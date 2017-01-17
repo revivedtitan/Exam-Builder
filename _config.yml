@@ -1,2 +1,6 @@
+<<<<<<< HEAD
 theme: jekyll-theme-cayman
 future: true
+=======
+theme: jekyll-theme-slate
+>>>>>>> origin/master
