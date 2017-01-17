@@ -1,0 +1,336 @@
+[{
+    "id": 1483457957016,
+    "text": "Angry IP Scanner is:",
+    "answers": [{
+        "text": "Open source",
+        "isValid": true
+    }, {
+        "text": "Only available for Windows",
+        "isValid": false
+    }, {
+        "text": "Only available for Linux",
+        "isValid": false
+    }, {
+        "text": "Available to scan private networks only",
+        "isValid": false
+    }],
+    "note": "Angry IP Scanner is an open source and free IP scanner. ",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}, {
+    "id": 1483458303682,
+    "text": "The scanning results of an Angry IP Scanner can be saved in the following files, except:",
+    "answers": [{
+        "text": "TXT",
+        "isValid": false
+    }, {
+        "text": "XLSX",
+        "isValid": true
+    }, {
+        "text": "XML",
+        "isValid": false
+    }, {
+        "text": "IP-Port list files",
+        "isValid": false
+    }],
+    "note": "The scanning results cannot be saved to XLSX files. ",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}, {
+    "id": 1483458366858,
+    "text": "Select the true statement:",
+    "answers": [{
+        "text": "Angry IP Scanner uses ICMP ",
+        "isValid": true
+    }, {
+        "text": "Angry IP Scanner scans IP addresses of private networks only",
+        "isValid": false
+    }, {
+        "text": "Angry IP Scanner is not a good tool for basic scanning",
+        "isValid": false
+    }],
+    "note": "Angry IP Scanner uses ICMP and pings each IP address to check if it is alive. It creates a separate scanning thread for each scanned IP address. ",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}, {
+    "id": 1483458386318,
+    "text": "In order to design the attack, the pen tester does not need to have an idea of the network.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": false
+    }, {
+        "text": "FALSE",
+        "isValid": true
+    }],
+    "note": "In order to design the attack, the pen tester needs to discover the network. ",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1483458406102,
+    "text": "Most of the techniques are developed to scan public networks and quite a few have the ability to scan private networks and give reliable results.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": false
+    }, {
+        "text": "FALSE",
+        "isValid": true
+    }],
+    "note": "Most of the techniques are developed to scan internally and quite few have the ability to scan public networks and give reliable results.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1483459127273,
+    "text": "Which is not an Hping Feature?",
+    "answers": [{
+        "text": "Advanced port scanning",
+        "isValid": false
+    }, {
+        "text": "Traceroute under all the supported protocols",
+        "isValid": false
+    }, {
+        "text": "Firewall testing",
+        "isValid": false
+    }, {
+        "text": "Plugins",
+        "isValid": true
+    }],
+    "note": "The functionality of Angry IP Scanner can be extended by writing plugins. ",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}, {
+    "id": 1483459175570,
+    "text": "______ is only available as a command-line tool. ",
+    "answers": [{
+        "text": "   Zmap",
+        "isValid": true
+    }, {
+        "text": "Hping",
+        "isValid": false
+    }, {
+        "text": "Nmap",
+        "isValid": false
+    }],
+    "note": "Zmap is only available as a command-line tool. ",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}, {
+    "id": 1483459220542,
+    "text": "__________ is a Michigan University Project.",
+    "answers": [{
+        "text": "Nmap",
+        "isValid": false
+    }, {
+        "text": "Zmap",
+        "isValid": true
+    }, {
+        "text": "Zenmap",
+        "isValid": false
+    }],
+    "note": "Zmap is a project developed at Michigan University to scan the IPv4 network in very short time. ",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}, {
+    "id": 1483459263532,
+    "text": "Which offers the fastest scan?",
+    "answers": [{
+        "text": "Zmap",
+        "isValid": true
+    }, {
+        "text": "Nmap",
+        "isValid": false
+    }, {
+        "text": "Bmap",
+        "isValid": false
+    }],
+    "note": "Zmap is designed to be faster than Nmap by 1300 times.",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}, {
+    "id": 1483459281618,
+    "text": "Angry IP Scanner can be extended with plugins.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": true
+    }, {
+        "text": "FALSE",
+        "isValid": false
+    }],
+    "note": "",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1483459295059,
+    "text": "A Java programmer can extend the functionality of Angry IP Scanner. ",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": true
+    }, {
+        "text": "FALSE",
+        "isValid": false
+    }],
+    "note": "",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1483459581590,
+    "text": "Find the term not associated with Nmap.",
+    "answers": [{
+        "text": "NSE",
+        "isValid": false
+    }, {
+        "text": "Zenmap",
+        "isValid": false
+    }, {
+        "text": "Firewall testing",
+        "isValid": true
+    }, {
+        "text": "TCP ACK",
+        "isValid": false
+    }],
+    "note": "Firewall testing is an Hping feature. ",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}, {
+    "id": 1483459611284,
+    "text": "Angry IP Scanner uses IGMP. ",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": false
+    }, {
+        "text": "FALSE",
+        "isValid": true
+    }],
+    "note": "",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1483459639492,
+    "text": "Zenmap is easy for beginners and contains features for advanced users. ",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": true
+    }, {
+        "text": "FALSE",
+        "isValid": false
+    }],
+    "note": "",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1483459657421,
+    "text": "Zenmap offers the ability to compare a new scan with an older version of the same scan.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": true
+    }, {
+        "text": "FALSE",
+        "isValid": false
+    }],
+    "note": "",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1483459673244,
+    "text": "Hping is available to use on Linux, Mac, Windows, and BSD only.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": false
+    }, {
+        "text": "FALSE",
+        "isValid": true
+    }],
+    "note": "",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1483459689164,
+    "text": "In Hping, the first command starts with hping. ",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": false
+    }, {
+        "text": "FALSE",
+        "isValid": true
+    }],
+    "note": "",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1483459707796,
+    "text": "In Hping, specifying -S (SYN) and -p 80 (port 80) can always avoid a blocking firewall.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": false
+    }, {
+        "text": "FALSE",
+        "isValid": true
+    }],
+    "note": "",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1483459724004,
+    "text": "Nmap is faster than Zmap.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": false
+    }, {
+        "text": "FALSE",
+        "isValid": true
+    }],
+    "note": "",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1483459739901,
+    "text": "Using Zmap, we can scan the entire IPv4 network in only 45 minutes. ",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": true
+    }, {
+        "text": "FALSE",
+        "isValid": false
+    }],
+    "note": "",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1483459756101,
+    "text": "Nmap runs on all major computer operating systems, and is available for Linux, Windows, Solaris, and Mac OS X.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": false
+    }, {
+        "text": "FALSE",
+        "isValid": true
+    }],
+    "note": "",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1483459770541,
+    "text": "Metasploit is the official GUI version of Nmap.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": false
+    }, {
+        "text": "FALSE",
+        "isValid": true
+    }],
+    "note": "",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1483459783303,
+    "text": "Angry IP Scanner uses raw IP packets to determine which hosts are alive.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": false
+    }, {
+        "text": "FALSE",
+        "isValid": true
+    }],
+    "note": "",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}]

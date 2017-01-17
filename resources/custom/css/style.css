@@ -1,0 +1,253 @@
+/* Custom Stylesheet */
+
+
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.icon-block {
+    padding: 0 15px;
+}
+
+.icon-block .material-icons {
+    font-size: inherit;
+}
+
+.container {
+    width: 50%;
+}
+
+
+/* label color */
+
+.input-field label {
+    color: #000;
+}
+
+
+/* label focus color */
+
+.input-field input[type=text]:focus+label {
+    color: #000;
+}
+
+
+/* label underline focus color */
+
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+}
+
+
+/* valid color */
+
+.input-field input[type=text].valid {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+}
+
+
+/* invalid color */
+
+.input-field input[type=text].invalid {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+}
+
+
+/* icon prefix focus color */
+
+.input-field .prefix.active {
+    color: #000;
+}
+
+a.selectedColor {
+    background-color: rgb(0, 128, 0) !important;
+}
+
+li.selectedColor {
+    background-color: #c8e6c9 !important;
+}
+
+ul.side-nav.fixed {}
+
+.side-nav.fixed {
+    left: 0;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    position: fixed;
+    top: 40px;
+}
+
+ul:not(.browser-default) {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.side-nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    margin: 0;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    height: 100%;
+    height: calc(100% + 60px);
+    height: -moz-calc(100%);
+    padding-bottom: 60px;
+    background-color: #fff;
+    z-index: 999;
+    overflow-y: auto;
+    will-change: transform;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translateX(-105%);
+    transform: translateX(-105%);
+}
+
+.z-depth-1,
+nav,
+.card-panel,
+.card,
+.toast,
+.btn,
+.btn-large,
+.btn-floating,
+.dropdown-content,
+.collapsible,
+.side-nav {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.side-nav a {
+    padding: 0 15px;
+}
+
+ul.side-nav.fixed:hover {
+    overflow-y: auto;
+}
+
+.material-tooltip {
+    margin-left: 50px;
+}
+
+img.seal {
+    height: 100%;
+    float: right;
+    margin-right: 20px;
+}
+
+li.disabled {
+    pointer-events: none;
+    opacity: 0.4;
+}
+
+.filled-in[type="checkbox"]:checked+label::after {
+    background-color: black;
+    border: 2px solid black;
+}
+
+.modal .modal-footer {
+    border-radius: 0px;
+}
+
+.correctAnswer {
+    color: green;
+    font-weight: 900;
+    font-size: larger;
+}
+
+.incorrectAnswer {
+    color: red;
+    font-weight: 900;
+    font-size: larger;
+}
+
+label {
+    color: #505050;
+}
+
+.progress {
+    background-color: #adadad;
+}
+
+.determinate {
+    background-color: #5088b7 !important;
+}
+
+h1 {
+    color: #396;
+    font-weight: 100;
+    font-size: 40px;
+    margin: 40px 0px 20px;
+}
+
+#panel-timer {
+    font-family: sans-serif;
+    color: #fff;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 16px;
+    position: absolute;
+    top: 64px;
+    right: 0px;
+    padding: 5px;
+    background-color: #424242;
+    border-bottom-left-radius: 5px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+#panel-timer>div {
+    padding: 10px;
+    border-radius: 3px;
+    background: #7C7C7C;
+    display: inline-block;
+    width: 75px;
+}
+
+#panel-timer div>span {
+    padding: 15px;
+    border-radius: 3px;
+    background: #424242;
+    display: inline-block;
+}
+
+.smalltext {
+    padding-top: 5px;
+    font-size: 14px;
+}
+
+.navbar-fixed {
+    height: 40px;
+}
+
+nav,
+nav .nav-wrapper i,
+nav a.button-collapse,
+nav a.button-collapse i {
+    height: 40px;
+    line-height: 40px;
+}
+
+#question_counter {
+    font-size: 28px;
+}
+
+i.left {
+    margin-right: 5px;
+}
+
+.collection .collection-item {
+    padding: 8px 15px;
+}

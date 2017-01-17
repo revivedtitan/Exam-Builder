@@ -1,0 +1,433 @@
+[{
+    "id": 1484006693454,
+    "text": "A BCP needs a _______ structure to ensure senior management support and authorization.",
+    "answers": [{
+        "text": "Governance",
+        "isValid": true
+    }, {
+        "text": "BIA",
+        "isValid": false
+    }, {
+        "text": "Readiness procedures",
+        "isValid": false
+    }],
+    "note": "A BCP needs a governance structure to ensure senior management support and authorization.",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}, {
+    "id": 1484006731640,
+    "text": "Who holds the overall responsibility for the BCP committee?",
+    "answers": [{
+        "text": "BCP Coordinator",
+        "isValid": false
+    }, {
+        "text": "Executive Sponsor",
+        "isValid": true
+    }, {
+        "text": "Security Officer",
+        "isValid": false
+    }, {
+        "text": "Chief Information Officer",
+        "isValid": false
+    }],
+    "note": "Executive sponsor has overall responsibility for the BCP committee, elicits senior management's support and direction, and ensures that adequate funding is available for the BCP program.",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}, {
+    "id": 1484006769595,
+    "text": "Who works with the coordinator to ensure that all aspects of the BCP meet the security requirements of the organization?",
+    "answers": [{
+        "text": "BCP Coordinator",
+        "isValid": false
+    }, {
+        "text": "Executive Sponsor",
+        "isValid": false
+    }, {
+        "text": "Security Officer",
+        "isValid": true
+    }, {
+        "text": "Chief Information Officer",
+        "isValid": false
+    }],
+    "note": "Security Officer works with the coordinator to ensure that all aspects of the BCP meet the security requirements of the organization.",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}, {
+    "id": 1484006786783,
+    "text": "BCP should study different events that threaten the daily operation of an organization and these events are distributed under two categories.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": false
+    }, {
+        "text": "FALSE",
+        "isValid": true
+    }],
+    "note": "BCP should study different events that threaten the daily operation of an organization and these events are distributed under three categories - Natural disasters, man-made disasters, and technology disasters.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1484006800649,
+    "text": "The BCP committee takes care of everything from the beginning of the project until the end.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": true
+    }, {
+        "text": "FALSE",
+        "isValid": false
+    }],
+    "note": "The BCP committee takes care of initiating the BCP, plan development, approval, testing, auditing, and implementation, typically everything from the beginning of the project until the end.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1484007848600,
+    "text": "Who provides the input, and assists in performing and analyzing the results of the business impact analysis?",
+    "answers": [{
+        "text": "CIO",
+        "isValid": false
+    }, {
+        "text": "Business unit representatives",
+        "isValid": true
+    }, {
+        "text": "Security Officer",
+        "isValid": false
+    }],
+    "note": "Business unit representatives provide input, and assist in performing and analyzing the results of the business impact analysis.",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}, {
+    "id": 1484007990691,
+    "text": "What is the main duty of BCP Coordinator?",
+    "answers": [{
+        "text": "Overall responsibility for the BCP committee",
+        "isValid": false
+    }, {
+        "text": "Ensures that all aspects of the BCP meet the security requirements of the organization",
+        "isValid": false
+    }, {
+        "text": "Plan for effective and harmonized continuity",
+        "isValid": false
+    }, {
+        "text": "Secure senior management's support",
+        "isValid": true
+    }],
+    "note": "BCP Coordinator secures senior management's support.",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}, {
+    "id": 1484008047767,
+    "text": "The purpose of the BIA is to do the following except?",
+    "answers": [{
+        "text": "Resolve conflicting interests and priorities",
+        "isValid": true
+    }, {
+        "text": "Rank the order of priority of services",
+        "isValid": false
+    }, {
+        "text": "Identify the organization's mandate and critical services",
+        "isValid": false
+    }, {
+        "text": "Determine what goods or services must be delivered",
+        "isValid": false
+    }],
+    "note": "Resolving conflicting interests and priorities is one of the duties that is normally done by the BCP Committee.",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}, {
+    "id": 1484008100080,
+    "text": "Loss of image or reputation is especially important for public institutions, as they are often perceived as having higher standards. This will aid to?",
+    "answers": [{
+        "text": "Identify intangible losses",
+        "isValid": true
+    }, {
+        "text": "Identify areas of potential revenue loss",
+        "isValid": false
+    }, {
+        "text": "Identify impacts of disruptions",
+        "isValid": false
+    }],
+    "note": "Estimates are required to determine the approximate cost of the loss of consumer and investor confidence, damage to reputation, loss of competitiveness, reduced market share, and violation of laws and regulations. Loss of image or reputation is especially important for public institutions, as they are often perceived as having higher standards.",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}, {
+    "id": 1484008135588,
+    "text": "Once all relevant information has been collected and assembled, ______ for the critical business services or products can be produced.",
+    "answers": [{
+        "text": "Ranking",
+        "isValid": true
+    }, {
+        "text": "Impacts of disruptions",
+        "isValid": false
+    }],
+    "note": "Once all relevant information has been collected and assembled, rankings for the critical business services or products can be produced. Ranking is based on the potential loss of revenue, time of recovery, and severity of impact a disruption would cause.",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}, {
+    "id": 1484008174769,
+    "text": "Employee availability is included in?",
+    "answers": [{
+        "text": "External dependencies",
+        "isValid": false
+    }, {
+        "text": "Internal dependencies",
+        "isValid": true
+    }],
+    "note": "Internal dependencies include employee availability.",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}, {
+    "id": 1484008202054,
+    "text": "Health and safety services are ___________ dependencies.",
+    "answers": [{
+        "text": "External",
+        "isValid": true
+    }, {
+        "text": "Internal",
+        "isValid": false
+    }],
+    "note": "External dependencies include any external support services, such as facility management, utilities, communications, transportation, finance institutions, insurance providers, government services, legal services, and health and safety services.",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}, {
+    "id": 1484008248115,
+    "text": "Which is not true about Maximum Tolerable Time?",
+    "answers": [{
+        "text": "Each company can have its own MTD.",
+        "isValid": false
+    }, {
+        "text": "MTD depends on the type of risk",
+        "isValid": false
+    }, {
+        "text": "MTD can be measured by minutes, hours, or days.",
+        "isValid": false
+    }, {
+        "text": "All is true",
+        "isValid": true
+    }],
+    "note": "",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": true
+}, {
+    "id": 1484008288078,
+    "text": "__________ ensure that all time-sensitive critical services or products are continuously delivered or not disrupted for longer than is permissible.",
+    "answers": [{
+        "text": "Operations management",
+        "isValid": false
+    }, {
+        "text": "Continuation",
+        "isValid": true
+    }, {
+        "text": "Recovery and restoration",
+        "isValid": false
+    }],
+    "note": "It ensures that all time-sensitive critical services or products are continuously delivered or not disrupted for longer than is permissible.",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}, {
+    "id": 1484008312866,
+    "text": "Chief Information Officer (CIO) cooperates closely with coordinator to ensure that all aspects of the BCP meet the security requirements of the organization.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": false
+    }, {
+        "text": "FALSE",
+        "isValid": true
+    }],
+    "note": "Security Officer works with the coordinator to ensure that all aspects of the BCP meet the security requirements of the organization, whereas the Chief Information Officer (CIO) cooperates closely with the BCP coordinator and IT specialists to plan for effective and harmonized continuity.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1484008332399,
+    "text": "The CIO develops the BCP policy.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": false
+    }, {
+        "text": "FALSE",
+        "isValid": true
+    }],
+    "note": "The BCP Coordinator develops the BCP policy.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1484008349854,
+    "text": "The BCP committee is co-chaired by the executive sponsor and the coordinator.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": true
+    }, {
+        "text": "FALSE",
+        "isValid": false
+    }],
+    "note": "The BCP committee is commonly co-chaired by the executive sponsor and the coordinator.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1484008367736,
+    "text": "The BCP Committee will not review the critical services and products that have been identified.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": false
+    }, {
+        "text": "FALSE",
+        "isValid": true
+    }],
+    "note": "The BCP Committee would normally review the critical services and products that have been identified.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1484008382476,
+    "text": "The BCP Committee would normally provide strategic direction.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": true
+    }, {
+        "text": "FALSE",
+        "isValid": false
+    }],
+    "note": "The BCP Committee would normally provide strategic direction and communicate essential messages.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1484008406600,
+    "text": "The BCP Committee cannot monitor quality assurance activities.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": false
+    }, {
+        "text": "FALSE",
+        "isValid": true
+    }],
+    "note": "The BCP Committee can monitor quality assurance activities.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1484008426228,
+    "text": "The purpose of the BIA is to identify the organization's mandate and critical services.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": true
+    }, {
+        "text": "FALSE",
+        "isValid": false
+    }],
+    "note": "The purpose of the BIA is to identify the organization's mandate and critical services or products.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1484008444427,
+    "text": "The impact of a disruption to a critical service or business product determines how long the organization could function without the service or product.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": true
+    }, {
+        "text": "FALSE",
+        "isValid": false
+    }],
+    "note": "The impact of a disruption to a critical service or business product determines how long the organization could function without the service or product, and how long the clients would accept its unavailability.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1484008458410,
+    "text": "The BIA can help you to decide what threats need insurance coverage, and the corresponding level of coverage.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": true
+    }, {
+        "text": "FALSE",
+        "isValid": false
+    }],
+    "note": "When considering insurance options, decide what threats to cover. It is important to use the BIA to help decide both what needs insurance coverage, and the corresponding level of coverage.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1484008480981,
+    "text": "When making claims for insurance, the burden of proof lies with the policyholder and requires valid and accurate documentation.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": true
+    }, {
+        "text": "FALSE",
+        "isValid": false
+    }],
+    "note": "When making claims for insurance, the burden of proof lies with the policyholder and requires valid and accurate documentation. It is always wise to include an expert or an insurance team when developing the response plan.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1484008497951,
+    "text": "Ranking is based on the potential loss of revenue, and time of recovery, only.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": false
+    }, {
+        "text": "FALSE",
+        "isValid": true
+    }],
+    "note": "Ranking is based on the potential loss of revenue, time of recovery, and severity of impact of a disruption.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1484008519291,
+    "text": "In Ranking, maximum service levels and minimum allowable downtimes are determined.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": false
+    }, {
+        "text": "FALSE",
+        "isValid": true
+    }],
+    "note": "In Ranking, minimum service levels and maximum allowable downtimes are determined.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1484008532741,
+    "text": "Risk assessment and vulnerability assessment forms an essential part of BIA.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": true
+    }, {
+        "text": "FALSE",
+        "isValid": false
+    }],
+    "note": "Risk assessment and vulnerability assessment is an essential part of BIA, with which you can identify the risk and BIA and can propose a mitigation, and analyze further the residual risk after mitigation.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1484008548446,
+    "text": "MTD depends on the type of risk and can be measured by minutes only.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": false
+    }, {
+        "text": "FALSE",
+        "isValid": true
+    }],
+    "note": "Each company can have it's own MTD (Maximum Tolerable Time), depending on the type of risk, which can be measured by minutes, hours, or days.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1484008565019,
+    "text": "Recovery time objective (RTO) is the length of time needed to recover from a disaster.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": true
+    }, {
+        "text": "FALSE",
+        "isValid": false
+    }],
+    "note": "Recovery time objective (RTO) is the length of time needed to recover from a disaster and go back to RPO point.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1484008581749,
+    "text": "Plans for the continuity of operations is based on the result of BIA, regardless of the ranking of threats.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": false
+    }, {
+        "text": "FALSE",
+        "isValid": true
+    }],
+    "note": "Plans for the continuity of operations are based on the result of BIA, while considering the ranking of threats, each should be mitigated if the budget allows unless the BCP committee see it unnecessary to be mitigated.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}]

@@ -1,0 +1,442 @@
+[{
+    "id": 1483555371972,
+    "text": "Pick the wrong statement about Encryption.",
+    "answers": [{
+        "text": "It is an irreversible process.",
+        "isValid": true
+    }, {
+        "text": "It can be used to prove the identity of a person.",
+        "isValid": false
+    }, {
+        "text": "Non-repudiation is ensured.",
+        "isValid": false
+    }],
+    "note": "The encryption process is reversible, and it needs the aid of knowing the key that encrypted it. Encryption assures the receiver that the received message has not been altered in any way from the original.",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}, {
+    "id": 1483555411280,
+    "text": "Name the cryptography that uses a single key for both encryption and decryption.",
+    "answers": [{
+        "text": "PKC",
+        "isValid": false
+    }, {
+        "text": "SKC",
+        "isValid": true
+    }, {
+        "text": "Hash Functions",
+        "isValid": false
+    }],
+    "note": "SKC stands for Secret Key Cryptography, and uses a single key for both encryption and decryption. ",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}, {
+    "id": 1483555443156,
+    "text": "In _______ cipher, the given plaintext block will always result with different ciphertext.",
+    "answers": [{
+        "text": "Block",
+        "isValid": false
+    }, {
+        "text": "Stream",
+        "isValid": true
+    }],
+    "note": "When using stream cipher, a given plaintext block will always result with different ciphertext. ",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}, {
+    "id": 1483555480820,
+    "text": "In cryptography, a Caesar cipher, is also known as the shift cipher.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": true
+    }, {
+        "text": "FALSE",
+        "isValid": false
+    }],
+    "note": "Cryptography is the science of writing in secret code. A Caesar cipher, also known as the shift cipher and Caesar's code or Caesar shift, is one of the simplest and most widely known encryption techniques. ",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1483555501772,
+    "text": "Stream cipher encrypts one block of data at a time using key on each block.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": true
+    }, {
+        "text": "FALSE",
+        "isValid": false
+    }],
+    "note": "Secret Key Cryptography is also known as Symmetric Key Cipher whereas, Public Key Cryptography is known as Asymmetric Key Cipher. ",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1483372694812,
+    "text": "Which stream ciphers generate the keystream in a fashion independent of the message stream, but uses the same keystream generation function at sender and receiver?",
+    "answers": [{
+        "text": "Synchronous",
+        "isValid": true
+    }, {
+        "text": "Self-synchronizing",
+        "isValid": false
+    }],
+    "note": "It generates the keystream in a fashion independent of the message stream, but uses the same keystream generation function at sender and receiver.",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}, {
+    "id": 1483372808427,
+    "text": "Find the that doesn't belong.",
+    "answers": [{
+        "text": "ECB",
+        "isValid": false
+    }, {
+        "text": "CBC",
+        "isValid": false
+    }, {
+        "text": "PKC",
+        "isValid": true
+    }, {
+        "text": "OFB",
+        "isValid": false
+    }],
+    "note": "Public Key Cryptography is a cryptographic method in which, it uses one key for encryption and another for decryption.",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}, {
+    "id": 1483372888814,
+    "text": "Name the mode in which the block cipher implementation is conceptually similar to a synchronous stream cipher?",
+    "answers": [{
+        "text": "CFB",
+        "isValid": false
+    }, {
+        "text": "CBC",
+        "isValid": false
+    }, {
+        "text": "ECB",
+        "isValid": false
+    }, {
+        "text": "OFB",
+        "isValid": true
+    }],
+    "note": "Output Feedback (OFB) mode is a block cipher implementation conceptually similar to a synchronous stream cipher. It prevents the same plaintext block from generating the same ciphertext block by using an internal feedback mechanism that is independent of both the plaintext and ciphertext bit streams.",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}, {
+    "id": 1483372956012,
+    "text": "Identify the mode that adds a feedback mechanism to the encryption scheme.",
+    "answers": [{
+        "text": "CFB",
+        "isValid": false
+    }, {
+        "text": "CBC",
+        "isValid": true
+    }, {
+        "text": "ECB",
+        "isValid": false
+    }, {
+        "text": "OFB",
+        "isValid": false
+    }],
+    "note": "Cipher Block Chaining (CBC) mode adds a feedback mechanism to the encryption scheme. In this mode, the plaintext is exclusively-ORed with the previous ciphertext block prior to encryption, and the two identical blocks of plaintext never encrypt to the same ciphertext.",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}, {
+    "id": 1483373027990,
+    "text": "Pick the incorrect statement about AES.",
+    "answers": [{
+        "text": "AES is a specification for the encryption of electronic data.",
+        "isValid": false
+    }, {
+        "text": "It supersedes the DES.",
+        "isValid": false
+    }, {
+        "text": "The algorithm described by AES is an asymmetric-key algorithm.",
+        "isValid": true
+    }, {
+        "text": "AES has been adopted by the U.S. government.",
+        "isValid": false
+    }],
+    "note": "The algorithm described by AES is a symmetric-key algorithm, meaning the same key is used for both encrypting and decrypting the data.",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}, {
+    "id": 1483373089728,
+    "text": "Find the wrong statement about DES.",
+    "answers": [{
+        "text": "DES is a block-cipher employing a 64-bit key that operates on 56-bit blocks.",
+        "isValid": true
+    }, {
+        "text": "It is the most common SKC scheme used today.",
+        "isValid": false
+    }, {
+        "text": "3DES employs up to three 56-bit keys and makes three encryption/decryption passes over the block.",
+        "isValid": false
+    }, {
+        "text": "DES was designed by IBM.",
+        "isValid": false
+    }],
+    "note": "DES is a block-cipher that employs a 56-bit key that operates on 64-bit blocks.",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}, {
+    "id": 1483373147679,
+    "text": "A blowfish is:",
+    "answers": [{
+        "text": "Available for free",
+        "isValid": true
+    }, {
+        "text": "Intended as a substitute for DES, but not for IDEA",
+        "isValid": false
+    }, {
+        "text": "Optimized for 64-bit processors",
+        "isValid": false
+    }],
+    "note": "Blowfish is available free and is used by a large number of systems. Blowfish is a symmetric 64-bit block cipher invented by Bruce Schneier.",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}, {
+    "id": 1483373191309,
+    "text": "Find the one that is highly secure and flexible and well-suited for large microprocessors.",
+    "answers": [{
+        "text": "Blowfish",
+        "isValid": false
+    }, {
+        "text": "Twofish",
+        "isValid": true
+    }],
+    "note": "Twofish is a 128-bit block cipher using 128-, 192-, or 256-bit keys. It is designed to be highly secure and flexible, well-suited for large microprocessors, 8-bit smart card microprocessors, and dedicated hardware.",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}, {
+    "id": 1483373249101,
+    "text": "Which of the following statement is not true about Digital signature?",
+    "answers": [{
+        "text": "It uses symmetric encryption.",
+        "isValid": true
+    }, {
+        "text": "The sender will use hash algorithm.",
+        "isValid": false
+    }, {
+        "text": "The receiver of the email will use the sender public key.",
+        "isValid": false
+    }],
+    "note": "Digital signatures use asymmetric encryption. Digital signature cannot be used to encrypt the content of the email, and is not a way to ensure confidentiality.",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}, {
+    "id": 1483373288925,
+    "text": "PKC uses a single key for both encryption and decryption.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": false
+    }, {
+        "text": "FALSE",
+        "isValid": true
+    }],
+    "note": "SKC uses a single key for both encryption and decryption, whereas Public Key Cryptography uses one key for encryption and another for decryption.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1483373306239,
+    "text": "In cryptography, the hash function uses mathematical transformations.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": true
+    }, {
+        "text": "FALSE",
+        "isValid": false
+    }],
+    "note": "Hash Functions use a mathematical transformation to irreversibly \"encrypt\" information.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1483373394171,
+    "text": "Secret Key Cryptography is also known as Symmetric Key Cipher.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": true
+    }, {
+        "text": "FALSE",
+        "isValid": false
+    }],
+    "note": "Secret Key Cryptography is also known as Symmetric Key Cipher whereas, Public Key Cryptography is known as Asymmetric Key Cipher.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1483373417961,
+    "text": "When using stream cipher, a given plaintext block will always result with different ciphertext.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": true
+    }, {
+        "text": "FALSE",
+        "isValid": false
+    }],
+    "note": "When using stream cipher, a given plaintext block will always result with different ciphertext and block cipher, will always result in same ciphertext if the same key is used.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1483373435081,
+    "text": "OFB prevents the same plaintext block from generating the same ciphertext block by using an internal feedback mechanism.  1",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": true
+    }, {
+        "text": "FALSE",
+        "isValid": false
+    }],
+    "note": "OFB prevents the same plaintext block from generating the same ciphertext block by using an internal feedback mechanism that is independent of both the plaintext and ciphertext bit streams.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1483373455540,
+    "text": "Electronic Codebook (ECB) mode, adds a feedback mechanism to the encryption scheme.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": false
+    }, {
+        "text": "FALSE",
+        "isValid": true
+    }],
+    "note": "In Electronic Codebook (ECB) mode, a secret key is used to encrypt the plaintext block, whereas the Cipher Block Chaining (CBC) mode adds a feedback mechanism to the encryption scheme.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1483373473287,
+    "text": "AES is the most common SKC scheme used today.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": false
+    }, {
+        "text": "FALSE",
+        "isValid": true
+    }],
+    "note": "Data Encryption Standard or DES is the most common SKC scheme used today. AES supersedes the Data Encryption Standard.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1483373494678,
+    "text": "DESX is a variant of DES devised by Xuejia Lai and James Massey.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": false
+    }, {
+        "text": "FALSE",
+        "isValid": true
+    }],
+    "note": "DESX is a variant of DES devised by Ron Rivest. The Secret-key cryptosystem, International Data Encryption Algorithm (IDEA), was written by Xuejia Lai and James Massey.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1483373511284,
+    "text": "An update to RC2 is called Spritz.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": false
+    }, {
+        "text": "FALSE",
+        "isValid": true
+    }],
+    "note": "An update to RC4 is called Spritz. RC2 is a 64-bit block cipher using variable-sized keys designed to replace DES.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1483373529934,
+    "text": "The resources required for a brute-force attack grow linearly with increasing key size.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": false
+    }, {
+        "text": "FALSE",
+        "isValid": true
+    }],
+    "note": "The resources required for a brute-force attack grow exponentially with increasing key size.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1483373547922,
+    "text": "RSA is used for secret-key, key exchange only, and not for authentication or digital signatures.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": false
+    }, {
+        "text": "FALSE",
+        "isValid": true
+    }],
+    "note": "D-H is used for secret-key key exchange only, and not for authentication or digital signatures. RSA is very popular and used in hundreds of software products. It can be used for key exchange, digital signatures, or encryption of small blocks of data.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1483373569362,
+    "text": "Diffie'Hellman key exchange is a specific method of exchanging cryptographic keys.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": true
+    }, {
+        "text": "FALSE",
+        "isValid": false
+    }],
+    "note": "Diffie'Hellman key exchange (D-H) is a specific method of exchanging cryptographic keys and this method allows two parties that have no prior knowledge of each other to jointly establish a shared secret key over an insecure communications channel.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1483373611470,
+    "text": "IPsec can be implemented in a host-to-host transport mode only.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": false
+    }, {
+        "text": "FALSE",
+        "isValid": true
+    }],
+    "note": "IPsec can be implemented in a host-to-host transport mode, as well as in a network tunnel mode.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1483371516861,
+    "text": "PKC employs two keys that are related mathematically.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": true
+    }, {
+        "text": "FALSE",
+        "isValid": false
+    }],
+    "note": "PKC employs two keys that are related mathematically, but the knowledge about one key is not enough to easily determine the other key. One key is used to encrypt and the other to decrypt- we call them private and public keys, this approach is also called asymmetric encryption.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1483371636171,
+    "text": "Public Key Cryptography is also known as:",
+    "answers": [{
+        "text": "Symmetric Key Cipher",
+        "isValid": false
+    }, {
+        "text": "Asymmetric Key Cipher",
+        "isValid": true
+    }],
+    "note": "Public Key Cryptography is also known as Asymmetric Key Cipher.",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}, {
+    "id": 1483371709736,
+    "text": "A hash function:",
+    "answers": [{
+        "text": "A. Is known as one way encryption",
+        "isValid": false
+    }, {
+        "text": " B. Is an algorithm that uses key",
+        "isValid": false
+    }, {
+        "text": " C. Is used to ensure integrity",
+        "isValid": false
+    }, {
+        "text": "D. Cannot be used to encrypt password in databases",
+        "isValid": false
+    }, {
+        "text": "E. Answers A & C",
+        "isValid": true
+    }],
+    "note": "Hash function is also known by message digest or one way encryption. Hash algorithms are used to ensure integrity, by making sure that the data has not been altered by an intruder.",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": true
+}]

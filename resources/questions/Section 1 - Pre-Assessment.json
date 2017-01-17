@@ -1,0 +1,125 @@
+[ {
+	"id": 1483555579733,
+	"text": "This term is not used in hacking circles.",
+	"answers": [{
+		"text": "Vulnerabilities",
+		"isValid": false
+	}, {
+		"text": "Exploits",
+		"isValid": false
+	}, {
+		"text": "Integrity",
+		"isValid": true
+	}, {
+		"text": "Zero-day attack",
+		"isValid": false
+	}],
+	"note": "Integrity is one of the key principles in the CIA triad. It ensures that only authorized persons edit the data. ",
+	"type": "MULTIPLE_CHOICE",
+	"preserveOrder": false
+}, {
+	"id": 1483555625077,
+	"text": "From discovery until disclosure, it is a:",
+	"answers": [{
+		"text": "Black risk",
+		"isValid": true
+	}, {
+		"text": "White risk",
+		"isValid": false
+	}, {
+		"text": "Gray risk",
+		"isValid": false
+	}],
+	"note": "From discovery until disclosure of a vulnerability, the black hats use their skill for malicious purposes. ",
+	"type": "MULTIPLE_CHOICE",
+	"preserveOrder": false
+}, {
+	"id": 1483555679109,
+	"text": "Choose the one that doesn't belong.",
+	"answers": [{
+		"text": "Zero-day attacks",
+		"isValid": false
+	}, {
+		"text": "Natural threat",
+		"isValid": true
+	}, {
+		"text": "Exploits",
+		"isValid": false
+	}, {
+		"text": "Malware",
+		"isValid": false
+	}],
+	"note": "As the name implies, natural threats can be any disaster caused by nature. It can be a flood or hurricane, causing impact on the availability of the systems. ",
+	"type": "MULTIPLE_CHOICE",
+	"preserveOrder": false
+}, {
+	"id": 1483555728762,
+	"text": "Identify the term not associated with confidentiality.",
+	"answers": [{
+		"text": "User IDs & passwords",
+		"isValid": false
+	}, {
+		"text": "EMP",
+		"isValid": true
+	}, {
+		"text": "SSL/TLS",
+		"isValid": false
+	}, {
+		"text": "Biometrics",
+		"isValid": false
+	}],
+	"note": "EMP or electromagnetic pulse, also sometimes called a transient electromagnetic disturbance, is a short burst of electromagnetic energy. EMP interference is usually only disruptive and damaging to electronic equipment, and at higher energy levels a powerful EMP event such as a lightning strike can damage physical objects such as buildings and aircraft structures. ",
+	"type": "MULTIPLE_CHOICE",
+	"preserveOrder": false
+}, {
+	"id": 1483555766876,
+	"text": "A vulnerability with one or more known instances of working and fully implemented attacks is classified as:",
+	"answers": [{
+		"text": "Exploitable vulnerability",
+		"isValid": true
+	}, {
+		"text": "Window of vulnerability",
+		"isValid": false
+	}, {
+		"text": "Attack surface",
+		"isValid": false
+	}],
+	"note": "A vulnerability with one or more known instances of working and fully implemented attacks is classified as an exploitable vulnerability. ",
+	"type": "MULTIPLE_CHOICE",
+	"preserveOrder": false
+}, {
+	"id": 1483555807207,
+	"text": "Who are self-proclaimed ethical hackers?",
+	"answers": [{
+		"text": "Black hat hackers",
+		"isValid": false
+	}, {
+		"text": "White hat hackers",
+		"isValid": false
+	}, {
+		"text": "Gray hat hackers",
+		"isValid": true
+	}],
+	"note": "Gray hackers are self-proclaimed ethical hackers. The nature of behavior depends on the situations and can be sometimes offensive or defensive. ",
+	"type": "MULTIPLE_CHOICE",
+	"preserveOrder": false
+}, {
+	"id": 1483555852852,
+	"text": "What is the primary goal of using exploits?",
+	"answers": [{
+		"text": "Gain low-level access, escalate privileges repeatedly, and reach the root",
+		"isValid": true
+	}, {
+		"text": "Unauthorized data access",
+		"isValid": false
+	}, {
+		"text": "DoS",
+		"isValid": false
+	}, {
+		"text": "Superuser-level access",
+		"isValid": false
+	}],
+	"note": "The main goal of exploits is to gain low-level access to the system. After gaining low-level access, it escalates the privilege repeatedly until the hacker reaches the root. ",
+	"type": "MULTIPLE_CHOICE",
+	"preserveOrder": false
+}]

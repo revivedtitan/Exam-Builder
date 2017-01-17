@@ -1,0 +1,408 @@
+[{
+    "id": 1483379090676,
+    "text": "Which is not true about SAM database?",
+    "answers": [{
+        "text": "It stores user accounts on the local computer.",
+        "isValid": false
+    }, {
+        "text": "It is harder to reach the server holding the database.",
+        "isValid": true
+    }, {
+        "text": "It is used by Microsoft systems.",
+        "isValid": false
+    }],
+    "note": "SAM databases are easily reachable and can be hacked, as it uses a weak hash algorithm.",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}, {
+    "id": 1483379126758,
+    "text": "Which one uses weak hash algorithms?",
+    "answers": [{
+        "text": "Centralized authentication systems",
+        "isValid": false
+    }, {
+        "text": "SAM database",
+        "isValid": true
+    }],
+    "note": "They use weak hash algorithms to store the passwords.",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}, {
+    "id": 1483379166603,
+    "text": "The basic form of authentication uses?",
+    "answers": [{
+        "text": "Username and password",
+        "isValid": true
+    }, {
+        "text": "PIN",
+        "isValid": false
+    }, {
+        "text": "Pattern",
+        "isValid": false
+    }],
+    "note": "The basic form of authentication uses a username and password.",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}, {
+    "id": 1483379185055,
+    "text": "Usually, the database stores the authentication credentials in clear text.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": false
+    }, {
+        "text": "FALSE",
+        "isValid": true
+    }],
+    "note": "Usually, the database does not store the authentication credentials in clear text, but they are hashed.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1483379200672,
+    "text": "Centralized authentication systems provide more security than SAM database.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": true
+    }, {
+        "text": "FALSE",
+        "isValid": false
+    }],
+    "note": "Centralized authentication systems provide more security than SAM database. SAM database uses weak hash algorithms to save passwords, whereas centralized authentication systems provide enhanced security.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1483381671254,
+    "text": "Which device generates a password for each login?",
+    "answers": [{
+        "text": "Smart Card Device",
+        "isValid": false
+    }, {
+        "text": "Token Generator",
+        "isValid": true
+    }],
+    "note": "Token generator is a small device given to the user. It generates a password for each log in and this password can be used only once.",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}, {
+    "id": 1483381708819,
+    "text": "The token generator uses ________ to generate OTP.",
+    "answers": [{
+        "text": "Formula",
+        "isValid": false
+    }, {
+        "text": "Randomness",
+        "isValid": true
+    }],
+    "note": "The token generator uses pseudorandomness or randomness to generate the OTP.",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}, {
+    "id": 1483381747193,
+    "text": "In which OTP does the system hash the password?",
+    "answers": [{
+        "text": "HOTP",
+        "isValid": true
+    }, {
+        "text": "TOTP",
+        "isValid": false
+    }],
+    "note": "Hashed OTP is also known as HMAC-OTP or HOTP. In this mechanism, the system hashes the password and sends it over to the token generator represented as digits.",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}, {
+    "id": 1483381785473,
+    "text": "In ______, the generated password expires after a period of time, even if it is not used.",
+    "answers": [{
+        "text": "TOTP",
+        "isValid": true
+    }, {
+        "text": "HOTP",
+        "isValid": false
+    }, {
+        "text": "OTP",
+        "isValid": false
+    }],
+    "note": "In TOTP, the OTP generated expires in a short amount of time, even if it was not used.",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}, {
+    "id": 1483381904256,
+    "text": "Which is not true in CHAP?",
+    "answers": [{
+        "text": "Client does not use hash function to reply.",
+        "isValid": true
+    }, {
+        "text": "Server sends a challenge to the client.",
+        "isValid": false
+    }, {
+        "text": "Server compares the hashed answer.",
+        "isValid": false
+    }],
+    "note": "The client uses one way hash function for the challenge and shared key together, and sends it back to the server.",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}, {
+    "id": 1483381970537,
+    "text": "Pick the wrong statement about MS-CHAP.",
+    "answers": [{
+        "text": "It defines a set of reason-for-failure codes.",
+        "isValid": false
+    }, {
+        "text": "It requires clear-text or reversibly encrypted passwords.",
+        "isValid": true
+    }, {
+        "text": "It is derived from CHAP.",
+        "isValid": false
+    }, {
+        "text": "MS-CHAP provides authentication retry.",
+        "isValid": false
+    }],
+    "note": "MS-CHAP format does not require the authenticator to store a clear-text or reversibly encrypted password.",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}, {
+    "id": 1483382018465,
+    "text": "In MSCHAP v2:",
+    "answers": [{
+        "text": "Mutual authentication does not take place.",
+        "isValid": false
+    }, {
+        "text": "Server sends a verification request.",
+        "isValid": true
+    }, {
+        "text": "Remote client responds with user name and a random string only.",
+        "isValid": false
+    }],
+    "note": "The authentication server sends a verification request, which includes a session identifier and an arbitrary challenge string to the remote client. The authentication server checks the response from the remote client and in turn sends a notification of success or failure of the authentication, and an authenticated response based on the sent challenge string, the peer challenge string, the client's encrypted response, and the user's password.",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}, {
+    "id": 1483382037982,
+    "text": "Authentications are provided by using a username and password only.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": false
+    }, {
+        "text": "FALSE",
+        "isValid": true
+    }],
+    "note": "The basic form of authentication will be using a username and password. PIN, smart card device, Fingerprint, and pattern to draw are some of the newly developed technologies to authenticate the system.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1483382061325,
+    "text": "In critical environments, multifactor authentication is used to ensure maximum safety.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": true
+    }, {
+        "text": "FALSE",
+        "isValid": false
+    }],
+    "note": "In critical environments, many authentication factors are implemented together to ensure maximum security. Good job, please continue to the next question.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1483382080739,
+    "text": "The Token generator uses a formula to generate passwords.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": false
+    }, {
+        "text": "FALSE",
+        "isValid": true
+    }],
+    "note": "OTP is very secure and cannot be predicted by a hacker, as the token generator does not use a formula to generate passwords. It uses randomness to generate passwords.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1483382099023,
+    "text": "In HMAC-OTP, the token generator displays a timer for the password when generated so the user can know how much time he still has to use the password.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": false
+    }, {
+        "text": "FALSE",
+        "isValid": true
+    }],
+    "note": "In Time based OTP, the OTP generated expires in a short amount of time, even if it was not used. The token generator displays a timer for the password when generated so the user can know how much time he still has to use the password. In HMAC-OTP or HOTP, the system hashes the password and sends it over to the token generator represented as digits.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1483382116721,
+    "text": "The TOTP password expires once it is used.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": false
+    }, {
+        "text": "FALSE",
+        "isValid": true
+    }],
+    "note": "The OTP password generated is expired once it has been used; whereas the TOTP is time based and becomes expired after a short amount of time, even if it is not used.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1483382133983,
+    "text": "HOTP is simple and is time based.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": false
+    }, {
+        "text": "FALSE",
+        "isValid": true
+    }],
+    "note": "HMAC-OTP or HOTP is complex. The system hashes the password and sends it over to the token generator represented as digits.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1483382150837,
+    "text": "CHAP uses a shared secret and this secret will be transmitted over the Internet.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": false
+    }, {
+        "text": "FALSE",
+        "isValid": true
+    }],
+    "note": "CHAP (Challenge Handshake Authentication Protocol) uses a shared secret and requires that both the client and the server know this secret, and the secret will not be transmitted over the Internet.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1483382167856,
+    "text": "MSCHAP doesn't require any party, client or server, to know the secret key.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": true
+    }, {
+        "text": "FALSE",
+        "isValid": false
+    }],
+    "note": "MSCHAP is an enhanced version of CHAP and is created by Microsoft. It doesn't require any party, client or server, to know the secret key.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1483382188425,
+    "text": "MS-CHAP format does not require the authenticator to store a clear-text or reversibly encrypted password.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": true
+    }, {
+        "text": "FALSE",
+        "isValid": false
+    }],
+    "note": "MS-CHAP was developed by Microsoft and its format does not require the authenticator to store a clear-text or reversibly encrypted password.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1483382205548,
+    "text": "NTLMv2 is more secure than NTLM v1 and uses NTv2 and LMv3 hashing.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": true
+    }, {
+        "text": "FALSE",
+        "isValid": false
+    }],
+    "note": "NTLMv2 use NTv2 and LMv3 hashing, and RC4 cipher, it is considered to be more secure than NTLMv1.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1483382223083,
+    "text": "RADIUS systems can perform the 3 As together.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": true
+    }, {
+        "text": "FALSE",
+        "isValid": false
+    }],
+    "note": "RADIUS (Remote Authentication Dial-In User Service) systems, can perform the 3 As together - authenticate, authorize and audit the user actions.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1483382273280,
+    "text": "Pick the one that is not used for multifactor authentication.",
+    "answers": [{
+        "text": "Smart card",
+        "isValid": false
+    }, {
+        "text": "PIN",
+        "isValid": false
+    }, {
+        "text": "Fingerprint",
+        "isValid": false
+    }, {
+        "text": "OTP",
+        "isValid": true
+    }],
+    "note": "As the name suggests, One Time Password can be used only once. The token generator generates the password for each log in.",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}, {
+    "id": 1483382321033,
+    "text": "Which protocol is considered as the most insecure authentication protocol, if we are connecting remotely to the corporate network using a modem connection?",
+    "answers": [{
+        "text": "PPP",
+        "isValid": false
+    }, {
+        "text": "PAP",
+        "isValid": true
+    }, {
+        "text": "CHAP",
+        "isValid": false
+    }],
+    "note": "PAP or Password Authentication Protocol is one of the oldest mechanisms. It is not recommended to use PAP and is considered as the most insecure authentication protocol, as it sends the password in clear text.",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}, {
+    "id": 1483382363253,
+    "text": "Find the one that works on a shared secret key, but doesn't require any party, client or server, to know it.",
+    "answers": [{
+        "text": "CHAP",
+        "isValid": false
+    }, {
+        "text": "MSCHAP",
+        "isValid": true
+    }],
+    "note": "It is an enhanced version of CHAP created by Microsoft. It does not require any party, client, or server, to know the secret key.",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}, {
+    "id": 1483382383007,
+    "text": "Token generator generates OTP.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": true
+    }, {
+        "text": "FALSE",
+        "isValid": false
+    }],
+    "note": "Token generator is a small device given to the user and it generates a password for each login. The password that is generated can be used only once, and this mechanism is known as OTP.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1483382402109,
+    "text": "PPP is the oldest mechanism and sends the password in clear text.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": false
+    }, {
+        "text": "FALSE",
+        "isValid": true
+    }],
+    "note": "Password Authentication Protocol (PAP), is one of the oldest mechanisms, and sends the password in clear text. PPP stands for Point to Point Protocol.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1483382420570,
+    "text": "DHCP server and 802.1X switch can act as RADIUS clients.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": true
+    }, {
+        "text": "FALSE",
+        "isValid": false
+    }],
+    "note": "Wireless AP, VPN server, DHCP server, 802.1X switch, Dial-in server, all can act as RADIUS clients.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}]

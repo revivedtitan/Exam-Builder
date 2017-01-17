@@ -1,0 +1,310 @@
+[{
+    "id": 1483535636678,
+    "text": "Port Scan is a simple software used to distinguish between communication channels.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": true
+    }, {
+        "text": "FALSE",
+        "isValid": false
+    }],
+    "note": "",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1483535757255,
+    "text": "How are ports different from IP addresses?",
+    "answers": [{
+        "text": "A) Port is application specific",
+        "isValid": false
+    }, {
+        "text": "B) IP Address is a numerical label",
+        "isValid": false
+    }, {
+        "text": "C) Both are customized application",
+        "isValid": false
+    }, {
+        "text": "D) A and B",
+        "isValid": true
+    }],
+    "note": "Port is an application specific or process-specific software construct serving as a communications endpoint in a computer's host operating system. An Internet Protocol address (IP address) is a numerical label assigned to each device (e.g., computer, printer) participating in a computer network that uses the Internet Protocol for communication. ",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": true
+}, {
+    "id": 1483535809767,
+    "text": "Which of the following is not a port type?",
+    "answers": [{
+        "text": "Well-known port",
+        "isValid": false
+    }, {
+        "text": "User Port",
+        "isValid": false
+    }, {
+        "text": "Dynamic Ports",
+        "isValid": false
+    }, {
+        "text": "Internal Port",
+        "isValid": true
+    }],
+    "note": "The internal port, also known as the internal interface, handles all LAN requests to resources, listening for Web browsing, file browsing, authentication, and outbound mail requests. ",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}, {
+    "id": 1483537178263,
+    "text": "Ping can be used for the following:",
+    "answers": [{
+        "text": "To test if a port is open or closed",
+        "isValid": false
+    }, {
+        "text": "To find out what operating system a target system is using",
+        "isValid": false
+    }, {
+        "text": "To check if access control lists are in place",
+        "isValid": false
+    }, {
+        "text": "To know the route the data packets take to reach the destination",
+        "isValid": false
+    }, {
+        "text": "All of these",
+        "isValid": true
+    }],
+    "note": "Ping can find if a port is open or closed. Using an Nmap ping scan it is possible to find which operating system is running. Ping can check the ACLs. Ping command can be used to display the route the data packet takes to the target server. ",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": true
+}, {
+    "id": 1483537193799,
+    "text": "Trojans use registered ports.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": true
+    }, {
+        "text": "FALSE",
+        "isValid": false
+    }],
+    "note": "",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1483537238331,
+    "text": "Which is the first of the three steps in a three-way handshake?",
+    "answers": [{
+        "text": "Sending a request by client to server",
+        "isValid": true
+    }, {
+        "text": "Receiving request and sending back acknowledgement by server to client",
+        "isValid": false
+    }, {
+        "text": "Receiving and accepting connection by server",
+        "isValid": false
+    }],
+    "note": "First client will send a SYN packet to the server (to synchronize the client's sequence number). ",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}, {
+    "id": 1483554201794,
+    "text": "Which of the flags are used to specify urgency in receiving data? ",
+    "answers": [{
+        "text": "URG",
+        "isValid": true
+    }, {
+        "text": "PSH",
+        "isValid": false
+    }, {
+        "text": "SYN",
+        "isValid": false
+    }, {
+        "text": "ACK",
+        "isValid": false
+    }],
+    "note": "URG is the flag used to inform a receiving station that certain data within a segment is urgent and should be prioritized. ",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}, {
+    "id": 1483554260929,
+    "text": "Which of the following is true about Nmap?",
+    "answers": [{
+        "text": "It is a port scanner",
+        "isValid": false
+    }, {
+        "text": "It is available in Unix and Windows",
+        "isValid": false
+    }, {
+        "text": "TCP connect scanning and SYN scanning are available",
+        "isValid": false
+    }, {
+        "text": "It is neither open source nor free",
+        "isValid": false
+    }, {
+        "text": "All of the above",
+        "isValid": true
+    }],
+    "note": "Nmap is a port scanner. Nmap port scanner is available for both UNIX and Windows platforms. TCP connect() scanning [-sT] and SYN scanning [-sS] are the two types of scan that are mostly used. Nmap tool is open source. ",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": true
+}, {
+    "id": 1483554284505,
+    "text": "A UDP Port Scan uses a TCP protocol.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": false
+    }, {
+        "text": "FALSE",
+        "isValid": true
+    }],
+    "note": "",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1483554340155,
+    "text": "What are the utilities provided by an operating system to find out which services use which ports? ",
+    "answers": [{
+        "text": "      WireShark & Network Monitor",
+        "isValid": false
+    }, {
+        "text": "NETSTAT.EXE & TASKLIST.EXE",
+        "isValid": true
+    }, {
+        "text": "WireShark & NETSTAT.EXE",
+        "isValid": false
+    }, {
+        "text": "Network Monitor & TASKLIST.EXE",
+        "isValid": false
+    }],
+    "note": "NETSTAT.EXE tool is provided by the operating system which is used to monitor the network. E.g. netstat with syntax -a, -n, -o. TASKLIST.EXE is also provided by the operating system to monitor the network. ",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}, {
+    "id": 1483554396818,
+    "text": "Which of the following flags are used in a three-way handshake?",
+    "answers": [{
+        "text": "SYN & ACK",
+        "isValid": true
+    }, {
+        "text": "ACK & RST",
+        "isValid": false
+    }, {
+        "text": "RST & FIN",
+        "isValid": false
+    }, {
+        "text": "FIN & SYN",
+        "isValid": false
+    }],
+    "note": "SYN flag is used to Initiate the connection. ACK flag is used to Acknowledge received data. ",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}, {
+    "id": 1483554413226,
+    "text": "IP tools provide many TCP/IP utilities in single program. ",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": true
+    }, {
+        "text": "FALSE",
+        "isValid": false
+    }],
+    "note": "",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1483554434346,
+    "text": "Nmap offers multiple scans at a time. ",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": false
+    }, {
+        "text": "FALSE",
+        "isValid": true
+    }],
+    "note": "",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1483554449227,
+    "text": "A port scan can cause denial-of-service.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": true
+    }, {
+        "text": "FALSE",
+        "isValid": false
+    }],
+    "note": "",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1483554494874,
+    "text": "What is true about half-open scan?",
+    "answers": [{
+        "text": "It also known as a stealth scan",
+        "isValid": false
+    }, {
+        "text": "It sends a frame to TCP port without any handshake or additional packet transfer",
+        "isValid": true
+    }, {
+        "text": "It completes a connection with the target",
+        "isValid": false
+    }],
+    "note": "A frame is sent to a TCP port without any handshake or additional packet transfer. ",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}, {
+    "id": 1483554558147,
+    "text": "What responses can come to a vanilla or half-open scan? ",
+    "answers": [{
+        "text": "SYN-ACK",
+        "isValid": false
+    }, {
+        "text": "RST-ACK",
+        "isValid": false
+    }, {
+        "text": "No response",
+        "isValid": false
+    }, {
+        "text": "Successful",
+        "isValid": false
+    }, {
+        "text": "A & B",
+        "isValid": true
+    }],
+    "note": "Attacker first sends SYN packets to sequential port numbers on a target, to see which port numbers reply. Open port will reply with a SYN/ACK. Closed port will reply with a RST/ACK. ",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": true
+}, {
+    "id": 1483554612253,
+    "text": "Which of the following statements is wrong for the Global Network Inventory?",
+    "answers": [{
+        "text": "Scan network appliances including switches",
+        "isValid": false
+    }, {
+        "text": "Scan network printers",
+        "isValid": false
+    }, {
+        "text": "Scan document centers",
+        "isValid": false
+    }, {
+        "text": "Licenses are user-based only",
+        "isValid": true
+    }],
+    "note": "Global Network Inventory is a powerful and flexible software and hardware inventory system that can be used as an audit scanner in an agent-free and zero deployment environments. If used as an audit scanner, it only requires full administrator rights to the remote computers you wish to scan. Global Network Inventory can audit remote computers and even network appliances, including switches, network printers, document centers, etc. ",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}, {
+    "id": 1483554667059,
+    "text": "Which of the following statements is wrong for PRTG?",
+    "answers": [{
+        "text": "SNMP and WMI",
+        "isValid": false
+    }, {
+        "text": "Packet Sniffing",
+        "isValid": false
+    }, {
+        "text": "NetFlow, IPFIX, jFlow, and sFlow",
+        "isValid": false
+    }, {
+        "text": "PRTG cannot auto discover the network",
+        "isValid": true
+    }],
+    "note": "PRTG can autodiscover them, helping you map out your network.",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}]

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <title>Q&A Builder</title>
+    <link rel="stylesheet" type="text/css" href="resources/libraries/materialize/css/icon.css" />
+    <link rel="stylesheet" type="text/css" href="resources/libraries/materialize/css/materialize.css" />
+    <link rel="stylesheet" type="text/css" href="resources/custom/css/style.css" />
+    <script src="resources/libraries/jquery/jquery-2.1.1.min.js"></script>
+    <script src="resources/libraries/materialize/js/materialize.min.js"></script>
+    <script src="resources/libraries/moment/moment.min.js"></script>
+    <script src="resources/custom/js/utilities.js"></script>
+    <script src="resources/custom/js/clock.js"></script>
+    <script src="resources/custom/js/Q&A_models.js"></script>
+    <script src="resources/custom/js/question-builder.js"></script>
+    <script src="resources/custom/js/question-modal.js"></script>
+    <script src="resources/custom/js/take-exam.js"></script>
+    <script src="resources/custom/js/onload.js"></script>
+</head>
+
+<body class="grey lighten-4">
+    <!-- Navigation Bar -->
+    <div class="navbar-fixed">
+        <nav class="grey darken-3">
+            <div class="nav-wrapper">
+                <ul id="navbar" class="left hide-on-med-and-down">
+                    <li id="navbar-btn-load"><a href="#loadQuestionsModal"><i class="material-icons left">library_add</i>Load</a></li>
+                    <li id="navbar-btn-list"><a href="#" onclick="toggleQuestionSidebar()"><i class="material-icons left">view_list</i>Toggle</a></li>
+                    <li id="navbar-btn-save" class="disabled"><a href="#saveQuestionsModal" onclick="openSaveQuestionModal()"><i class="material-icons left">system_update_alt</i>Save</a></li>
+                    <li id="navbar-btn-clear" class="disabled"><a href="#" onclick="clearAllQuestions()"><i class="material-icons left">delete</i>Clear</a></li>
+                </ul>
+                <a id="question_counter" href="#" class="brand-logo center">Please Load Questions</a>
+                <ul id="exam-navbar" class="right hide-on-med-and-down">
+                    <li id="navbar-btn-timer" style="display:none;"><a href="#" onclick="toggleTimerPanel()"><i class="material-icons left">query_builder</i>Timer</a></li>
+                    <li id="navbar-btn-summary" class="disabled"><a href="#examSummary"><i class="material-icons left">assignment</i>Summary</a></li>
+                    <li id="navbar-btn-start" class="disabled"><a href="#examSettings"><i class="material-icons left">play_arrow</i>Start</a></li>
+                    <li id="navbar-btn-end" style="display:none;" onclick="endExam()"><a><i class="material-icons left">stop</i>End</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- Side bar -->
+    <ul id="nav-mobile" class="side-nav fixed" style="overflow-y: scroll;display:none;">
+        <li class="center" style="background-color:#DDD"><a>Current Exam Questions</a></li>
+    </ul>
+    <!-- Main Content Panel -->
+    <div class="container" style="margin-top:15px;">
+        <div class="row" style="margin-bottom:0px;">
+            <form id="questionBuilder" class="col s12">
+                <div class="col s12">
+                    <label>Question Type</label>
+                    <select id="question_type" class="browser-default" onchange="toggleTrueFalse(this.value)">
+						<option value="MULTIPLE_CHOICE" selected>Multiple Choice</option>
+						<option value="CHECK_ALL">Check All</option>
+						<option value="TRUE_FALSE">True / False</option>
+					</select>
+                </div>
+                <div class="input-field col s12" style="margin-top:30px;">
+                    <i class="material-icons prefix">question_answer</i>
+                    <input id="question_text" type="text" class="validate">
+                    <label for="question_text">Question Text</label>
+                </div>
+
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">mode_edit</i>
+                    <input id="question_note" type="text" class="validate">
+                    <label for="question_note">Note</label>
+                </div>
+                <div class="input-field col s12" id="trueFalseRadios" style="display:none;margin-top:0px">
+                    <p>Question Answers:</p>
+                    <p>
+                        <input class="with-gap" name="tf_radio" type="radio" id="tf_true" value="true" />
+                        <label for="tf_true">True</label>
+                    </p>
+                    <p>
+                        <input class="with-gap" name="tf_radio" type="radio" id="tf_false" value="false" />
+                        <label for="tf_false">False</label>
+                    </p>
+                </div>
+                <div id="choice_question">
+                    <div class="input-field col s10" style="margin-top:15px;">
+                        <i class="material-icons prefix">note_add</i>
+                        <input id="answerText" type="text" class="validate">
+                        <label for="answerText">Answer Text</label>
+                    </div>
+                    <div class="input-field col s2" style="margin-top:15px;">
+                        <a class="waves-effect waves-light btn black" onclick="addAnswer()" style="width:100%;">Add</a>
+                    </div>
+                    <div class="input-field col s12" style="margin-top:0px;">
+                        <ul class="collection" id="answerCollection"></ul>
+                    </div>
+                </div>
+
+                <div class="col s3" style="margin-top:15px;">
+                    <div class="switch">
+                        <label>Off
+                            <input id="order" type="checkbox"/>
+                        <span class="lever"></span>On
+                        </label>
+                    </div>
+                </div>
+                <div class="col s9" style="margin-top:15px;">
+                    <a class="waves-effect waves-light btn black" style="width:100%;" onclick="builderQuestionAnswer()">Submit Q&A</a>
+                </div>
+            </form>
+        </div>
+
+        <div id="examPanel" style="display:none">
+            <div class="row">
+                <form id="questionBuilder" class="col s12">
+                    <div class="col s12">
+                        <input id="exam-question-type" type="hidden"></input>
+                        <h4 id="exam-question-text"></h4>
+                    </div>
+                    <div class="col s12">
+                        <div id="exam-answers"></div>
+                    </div>
+                    <div class="col s12">
+                        <p id="exam-answer-result"></p>
+                        <p id="exam-note" style="font-size:18px;"></p>
+                    </div>
+
+                    <div id="examSubmitBtn" class="col s12" style="">
+                        <a class="waves-effect waves-light btn black" style="width:100%;" onclick="checkExamQuestionAnswer()">Submit</a>
+                    </div>
+                    <div id="examContinueBtn" class="col s12" style="display:none">
+                        <a class="waves-effect waves-light btn black" style="width:100%;" onclick="advanceExam()">Continue</a>
+                    </div>
+                    <div id="examFinishedBtn" class="col s12" style="display:none">
+                        <a class="waves-effect waves-light btn black" style="width:100%;" onclick="finishExam()">Finish</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div id="examCompletedPanel" style="display:none">
+            <div id="examSummaryClone"></div>
+            <h4 id="verdict" class="center-align"></h4>
+            <div class="row">
+                <div class="col s12 center-align">
+                    <a id="downloadCorrectBtn" class="waves-effect waves-light btn green darken-2" style="margin:25px;" onclick="saveCorrectQuestionList()"><i class="material-icons left">system_update_alt</i>Download Correct Questions</a>
+                    <a></a>
+                    <a id="downloadIncorrectBtn" class="waves-effect waves-light btn red darken-3" style="margin:25px;" onclick="saveIncorrectQuestionList()"><i class="material-icons left">system_update_alt</i>Download Incorrect Questions</a>
+                    <a></a>
+                </div>
+            </div>
+
+        </div>
+        <div id="panel-timer" style="display:none">
+            <div>
+                <span class="hours"></span>
+                <div class="smalltext">Hours</div>
+            </div>
+            <div>
+                <span class="minutes"></span>
+                <div class="smalltext">Minutes</div>
+            </div>
+            <div>
+                <span class="seconds"></span>
+                <div class="smalltext">Seconds</div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <!-- Modal Structure -->
+    <div id="loadQuestionsModal" class="modal">
+        <div class="modal-content">
+            <h4>Load Exam Questions</h4>
+            <p>Please navigate and load prior saved exam questions built by this application.</p>
+            <p>
+                <form action="#">
+                    <div class="file-field input-field">
+                        <div class="waves-effect waves-light btn black accent-4">
+                            <span>File</span>
+                            <input type="file" onchange='openFile(event)' multiple>
+                        </div>
+                        <div class="file-path-wrapper">
+                            <input class="file-path validate" type="text" placeholder="Upload one or more files">
+                        </div>
+                    </div>
+                </form>
+            </p>
+        </div>
+    </div>
+
+    <!-- Modal Structure -->
+    <div id="saveQuestionsModal" class="modal blue-grey lighten-5" style="border: 2px solid black;">
+        <div class="modal-content">
+            <h4>Save Exam Questions</h4>
+            <p>You can customize the filename used to save the questions in JSON form or accept the default "Exam_Questions_"+[Current Date and Time]</p>
+
+            <form action="#">
+                <div class="col-s12 input-field" style="margin-top:30px;">
+                    <i class="material-icons prefix">system_update_alt</i>
+                    <input id="save_filename" type="text" class="validate">
+                    <label for="save_filename" class="active">Filename</label>
+                </div>
+            </form>
+
+        </div>
+        <div class="modal-footer  center-align blue-grey lighten-1" style="border-top: 1px solid black;">
+            <a href="#!" class=" modal-action modal-close waves-effect waves-grey btn  blue-grey darken-2" style="float:none;" onclick="saveQuestionList()">Save Exam Questions</a>
+        </div>
+    </div>
+
+    <div id="crudQuestion" class="modal" style="border: 2px solid black;">
+        <input id="selected_question_id" type="text" style="display:none" />
+        <div class="modal-content" style="padding-bottom: 0px;">
+            <div class="input-field col s12">
+                <i class="material-icons prefix">question_answer</i>
+                <input id="selected_question_text" type="text" class="validate" disabled>
+                <label class="active" for="selected_question_text">Question Text</label>
+            </div>
+            <div class="input-field col s12">
+                <i class="material-icons prefix">mode_edit</i>
+                <input id="selected_question_note" type="text" class="validate" disabled>
+                <label class="active" for="selected_question_note">Note</label>
+            </div>
+            <div class="input-field col s12">
+                <ul class="collection" id="selected_question_answers"></ul>
+            </div>
+        </div>
+        <div class="modal-footer" style="border-top: 1px solid black;">
+            <a id="questionModalClose" href="#!" class="modal-action modal-close waves-effect waves-green btn red darken-4" style="float:none;">Okay</a>
+            <a id="questionModalDelete" href="#!" class="modal-action modal-close waves-effect waves-green btn red darken-4" onclick="deleteQuestion()">Delete</a>
+            <a id="questionModalEdit" href="#!" class="waves-effect waves-yellow btn yellow darken-2" onclick="enableEditAction()" style="margin-right:10px;display:none">Edit</a>
+            <a id="questionModalSave" href="#!" class="waves-effect waves-yellow btn green darken-2" onclick="updateQuestion()" style="margin-right:10px;display:none">Save</a>
+        </div>
+    </div>
+
+    <div id="examSettings" class="modal" style="border: 2px solid black;">
+        <div class="modal-content" style="padding-bottom: 0px;">
+            <form id="configureExam">
+                <div class="row">
+                    <h4 class="center-align"><i class="material-icons prefix" style="padding-right:10px;">settings</i>Exam Settings</h4>
+                    <div class="col s3 input-field  center-align disabled">
+                        <input id="timedExamChkBox" class="filled-in" type="checkbox" onclick="enableTimer()" />
+                        <label for="timedExamChkBox">Timed Exam</label>
+                    </div>
+                    <div class="col s3 input-field">
+                        <input id="numberOfMinutes" type="text" class="validate" disabled value="120">
+                        <label for="numberOfMinutes" class="active">Number of minutes</label>
+                    </div>
+                    <div class="col s3 input-field">
+                        <input id="numberOfQuestions" class="validate" type="text">
+                        <label for="numberOfQuestions" class="active"> Number of Questions</label>
+                    </div>
+                    <div class="col s3 input-field">
+                        <input id="passingPercentage" class="validate" type="text" value="83">
+                        <label for="passingPercentage" class="active">Passing Percentage</label>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer  center-align" style="border-top: 1px solid black;">
+            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn  black" style="float:none;" onclick="showTestPanel()">Start Exam</a>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div id="examSummary" class="modal " style="border: 2px solid black;">
+        <div class="modal-content" style="padding-bottom: 0px;">
+            <div class="row center-align">
+                <h4><i class="material-icons prefix" style="padding-right:10px;">assignment</i>Exam Summary</h4>
+                <div class="col s2">
+                    <label>Correct</label>
+                    <div class="summary-correctly-answered"></div>
+                </div>
+                <div class="col s2">
+                    <label>Incorrect</label>
+                    <div class="summary-wrongly-answered"></div>
+                </div>
+                <div class="col s2">
+                    <label>Unanswered</label>
+                    <div class="summary-unanswered"></div>
+                </div>
+                <div class="col s2">
+                    <label>Total</label>
+                    <div class="summary-total-questions"></div>
+                </div>
+                <div class="col s2">
+                    <label>Passing Grade</label>
+                    <div class="summary-passing-percent">83%</div>
+                </div>
+                <div class="col s2">
+                    <label>Current Grade</label>
+                    <div class="summary-percent"></div>
+                </div>
+            </div>
+            <div class="row center-align">
+                <div class="progress">
+                    <div class="determinate" style="width: 0%"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <div id="errorModal" class="modal center red lighten-1" style="width:30%;border: 2px solid black;">
+        <div class="modal-content" style="padding-bottom: 0px;">
+            <h4>Question Input Error</h4>
+            <p id="errorModalMessage"></p>
+        </div>
+        <div class="modal-footer red lighten-3" style="border-top: 1px solid black;">
+            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn  red darken-4" style="float:none;">Okay</a>
+        </div>
+    </div>
+</body>
+
+</html>

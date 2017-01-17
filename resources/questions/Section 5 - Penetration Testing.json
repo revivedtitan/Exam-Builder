@@ -1,0 +1,452 @@
+[{
+    "id": 1484008718861,
+    "text": "Find the wrong statement about penetration testing.",
+    "answers": [{
+        "text": "It is an unintentional attack",
+        "isValid": true
+    }, {
+        "text": "Pen-testing is used for security assessment",
+        "isValid": false
+    }, {
+        "text": "Pen testing improves the security of the system",
+        "isValid": false
+    }, {
+        "text": "Pen testing does discovers security weaknesses",
+        "isValid": false
+    }],
+    "note": "A pentest is an intentional attack on a system using the pen testing skills to improve the defense strategy.",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}, {
+    "id": 1484008745523,
+    "text": "Which stage does not verify or try to exploit the vulnerability, just lists and ranks the identified weaknesses.",
+    "answers": [{
+        "text": "Vulnerability assessment",
+        "isValid": false
+    }, {
+        "text": "Vulnerability scan",
+        "isValid": true
+    }],
+    "note": "Vulnerability scan is the next step after the first discovery. This stage does not verify or try to exploit the vulnerability, it just lists and ranks the identified weaknesses.",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}, {
+    "id": 1484008785729,
+    "text": "Penetration testing",
+    "answers": [{
+        "text": "can evaluate the security of system or network",
+        "isValid": true
+    }, {
+        "text": "cannot be used to identify the vulnerabilities left undetected by automated vulnerability scanners",
+        "isValid": false
+    }, {
+        "text": "is an unauthorized attempt to exploit a computer system",
+        "isValid": false
+    }],
+    "note": "Penetration testing exploits the vulnerabilities of a system or network to improve the security of the system. Pentesting can identify the insecure areas of the system or network that can be used by an attacker to gain unauthorized access to the system.",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}, {
+    "id": 1484008802099,
+    "text": "Nexpose and GFI are tools that try to match conditions found on the target system with known vulnerabilities, and can find new vulnerabilities.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": false
+    }, {
+        "text": "FALSE",
+        "isValid": true
+    }],
+    "note": "Nexpose, Nessus and GFI are tools that try to match conditions found on the target system with known vulnerabilities, but they lack the ability to find new vulnerabilities. These tools count on a database to identify the existence of certain weaknesses.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1484008825284,
+    "text": "A vulnerability scan tries to verify the vulnerabilities found with little or no user interaction.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": false
+    }, {
+        "text": "FALSE",
+        "isValid": true
+    }],
+    "note": "The last phase, or vulnerability assessment, tries to verify the vulnerabilities found and is done with little or no user interaction.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1484009134724,
+    "text": "______ testing aims to exploit identified vulnerabilities to check what information is exposed to the outside world.",
+    "answers": [{
+        "text": "Internal",
+        "isValid": false
+    }, {
+        "text": "External",
+        "isValid": true
+    }],
+    "note": "External testing aims to exploit identified vulnerabilities to check what information is exposed to the outside world.",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}, {
+    "id": 1484009162013,
+    "text": "What remains the same in both internal and external testing?",
+    "answers": [{
+        "text": "The target",
+        "isValid": true
+    }, {
+        "text": "The attacker",
+        "isValid": false
+    }],
+    "note": "The target remains the same in both the internal and external testing.",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}, {
+    "id": 1484009248578,
+    "text": "Which attack can be much more devastating?",
+    "answers": [{
+        "text": "External attacks",
+        "isValid": false
+    }, {
+        "text": "Internal attacks",
+        "isValid": true
+    }],
+    "note": "Internal attackers have the full understanding of which systems are important within a network and where it is located.",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}, {
+    "id": 1484009281338,
+    "text": "__________ saves time and resources, but is not accurate or professional.",
+    "answers": [{
+        "text": "Automated pentesting",
+        "isValid": true
+    }, {
+        "text": "Manual testing",
+        "isValid": false
+    }],
+    "note": "You can easily use different tools to automate pentesting, to save your time and resources, but it is not accurate or professional.",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}, {
+    "id": 1484009323479,
+    "text": "Manual testing requires:",
+    "answers": [{
+        "text": " A. less planning",
+        "isValid": false
+    }, {
+        "text": "B. a schedule",
+        "isValid": false
+    }, {
+        "text": " C. an attack design",
+        "isValid": false
+    }, {
+        "text": "D. automated tools",
+        "isValid": false
+    }, {
+        "text": " E. Answer B & C",
+        "isValid": true
+    }],
+    "note": "A skilled manual tester will always plan and schedule everything in advance. An experienced pen tester will always prepare an attack design and schedule it.",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": true
+}, {
+    "id": 1484011871957,
+    "text": "Identify the benefits of using automated tools.",
+    "answers": [{
+        "text": " A. Faster",
+        "isValid": false
+    }, {
+        "text": "B. Computerized",
+        "isValid": false
+    }, {
+        "text": "C. Accurate",
+        "isValid": false
+    }, {
+        "text": "D. In-depth coverage",
+        "isValid": false
+    }, {
+        "text": "E. Answers A & B",
+        "isValid": true
+    }],
+    "note": "The testing carried out with automated tools is faster when compared to manual ones. Automated tools are fully computerized, whereas manual testing depends entirely on the skill of the tester.",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": true
+}, {
+    "id": 1484011912522,
+    "text": "Identify the disadvantages of using automated tools.",
+    "answers": [{
+        "text": "Fast",
+        "isValid": false
+    }, {
+        "text": "Dependency on the vendor's database",
+        "isValid": true
+    }, {
+        "text": "Computerized",
+        "isValid": false
+    }],
+    "note": "Automated tools work based on the information provided in the database, and the decreased chances of being updated to the latest threats affects the efficiency of the test. The automated testing only tests the technical flow, whereas the manual testing tests for both technical and business/logic flow.",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}, {
+    "id": 1484011944152,
+    "text": "What are the disadvantages of manual testing?",
+    "answers": [{
+        "text": "Awareness to new attack vendors",
+        "isValid": false
+    }, {
+        "text": "Tests for both technical and business/logic flow",
+        "isValid": false
+    }, {
+        "text": "Does not cover the entire system",
+        "isValid": true
+    }],
+    "note": "Only automated testing is able to cover every bit of the system, whereas the manual testing fails to do so. The manual testing is slow when compared to automated testing.",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}, {
+    "id": 1484011976491,
+    "text": "Pick out the merits of manual testing.",
+    "answers": [{
+        "text": "Dependency on the skill of the tester",
+        "isValid": false
+    }, {
+        "text": "Accuracy",
+        "isValid": true
+    }, {
+        "text": "Possibility of forgetting",
+        "isValid": false
+    }],
+    "note": "The automated tools lack accuracy. The automated tools depend on the database of the vendor, which may not be updated.",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}, {
+    "id": 1484012024890,
+    "text": "Identify the least effective technique to protect webapps.",
+    "answers": [{
+        "text": "Basic SQL injection",
+        "isValid": true
+    }, {
+        "text": "Blind SQL injection",
+        "isValid": false
+    }],
+    "note": "Hackers have developed new techniques to overcome the basic SQL injection techniques.",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}, {
+    "id": 1484012043436,
+    "text": "The risk assessment depends heavily on the vulnerability assessment.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": true
+    }, {
+        "text": "FALSE",
+        "isValid": false
+    }],
+    "note": "The risk assessment depends heavily on the vulnerability assessment and cannot be performed without identifying the vulnerabilities on a system.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1484012058365,
+    "text": "External testing simulates what an insider attack could accomplish.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": false
+    }, {
+        "text": "FALSE",
+        "isValid": true
+    }],
+    "note": "Internal testing simulates what an insider attack could accomplish, while an external test exploits vulnerabilities to identify information that will be exposed to the outside world.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1484012071904,
+    "text": "Armitage is a guru in automated testing, liked by all pen testers.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": false
+    }, {
+        "text": "FALSE",
+        "isValid": true
+    }],
+    "note": "Armitage is a plugin in Metasploit, which presents a manual framework, to automate the pentest. Core impact is a guru in automated testing.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1484012084712,
+    "text": "Automated testing is faster than manual testing.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": true
+    }, {
+        "text": "FALSE",
+        "isValid": false
+    }],
+    "note": "Automated testing is faster. Manual testing requires planning, an attack design, and a schedule. It is exactly, in a way, what a hacker does to attack certain environment.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1484012098986,
+    "text": "If a hacker gains physical access to the system, he may not try to install malicious hardware like keyloggers or backdoors.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": false
+    }, {
+        "text": "FALSE",
+        "isValid": true
+    }],
+    "note": "If a hacker gains physical access to the system, he may try to install malicious hardware like keyloggers or backdoors.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1484012117212,
+    "text": "In case of mobile users, the pentesting team will not attempt to enforce a policy to encrypt mobile devices.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": false
+    }, {
+        "text": "FALSE",
+        "isValid": true
+    }],
+    "note": "The pentesting team will try to enforce a policy to encrypt mobile devices to prevent the exposure of sensitive information.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1484012134868,
+    "text": "Footprinting, services probing, and system fingerprinting are a few examples of internal testing.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": false
+    }, {
+        "text": "FALSE",
+        "isValid": true
+    }],
+    "note": "Footprinting, services probing, and system fingerprinting are a few examples of tests that focus on external systems that face the Internet.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1484012148661,
+    "text": "SQL injection techniques cannot be used to find web application vulnerabilities.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": false
+    }, {
+        "text": "FALSE",
+        "isValid": true
+    }],
+    "note": "SQL injection techniques can be used to find web application vulnerabilities. Basic SQL injection, advanced SQL injection, and blind SQL injection techniques are the most common techniques used to ensure the safety of webapps.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1484012161962,
+    "text": "Penetration testing can be used to evaluate the magnitude of potential business and operational impacts of successful attacks.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": true
+    }, {
+        "text": "FALSE",
+        "isValid": false
+    }],
+    "note": "Penetration testing can identify the vulnerabilities left out by automated tools. It can evaluate the magnitude of potential business and operational impacts of successful attacks.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1484012192696,
+    "text": "Which step is essential for the organization to be compliant with certain ISOs or other certification bodies?",
+    "answers": [{
+        "text": "Security audit",
+        "isValid": false
+    }, {
+        "text": "Vulnerability assessment",
+        "isValid": false
+    }, {
+        "text": "Code reviews",
+        "isValid": true
+    }],
+    "note": "It can analyze specific web applications or internal software. It is the essential step for the organization to be compliant with certain ISOs or other certification bodies.",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}, {
+    "id": 1484012226172,
+    "text": "Pen testers will use _____ to protect the possibility of data leakage and add another layer of security.",
+    "answers": [{
+        "text": "code review",
+        "isValid": true
+    }, {
+        "text": "vulnerability scan",
+        "isValid": false
+    }, {
+        "text": "manual testing",
+        "isValid": false
+    }],
+    "note": "Code review can be used to identify the vulnerabilities left by developers, thereby protecting the possibility of data leakage and adding another layer of security.",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}, {
+    "id": 1484012267539,
+    "text": "Pentesting tests helps an organization to do the following except:",
+    "answers": [{
+        "text": "Manage vulnerabilities",
+        "isValid": false
+    }, {
+        "text": "Avoid downtime",
+        "isValid": false
+    }, {
+        "text": "Preserve the corporation's good reputation",
+        "isValid": false
+    }, {
+        "text": "Manage risks",
+        "isValid": true
+    }],
+    "note": "Pen testers are only concerned with security issues and improving the defense strategy.",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}, {
+    "id": 1484012283223,
+    "text": "Penetration testing aims to determine the impact on the business if an attack was successful.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": true
+    }, {
+        "text": "FALSE",
+        "isValid": false
+    }],
+    "note": "Penetration testing simulates a real-time attack and determines the impact on the business if an attack was successful.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1484012297992,
+    "text": "Penetration testing is not complete without testing human behavior.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": true
+    }, {
+        "text": "FALSE",
+        "isValid": false
+    }],
+    "note": "Penetration testing is not complete without testing human behavior, as exploiting human trust is the easiest way to gain access to sensitive information.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1484012309833,
+    "text": "Internal Network Scanning, Firewall and ACL Testing, and Password Strength Testing are a few external threats.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": true
+    }, {
+        "text": "FALSE",
+        "isValid": false
+    }],
+    "note": "Internal Network Scanning, Database Security Controls Testing, Firewall and ACL Testing, and Password Strength Testing are all examples of external attacks.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1484012324560,
+    "text": "A security audit is also known as a security assessment.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": true
+    }, {
+        "text": "FALSE",
+        "isValid": false
+    }],
+    "note": "A security audit is also known as a security review or assessment.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}]

@@ -1,0 +1,411 @@
+[{
+    "id": 1484013219898,
+    "text": "In complex environments, after deploying all the PKI, the subordinate CA is taken offline and kept secure in a safe.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": false
+    }, {
+        "text": "FALSE",
+        "isValid": true
+    }],
+    "note": "In complex environments, after deploying all the PKI, the root CA is taken offline and kept secure in a safe.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1484013247448,
+    "text": "Identify the type of cryptography used by PKI.",
+    "answers": [{
+        "text": "Public Key cryptography",
+        "isValid": true
+    }, {
+        "text": "Private Key cryptography",
+        "isValid": false
+    }],
+    "note": "The PKI uses public key cryptography, which is the most common method for authentication over the Internet.",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}, {
+    "id": 1484013271982,
+    "text": "A digital signature works on a(n):",
+    "answers": [{
+        "text": "Asymmetric Key",
+        "isValid": true
+    }, {
+        "text": "Symmetric Key",
+        "isValid": false
+    }],
+    "note": "You can send an encrypted message using the colleague's public key and he must use his own private key to decrypt the message. There is no way to decrypt the message with the same public key, making it the most secure one.",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}, {
+    "id": 1484013293665,
+    "text": "Which is the hierarchical system that can answer all the queries about key certification?",
+    "answers": [{
+        "text": "CA",
+        "isValid": true
+    }, {
+        "text": "PKI",
+        "isValid": false
+    }],
+    "note": "CA is the hierarchical system that answers all the queries about key certification.",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}, {
+    "id": 1484013319704,
+    "text": "Identify the most common method for authentication over the Internet to encrypt a message.",
+    "answers": [{
+        "text": "Traditional cryptography",
+        "isValid": false
+    }, {
+        "text": "Public key cryptography",
+        "isValid": true
+    }],
+    "note": "It is the most common method for authentication over the Internet or to encrypt a message and is used by PKI.",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}, {
+    "id": 1484013347590,
+    "text": "Which is the approach that takes advantage of cryptography and is used by many Internet businesses as well as users?",
+    "answers": [{
+        "text": "CA",
+        "isValid": false
+    }, {
+        "text": "Encrypting File System",
+        "isValid": false
+    }, {
+        "text": "PKI",
+        "isValid": true
+    }],
+    "note": "PKI is the most common approach that takes advantage of cryptography and is used by many Internet businesses and users.",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}, {
+    "id": 1484013361598,
+    "text": "Root CA is used only to create a new subordinate CA.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": true
+    }, {
+        "text": "FALSE",
+        "isValid": false
+    }],
+    "note": "Root CA is used only to create a new subordinate CA. The subordinate CAs can issue all certificates needed by clients or devices.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1484013430288,
+    "text": "Name the authority that acts as the root of trust in a PKI.",
+    "answers": [{
+        "text": "Registration",
+        "isValid": false
+    }, {
+        "text": "Certificate",
+        "isValid": true
+    }],
+    "note": "Certificate authority act as the root of trust in a PKI and provides services to authenticate whoever request a certificate like users, computers, or network devices.",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}, {
+    "id": 1484013462819,
+    "text": "Which of the following doesn't belong?",
+    "answers": [{
+        "text": "unspecified",
+        "isValid": false
+    }, {
+        "text": "CACompromise",
+        "isValid": false
+    }, {
+        "text": "certificateHold",
+        "isValid": true
+    }, {
+        "text": "keyCompromise",
+        "isValid": false
+    }],
+    "note": "In this code, if the certificate is revoked, it can be unrevoked and is called \"reinstate the certificate.\"",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}, {
+    "id": 1484013502268,
+    "text": "Revocation list is published in:",
+    "answers": [{
+        "text": "removeFromCRL",
+        "isValid": false
+    }, {
+        "text": "Issued certificates",
+        "isValid": false
+    }, {
+        "text": "Pending certificates",
+        "isValid": false
+    }, {
+        "text": "CRL",
+        "isValid": true
+    }],
+    "note": "A revocation list is published in two ways - CRL and OCSP. CRL is based on a text file that users or computers can check to validate the status of a certificate.",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}, {
+    "id": 1484013554103,
+    "text": "Which is not true about autoenrollment?",
+    "answers": [{
+        "text": "A. It makes the life of the administrator tough",
+        "isValid": false
+    }, {
+        "text": " B. It provides a web page",
+        "isValid": false
+    }, {
+        "text": "C. It cannot define who the request is coming from",
+        "isValid": false
+    }, {
+        "text": "D. Certificates can be installed with a few mouse clicks",
+        "isValid": false
+    }, {
+        "text": "E. Answers A & C",
+        "isValid": true
+    }],
+    "note": "Autoenrollment makes the life of the admin easier. Autoenrollment can define whether the request is coming from the user or web server.",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": true
+}, {
+    "id": 1484013591364,
+    "text": "Pick the one that is not included in Secure Communication Scenarios.",
+    "answers": [{
+        "text": "SSL",
+        "isValid": false
+    }, {
+        "text": "VPN",
+        "isValid": false
+    }, {
+        "text": "EFS",
+        "isValid": false
+    }, {
+        "text": "RA",
+        "isValid": true
+    }],
+    "note": "Registration Authority (RA) is sometimes called subordinate CA, and it works in two different scenarios. If you have only one server for PKI, then RA will be imbedded in the same server and is responsible to issue certificates for whoever was authenticated and permitted by the CA. If you have multiple servers for PKI, RA will be certified by the root CA to issue the certificates.",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}, {
+    "id": 1484013629397,
+    "text": "Which of the following is not true about Certification Authority?",
+    "answers": [{
+        "text": "It is a third party that issues digital certificates",
+        "isValid": false
+    }, {
+        "text": "It is a third party that encrypts information for people",
+        "isValid": true
+    }, {
+        "text": "CA validates the identity of the certificate holder",
+        "isValid": false
+    }],
+    "note": "Certificate Authority acts as the root of trust in a PKI, providing services to authenticate whoever requests a certificate, like users, computers, or network devices.",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}, {
+    "id": 1484013648851,
+    "text": "__________ is based on a text file that users or computers can check to validate the status of a certificate.",
+    "answers": [{
+        "text": "OCSP",
+        "isValid": false
+    }, {
+        "text": "CRL",
+        "isValid": true
+    }],
+    "note": "It is based on a text file that users or computers can check to validate the status of a certificate.",
+    "type": "MULTIPLE_CHOICE",
+    "preserveOrder": false
+}, {
+    "id": 1484013663363,
+    "text": "If one subordinate CA was compromised, all the organizations are compromised.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": false
+    }, {
+        "text": "FALSE",
+        "isValid": true
+    }],
+    "note": "If one subordinate CA was compromised, the issue is contaminated only in the location of that sub CA; if a root CA was compromised, all the organization is compromised.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1484013678056,
+    "text": "In public key cryptography, the CA creates private and public key.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": true
+    }, {
+        "text": "FALSE",
+        "isValid": false
+    }],
+    "note": "In public key cryptography, the CA creates private and public keys using the same algorithm. The private key is given to the user, while the public key is made available for the public.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1484013691501,
+    "text": "While using asymmetric keys, the encrypted message can be decrypted with the help of the same public key.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": false
+    }, {
+        "text": "FALSE",
+        "isValid": true
+    }],
+    "note": "The strength of using asymmetric keys is that there is no way to decrypt the message with the same public key.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1484013706417,
+    "text": "Registration Authority is sometimes called subordinate CA.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": true
+    }, {
+        "text": "FALSE",
+        "isValid": false
+    }],
+    "note": "Registration Authority is sometimes called subordinate CA. If you have only one server for PKI, then RA will be imbedded in the same server and is responsible to issue certificates for whoever was authenticated and permitted by the CA.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1484013720142,
+    "text": "The way PKI keys function is called symmetric.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": false
+    }, {
+        "text": "FALSE",
+        "isValid": true
+    }],
+    "note": "The way PKI keys function is called asymmetric.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1484013733384,
+    "text": "Certificate Authority acts as the root of trust in a PKI.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": true
+    }, {
+        "text": "FALSE",
+        "isValid": false
+    }],
+    "note": "Certificate authority acts as the root of trust in a PKI, providing services to authenticate whoever requests a certificate; like users, computers, or network devices.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1484013749053,
+    "text": "In reinstate the certificate, the certificate can be unrevoked.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": true
+    }, {
+        "text": "FALSE",
+        "isValid": false
+    }],
+    "note": "CertificateHold is one of the reasons to revoke a certificate and in such cases, the certificate can be unrevoked, which is known as \"reinstate the certificate.\"",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1484013763536,
+    "text": "CRL is a more advanced way to publish the status of certificates online.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": false
+    }, {
+        "text": "FALSE",
+        "isValid": true
+    }],
+    "note": "CRL is based on a text file that users or computers can check to validate the status of a certificate, whereas OCSP is a more advanced way to publish the status of certificates online.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1484013776261,
+    "text": "In a private network, the CA does not validate the identity of the certificate holder.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": false
+    }, {
+        "text": "FALSE",
+        "isValid": true
+    }],
+    "note": "In a private network, the CA validates the identity of the certificate holder.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1484013791242,
+    "text": "You can renew the certificate only with the same key set that you used before.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": false
+    }, {
+        "text": "FALSE",
+        "isValid": true
+    }],
+    "note": "You can either renew the certificate with the same key set that you used before, or you can renew a certificate with a new key set.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1484013806271,
+    "text": "PKI contents include digital certificates and CA.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": true
+    }, {
+        "text": "FALSE",
+        "isValid": false
+    }],
+    "note": "Public Key Infrastructure consists of digital certificates, public key cryptography, and Certificate Authorities.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1484013819380,
+    "text": "Certificates do not have a validity period.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": false
+    }, {
+        "text": "FALSE",
+        "isValid": true
+    }],
+    "note": "Certificates have a validity period, and after the validity period, the certificate is no longer an acceptable or usable credential.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1484013833042,
+    "text": "PKI is related to symmetric key cryptography.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": false
+    }, {
+        "text": "FALSE",
+        "isValid": true
+    }],
+    "note": "PKI is related with asymmetric key cryptography.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1484013847250,
+    "text": "Digital Certificates are called passports of the web.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": true
+    }, {
+        "text": "FALSE",
+        "isValid": false
+    }],
+    "note": "Digital certificates are called passports of the web. Digital certificates are signed by CA. CRL and OCSP are protocols used for validating it.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}, {
+    "id": 1484013864636,
+    "text": "Keys used for digital signature should be backed up.",
+    "answers": [{
+        "text": "TRUE",
+        "isValid": false
+    }, {
+        "text": "FALSE",
+        "isValid": true
+    }],
+    "note": "The decryption keys are only backed up. Keys used for digital signatures should not be backed up, as it is illegal to backup signature keys.",
+    "type": "TRUE_FALSE",
+    "preserveOrder": false
+}]
