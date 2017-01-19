@@ -19,14 +19,14 @@ function toggleTrueFalse(option) {
 }
 
 function addAnswer() {
-    var answerText = $('#answerText').val();
+    var answerText = $('#answerText').val().trim();
 
     if (answerText.length == 0) {
         $('#errorModalMessage').html('Please enter an answer before attempting to add it.');
         $('#errorModal').modal('open');
     } else {
         var newAnswer = '<li class="collection-item"><a class="waves-effect waves-light btn black" style="padding: 0 1rem;" onclick="selectAnswer(this)"><i class="material-icons">done</i></a><a class="waves-effect waves-light btn red darken-4" onclick="deleteAnswer(this)" style="padding: 0 1rem;float:right;"><i class="material-icons">delete</i></a><span style="margin-left:15px;">' + answerText + '</span></li>';
-        $('#answerCollection').append(newAnswer.trim());
+        $('#answerCollection').append(newAnswer);
         $('#answerText').val("")
         $('#answerText').focus();
     }
@@ -64,7 +64,7 @@ function selectAnswer(answer) {
 
 function builderQuestionAnswer() {
     var question_type = $('#question_type').val();
-    var question_text = $('#question_text').val();
+    var question_text = $('#question_text').val().trim();
     var answers = [];
 
     if (question_text.length == 0) {
