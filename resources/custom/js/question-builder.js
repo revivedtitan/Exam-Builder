@@ -157,6 +157,18 @@ function buildQuestionElement(question, answers, correct_answer) {
     return questionElement;
 }
 
+function loadQuestions(data) {
+    var fileQuestions = JSON.parse(data);
+
+    for (var i = 0; i < fileQuestions.length; i++) {
+        questions.push(fileQuestions[i]);
+        $('#nav-mobile').append(buildQuestionElement(fileQuestions[i]));
+    }
+
+    updateQuestionCounter();
+    checkDisabledOptions();
+}
+
 function openFile(event) {
     var input = event.target;
 
@@ -169,15 +181,7 @@ function openFile(event) {
         var reader = new FileReader();
 
         reader.onload = function(e) {
-            var fileQuestions = JSON.parse(reader.result);
-
-            for (var i = 0; i < fileQuestions.length; i++) {
-                questions.push(fileQuestions[i]);
-                $('#nav-mobile').append(buildQuestionElement(fileQuestions[i]));
-            }
-
-            updateQuestionCounter();
-            checkDisabledOptions();
+            loadQuestions(reader.result)
             readFile(index + 1)
         }
         reader.readAsBinaryString(file);
