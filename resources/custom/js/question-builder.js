@@ -26,7 +26,7 @@ function addAnswer() {
         $('#errorModal').modal('open');
     } else {
         var newAnswer = '<li class="collection-item"><a class="waves-effect waves-light btn black" style="padding: 0 1rem;" onclick="selectAnswer(this)"><i class="material-icons">done</i></a><a class="waves-effect waves-light btn red darken-4" onclick="deleteAnswer(this)" style="padding: 0 1rem;float:right;"><i class="material-icons">delete</i></a><span style="margin-left:15px;">' + answerText + '</span></li>';
-        $('#answerCollection').append(newAnswer);
+        $('#answerCollection').append(newAnswer.trim());
         $('#answerText').val("")
         $('#answerText').focus();
     }
