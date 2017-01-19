@@ -284,3 +284,20 @@ div.titleClock {
     margin-left: auto;
     font-size: 22px;
 }
+
+@media only screen and (min-width: 0px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+#answerCollection a {
+    height: 25px;
+    line-height: 25px;
+    padding: 0 5px !important;
+}
+
+.collection,
+.collection .collection-item {
+    border-color: #9e9e9e;
+}

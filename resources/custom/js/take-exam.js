@@ -45,6 +45,7 @@ function endExam() {
     $('#examFinishedBtn').hide();
     $('#question_counter').html(questions.length + ' Questions Loaded');
     $('#navbar-btn-timer').hide();
+    $('#navbar-btn-summary').addClass('disabled');
     $('.titleClock').hide();
     $('#summaryPanel').hide();
     stopClock();
