@@ -13,9 +13,8 @@ function toggleSummaryPanel() {
 
 function saveCorrectQuestionList() {
     var currentTime = new Date();
-    var time = currentTime.getHours() + "H-" + currentTime.getMinutes() + "M-" + currentTime.getSeconds() + "S";
-    currentTime = currentTime.toLocaleFormat('%d-%b-%Y');
-    var filename = 'Exam_Builder__Correct_Questions__' + currentTime + "__" + time;
+    var time = moment().format("DD-MMM-YYYY__HH[H]-mm[M]-ss[S]");
+    var filename = 'Exam_Builder__Correct_Questions__' + time;
     var data = "text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(exam.correctlyAnswered));
     $('#correctly_answered_list_link').remove();
     $('<a id="correctly_answered_list_link" href="data:' + data + '" download="' + filename + '.json" style="display:none;"></a>').appendTo('#examCompletedPanel');
@@ -24,9 +23,8 @@ function saveCorrectQuestionList() {
 
 function saveIncorrectQuestionList() {
     var currentTime = new Date();
-    var time = currentTime.getHours() + "H-" + currentTime.getMinutes() + "M-" + currentTime.getSeconds() + "S";
-    currentTime = currentTime.toLocaleFormat('%d-%b-%Y');
-    var filename = 'Exam_Builder__Incorrect_Questions__' + currentTime + "__" + time;
+    var time = moment().format("DD-MMM-YYYY__HH[H]-mm[M]-ss[S]");
+    var filename = 'Exam_Builder__Incorrect_Questions__' + time;
     var data = "text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(exam.wronglyAnswered));
     $('#wrongly_answered_list_link').remove();
     $('<a id="wrongly_answered_list_link" href="data:' + data + '" download="' + filename + '.json" style="display:none;"></a>').appendTo('#examCompletedPanel');
