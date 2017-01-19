@@ -4,7 +4,8 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
-    <title>Q&A Builder</title>
+    <link rel="shortcut icon" href="resources/custom/images/badge.png" type="image/x-icon" />
+    <title>Exam Builder</title>
     <link rel="stylesheet" type="text/css" href="resources/libraries/materialize/css/icon.css" />
     <link rel="stylesheet" type="text/css" href="resources/libraries/materialize/css/materialize.css" />
     <link rel="stylesheet" type="text/css" href="resources/custom/css/style.css" />
@@ -31,7 +32,7 @@
                     <li id="navbar-btn-save" class="disabled"><a href="#saveQuestionsModal" onclick="openSaveQuestionModal()"><i class="material-icons left">system_update_alt</i><span class="left hide-on-med-and-down">Save</span></a></li>
                     <li id="navbar-btn-clear" class="disabled"><a href="#" onclick="clearAllQuestions()"><i class="material-icons left">delete</i><span class="left hide-on-med-and-down">Clear</span></a></li>
                 </ul>
-                <a id="question_counter" href="#" class="brand-logo center">Please Load Questions</a>
+                <a id="question_counter" href="#" class="brand-logo center hide-on-small-only">Please Load Questions</a>
                 <ul id="exam-navbar" class="right">
                     <li id="navbar-btn-timer" style="display:none;"><a href="#" onclick="toggleTimerPanel()"><i class="material-icons left">query_builder</i><span class="left hide-on-med-and-down">Timer</span></a></li>
                     <li id="navbar-btn-summary" class="disabled"><a href="#examSummary"><i class="material-icons left">assignment</i><span class="left hide-on-med-and-down">Summary</span></a></li>
@@ -92,9 +93,9 @@
 
                 <div class="col s3" style="margin-top:15px;">
                     <div class="switch">
-                        <label>Off
+                        <label>No Order
                             <input id="order" type="checkbox"/>
-                        <span class="lever"></span>On
+                        <span class="lever"></span>Preserve Order
                         </label>
                     </div>
                 </div>
@@ -242,7 +243,7 @@
                         <label for="timedExamChkBox">Timed Exam</label>
                     </div>
                     <div class="col s3 input-field">
-                        <input id="numberOfMinutes" type="text" class="validate" disabled value="120">
+                        <input id="numberOfMinutes" type="text" class="validate" disabled value="90">
                         <label for="numberOfMinutes" class="active">Number of minutes</label>
                     </div>
                     <div class="col s3 input-field">
@@ -250,7 +251,7 @@
                         <label for="numberOfQuestions" class="active"> Number of Questions</label>
                     </div>
                     <div class="col s3 input-field">
-                        <input id="passingPercentage" class="validate" type="text" value="83">
+                        <input id="passingPercentage" class="validate" type="text" value="83.33">
                         <label for="passingPercentage" class="active">Passing Percentage</label>
                     </div>
                 </div>
@@ -327,7 +328,7 @@
             <ul id="nav-mobile">
             </ul>
         </div>
-        <div class="modal-footer">
+        <div class="modal-footer-list">
             <h5 class="center-align">Questions Loaded</h5>
         </div>
     </div>

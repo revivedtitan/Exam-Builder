@@ -260,11 +260,11 @@ i.left {
     padding: 0 32px;
 }
 
-div.modal-footer h5 {
+div.modal-footer-list h5 {
     margin: 0px;
 }
 
-.modal .modal-footer {
+.modal .modal-footer-list {
     border-radius: 0 0 2px 2px;
     background-color: #fafafa;
     padding: 4px 6px;
