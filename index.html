@@ -27,7 +27,7 @@
             <div class="nav-wrapper">
                 <ul id="navbar" class="left">
                     <li id="navbar-btn-load"><a href="#loadQuestionsModal"><i class="material-icons left">library_add</i><span class="left hide-on-med-and-down">Load</span></a></li>
-                    <li id="navbar-btn-list"><a href="#" onclick="toggleQuestionSidebar()"><i class="material-icons left">view_list</i><span class="left hide-on-med-and-down">Toggle</span></a></li>
+                    <li id="navbar-btn-list"><a href="#question-list-modal"><i class="material-icons left">view_list</i><span class="left hide-on-med-and-down">List</span></a></li>
                     <li id="navbar-btn-save" class="disabled"><a href="#saveQuestionsModal" onclick="openSaveQuestionModal()"><i class="material-icons left">system_update_alt</i><span class="left hide-on-med-and-down">Save</span></a></li>
                     <li id="navbar-btn-clear" class="disabled"><a href="#" onclick="clearAllQuestions()"><i class="material-icons left">delete</i><span class="left hide-on-med-and-down">Clear</span></a></li>
                 </ul>
@@ -41,10 +41,7 @@
             </div>
         </nav>
     </div>
-    <!-- Side bar -->
-    <ul id="nav-mobile" class="side-nav fixed" style="overflow-y: scroll;display:none;">
-        <li class="center" style="background-color:#DDD"><a>Current Exam Questions</a></li>
-    </ul>
+
     <!-- Main Content Panel -->
     <div class="container" style="margin-top:15px;">
         <div class="row" style="margin-bottom:0px;">
@@ -322,6 +319,20 @@
             <a href="#!" class=" modal-action modal-close waves-effect waves-green btn  red darken-4" style="float:none;">Okay</a>
         </div>
     </div>
+
+
+    <!-- Modal Structure -->
+    <div id="question-list-modal" class="modal bottom-sheet modal-fixed-footer">
+        <div class="modal-content">
+            <ul id="nav-mobile">
+            </ul>
+        </div>
+        <div class="modal-footer">
+            <h5 class="center-align">Questions Loaded</h5>
+        </div>
+    </div>
+
+
 </body>
 
 </html>

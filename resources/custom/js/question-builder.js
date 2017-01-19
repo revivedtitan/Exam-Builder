@@ -1,12 +1,3 @@
-function toggleQuestionSidebar() {
-    if(hideQuestionBar){
-		hideQuestionBar = false;
-	} else {
-		hideQuestionBar = true;
-	}
-	$('#nav-mobile').toggle();
-}
-
 function clearAllQuestions() {
     questions = [];
     $('#nav-mobile li.no-padding').remove();
@@ -123,9 +114,7 @@ function builderQuestionAnswer() {
     var question = new Question(question_text, answers, note, question_type, preserveOrder);
 
     questions.push(question);
-    $('.side-nav').append(buildQuestionElement(question));
-    $('.collapsible').collapsible();
-    $('.tooltipped').tooltip({ delay: 50 });
+    $('#nav-mobile').append(buildQuestionElement(question));
 
     resetQuestionBuilder();
     updateQuestionCounter();
@@ -162,7 +151,7 @@ function saveQuestionList() {
 function buildQuestionElement(question, answers, correct_answer) {
 
     var questionElement = '<li class="no-padding bold">';
-    questionElement += '<a class="collapsible-header waves-effect waves-teal truncate tooltipped" onclick="openQuestionModal(this)" data-id="' + question.id + '" data-position="right" data-delay="500" data-tooltip="' + question.text + '">' + question.text + '</a>';
+    questionElement += '<a class="collapsible-header waves-effect waves-black truncate" onclick="openQuestionModal(this)" data-id="' + question.id + '">' + question.text + '</a>';
     questionElement += '</li>';
 
     return questionElement;
@@ -184,11 +173,9 @@ function openFile(event) {
 
             for (var i = 0; i < fileQuestions.length; i++) {
                 questions.push(fileQuestions[i]);
-                $('.side-nav').append(buildQuestionElement(fileQuestions[i]));
+                $('#nav-mobile').append(buildQuestionElement(fileQuestions[i]));
             }
 
-            $('.collapsible').collapsible();
-            $('.tooltipped').tooltip({ delay: 50 });
             updateQuestionCounter();
             checkDisabledOptions();
             readFile(index + 1)

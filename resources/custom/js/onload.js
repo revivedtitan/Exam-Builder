@@ -1,8 +1,3 @@
-$(window).resize(function() {
-    var sideNavHeight = window.innerHeight - 101;
-    setTimeout(function() { $('#nav-mobile').height(sideNavHeight); }, 10);
-});
-
 $(document).ready(function() {
 
     $('.modal').modal();
@@ -15,7 +10,4 @@ $(document).ready(function() {
     });
 
     toggleTrueFalse($('#question_type').val());
-
-    var sideNavHeight = $('#nav-mobile').height();
-    $('#nav-mobile').height(sideNavHeight - 40);
 })
