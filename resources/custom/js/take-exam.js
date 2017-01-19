@@ -4,7 +4,11 @@ function enableTimer() {
 }
 
 function toggleTimerPanel() {
-    $('#panel-timer').slideToggle();
+    $('.titleClock').toggle();
+}
+
+function toggleSummaryPanel() {
+    $('#summaryPanel').toggle();
 }
 
 function saveCorrectQuestionList() {
@@ -41,7 +45,8 @@ function endExam() {
     $('#examFinishedBtn').hide();
     $('#question_counter').html(questions.length + ' Questions Loaded');
     $('#navbar-btn-timer').hide();
-    $('#panel-timer').hide();
+    $('.titleClock').hide();
+    $('#summaryPanel').hide();
     stopClock();
 }
 
@@ -50,10 +55,10 @@ function checkDisabledOptions() {
         $('#exam-navbar li.disabled').removeClass('disabled');
         $('#navbar li.disabled').removeClass('disabled');
         $('#navbar-btn-summary').addClass('disabled');
-        
-		if(hideQuestionBar){
-			$('#nav-mobile').show();
-		}
+
+        if (hideQuestionBar) {
+            $('#nav-mobile').show();
+        }
     }
 }
 
@@ -63,6 +68,7 @@ function showTestPanel() {
     $('#navbar li').addClass('disabled');
     $('#navbar-btn-start').addClass('disabled');
     $('#navbar-btn-summary').removeClass('disabled');
+    $('#summaryPanel').show();
     beginExam();
     $('#examPanel').show();
 }
@@ -73,7 +79,7 @@ function loadExamQuestion(question) {
     $('#exam-answer-result').html("");
     $('#exam-answer-result').removeClass("incorrectAnswer");
     $('#exam-answer-result').removeClass("correctAnswer");
-	$('#exam-question-type').val(question.type);
+    $('#exam-question-type').val(question.type);
     $('#exam-question-text').html(question.text);
 
     var answerLetters = ['A', 'B', 'C', 'D', 'E', 'F'];
@@ -96,49 +102,49 @@ function loadExamQuestion(question) {
 }
 
 function checkExamQuestionAnswer() {
-	var selectedAnswers = $('input[name=exam-answers]:checked')
-	
+    var selectedAnswers = $('input[name=exam-answers]:checked')
+
     if (selectedAnswers.length == 0) {
         $('#errorModalMessage').html('Please select an answer!');
         $('#errorModal').modal('open');
         return;
     }
 
-	var userAnswers=[];
-	
-	$.each(selectedAnswers, function(index,answer){
-		userAnswers.push($(answer).val());
-	});
+    var userAnswers = [];
+
+    $.each(selectedAnswers, function(index, answer) {
+        userAnswers.push($(answer).val());
+    });
 
     var correctAnswers = getAnswers(exam.currentQuestion);
 
-	if(userAnswers.sort().compare(correctAnswers.sort())) {
-		exam.correctlyAnswered.push(exam.currentQuestion);
-		$('#exam-answer-result').html("Good job, please continue to the next question..").addClass('correctAnswer');
-	} else {
-		exam.wronglyAnswered.push(exam.currentQuestion);
-		$('#exam-answer-result').html("Incorrect, please continue to the next question..").addClass('incorrectAnswer');
-	}
-	
-	var questionType = $('#exam-question-type').val();
-	var formAnswerType = ':radio[value="';
-	
-	if(questionType == CHECK_ALL){
-		formAnswerType = ':checkbox[value="';
-	}
-	
-		$.each(userAnswers, function(index, answer){
-				var element = formAnswerType + answer + '"]';
-				$(element).parent().find('label').addClass('incorrectAnswer');
-		});
-		
-		$.each(correctAnswers, function(index, answer){
-				var element = formAnswerType + answer + '"]';
-				$(element).parent().find('label').removeClass('incorrectAnswer');
-				$(element).parent().find('label').addClass('correctAnswer');
-		});
-		
-		updateTestSummary();
+    if (userAnswers.sort().compare(correctAnswers.sort())) {
+        exam.correctlyAnswered.push(exam.currentQuestion);
+        $('#exam-answer-result').html("Good job, please continue to the next question..").addClass('correctAnswer');
+    } else {
+        exam.wronglyAnswered.push(exam.currentQuestion);
+        $('#exam-answer-result').html("Incorrect, please continue to the next question..").addClass('incorrectAnswer');
+    }
+
+    var questionType = $('#exam-question-type').val();
+    var formAnswerType = ':radio[value="';
+
+    if (questionType == CHECK_ALL) {
+        formAnswerType = ':checkbox[value="';
+    }
+
+    $.each(userAnswers, function(index, answer) {
+        var element = formAnswerType + answer + '"]';
+        $(element).parent().find('label').addClass('incorrectAnswer');
+    });
+
+    $.each(correctAnswers, function(index, answer) {
+        var element = formAnswerType + answer + '"]';
+        $(element).parent().find('label').removeClass('incorrectAnswer');
+        $(element).parent().find('label').addClass('correctAnswer');
+    });
+
+    updateTestSummary();
 
     $('#exam-note').html(exam.currentQuestion.note);
     $('#examSubmitBtn').hide();
@@ -174,9 +180,9 @@ function beginExam() {
     var isExamTimed = $('#timedExamChkBox').is(':checked');
 
     if (isExamTimed) {
-        $('#panel-timer').show();
+        $('.titleClock').show();
         var deadline = moment().add(parseInt($('#numberOfMinutes').val()), 'm');
-        initializeClock('panel-timer', deadline);
+        initializeClock(deadline);
         $('#navbar-btn-timer').show();
     }
 }
@@ -199,10 +205,11 @@ function updateTestSummary() {
 }
 
 function finishExam() {
-    var summary = $("#examSummary").find('.modal-content').clone();
+    var summary = $("#summaryPanel").find('.modal-content').clone();
     $('#examSummaryClone').html(summary);
     $('#navbar-btn-summary').addClass('disabled');
     $('#examPanel').hide();
+    $('#summaryPanel').show();
     $('#examCompletedPanel').show();
     $('#question_counter').html('Final Grade: ' + exam.calculateGrade() + '%');
 

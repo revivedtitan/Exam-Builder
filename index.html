@@ -32,10 +32,12 @@
                     <li id="navbar-btn-save" class="disabled"><a href="#saveQuestionsModal" onclick="openSaveQuestionModal()"><i class="material-icons left">system_update_alt</i><span class="left hide-on-med-and-down">Save</span></a></li>
                     <li id="navbar-btn-clear" class="disabled"><a href="#" onclick="clearAllQuestions()"><i class="material-icons left">delete</i><span class="left hide-on-med-and-down">Clear</span></a></li>
                 </ul>
-                <a id="question_counter" href="#" class="brand-logo center hide-on-small-only">Please Load Questions</a>
+                <a href="#" class="brand-logo center hide-on-small-only">
+                    <div class="titleClock"></div>
+                </a>
                 <ul id="exam-navbar" class="right">
                     <li id="navbar-btn-timer" style="display:none;"><a href="#" onclick="toggleTimerPanel()"><i class="material-icons left">query_builder</i><span class="left hide-on-med-and-down">Timer</span></a></li>
-                    <li id="navbar-btn-summary" class="disabled"><a href="#examSummary"><i class="material-icons left">assignment</i><span class="left hide-on-med-and-down">Summary</span></a></li>
+                    <li id="navbar-btn-summary" class="disabled"><a href="#" onclick="toggleSummaryPanel()"><i class="material-icons left">assignment</i><span class="left hide-on-med-and-down">Summary</span></a></li>
                     <li id="navbar-btn-start" class="disabled"><a href="#examSettings"><i class="material-icons left">play_arrow</i><span class="left hide-on-med-and-down">Start</span></a></li>
                     <li id="navbar-btn-end" style="display:none;" onclick="endExam()"><a><i class="material-icons left">stop</i><span class="left hide-on-med-and-down">End</span></a></li>
                 </ul>
@@ -43,8 +45,48 @@
         </nav>
     </div>
 
+    <div style="width:70%;margin-left:auto;margin-right:auto;">
+        <div class="center-align">
+            <h4><i class="material-icons prefix" style="padding-right:10px;vertical-align: middle;">assignment</i>
+                <span id="question_counter">Please Load Questions</span>
+            </h4>
+        </div>
+        <div id="summaryPanel" class="modal-content" style="display:none;">
+            <div class="row center-align">
+                <div class="col s2">
+                    <label>Correct</label>
+                    <div class="summary-correctly-answered"></div>
+                </div>
+                <div class="col s2">
+                    <label>Incorrect</label>
+                    <div class="summary-wrongly-answered"></div>
+                </div>
+                <div class="col s2">
+                    <label>Unanswered</label>
+                    <div class="summary-unanswered"></div>
+                </div>
+                <div class="col s2">
+                    <label>Total</label>
+                    <div class="summary-total-questions"></div>
+                </div>
+                <div class="col s2">
+                    <label>Passing Grade</label>
+                    <div class="summary-passing-percent">83%</div>
+                </div>
+                <div class="col s2">
+                    <label>Current Grade</label>
+                    <div class="summary-percent"></div>
+                </div>
+            </div>
+            <div class="row center-align">
+                <div class="progress">
+                    <div class="determinate" style="width: 0%"></div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Main Content Panel -->
-    <div class="container" style="margin-top:15px;">
+    <div class="container">
         <div class="row" style="margin-bottom:0px;">
             <form id="questionBuilder" class="col s12">
                 <div class="col s12">
@@ -110,7 +152,7 @@
                 <form id="questionBuilder" class="col s12">
                     <div class="col s12">
                         <input id="exam-question-type" type="hidden"></input>
-                        <h4 id="exam-question-text"></h4>
+                        <h4 id="exam-question-text" style="font-size:28px"></h4>
                     </div>
                     <div class="col s12">
                         <div id="exam-answers"></div>
@@ -120,13 +162,13 @@
                         <p id="exam-note" style="font-size:18px;"></p>
                     </div>
 
-                    <div id="examSubmitBtn" class="col s12" style="">
+                    <div id="examSubmitBtn" class="col s12" style="margin-top:10px;">
                         <a class="waves-effect waves-light btn black" style="width:100%;" onclick="checkExamQuestionAnswer()">Submit</a>
                     </div>
-                    <div id="examContinueBtn" class="col s12" style="display:none">
+                    <div id="examContinueBtn" class="col s12" style="display:none; margin-top:10px;">
                         <a class="waves-effect waves-light btn black" style="width:100%;" onclick="advanceExam()">Continue</a>
                     </div>
-                    <div id="examFinishedBtn" class="col s12" style="display:none">
+                    <div id="examFinishedBtn" class="col s12" style="display:none;margin-top:10px;">
                         <a class="waves-effect waves-light btn black" style="width:100%;" onclick="finishExam()">Finish</a>
                     </div>
                 </form>
@@ -146,26 +188,7 @@
             </div>
 
         </div>
-        <div id="panel-timer" style="display:none">
-            <div>
-                <span class="hours"></span>
-                <div class="smalltext">Hours</div>
-            </div>
-            <div>
-                <span class="minutes"></span>
-                <div class="smalltext">Minutes</div>
-            </div>
-            <div>
-                <span class="seconds"></span>
-                <div class="smalltext">Seconds</div>
-            </div>
-        </div>
-
     </div>
-
-
-
-
 
     <!-- Modal Structure -->
     <div id="loadQuestionsModal" class="modal">
@@ -261,54 +284,6 @@
             <a href="#!" class=" modal-action modal-close waves-effect waves-green btn  black" style="float:none;" onclick="showTestPanel()">Start Exam</a>
         </div>
     </div>
-
-
-
-
-
-
-
-    <div id="examSummary" class="modal " style="border: 2px solid black;">
-        <div class="modal-content" style="padding-bottom: 0px;">
-            <div class="row center-align">
-                <h4><i class="material-icons prefix" style="padding-right:10px;">assignment</i>Exam Summary</h4>
-                <div class="col s2">
-                    <label>Correct</label>
-                    <div class="summary-correctly-answered"></div>
-                </div>
-                <div class="col s2">
-                    <label>Incorrect</label>
-                    <div class="summary-wrongly-answered"></div>
-                </div>
-                <div class="col s2">
-                    <label>Unanswered</label>
-                    <div class="summary-unanswered"></div>
-                </div>
-                <div class="col s2">
-                    <label>Total</label>
-                    <div class="summary-total-questions"></div>
-                </div>
-                <div class="col s2">
-                    <label>Passing Grade</label>
-                    <div class="summary-passing-percent">83%</div>
-                </div>
-                <div class="col s2">
-                    <label>Current Grade</label>
-                    <div class="summary-percent"></div>
-                </div>
-            </div>
-            <div class="row center-align">
-                <div class="progress">
-                    <div class="determinate" style="width: 0%"></div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-
-
-
 
 
     <div id="errorModal" class="modal center red lighten-1" style="width:30%;border: 2px solid black;">

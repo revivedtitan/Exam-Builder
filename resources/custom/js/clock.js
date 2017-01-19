@@ -13,18 +13,15 @@ function getTimeRemaining(endtime) {
     };
 }
 
-function initializeClock(id, endtime) {
-    var clock = document.getElementById(id);
-    var hoursSpan = clock.querySelector('.hours');
-    var minutesSpan = clock.querySelector('.minutes');
-    var secondsSpan = clock.querySelector('.seconds');
+function initializeClock(endtime) {
 
     function updateClock() {
         var t = getTimeRemaining(endtime);
+        var hour = ('0' + t.hours).slice(-2);
+        var minutes = ('0' + t.minutes).slice(-2);
+        var seconds = ('0' + t.seconds).slice(-2);
 
-        hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
-        minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
-        secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+        $('.titleClock').html("Remaining Time:\t" + hour + ":" + minutes + ":" + seconds);
 
         if (t.total <= 0) {
             clearInterval(timeinterval);
