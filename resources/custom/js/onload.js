@@ -27,7 +27,7 @@ function loadExamFromURL() {
             }
         });
 
-        $('#loadQuestionsModal').modal('close');
+        //$('#loadQuestionsModal').modal('close');
     });
 
 
