@@ -14,20 +14,15 @@ $(document).ready(function() {
 
 function loadExamFromURL() {
 
-    console.log('get checked elements');
-
     $('#stored-exams input:checked').each(function() {
-        console.log($(this).val());
-
         $.ajax({
             url: $(this).val(),
             success: function(data) {
-                //console.log(data);
                 loadQuestions(data);
             }
         });
 
-        //$('#loadQuestionsModal').modal('close');
+        $('#loadQuestionsModal').modal('close');
     });
 
 
