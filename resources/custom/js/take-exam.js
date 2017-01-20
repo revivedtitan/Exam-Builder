@@ -43,17 +43,17 @@ function endExam() {
     $('#examFinishedBtn').hide();
     $('#question_counter').html(questions.length + ' Questions Loaded');
     $('#navbar-btn-timer').hide();
-    $('#navbar-btn-summary').addClass('disabled');
+    $('#navbar-btn-summary').hide();
     $('.titleClock').hide();
     $('#summaryPanel').hide();
     stopClock();
+    $('#navbar').show();
 }
 
 function checkDisabledOptions() {
     if (questions.length > 0) {
         $('#exam-navbar li.disabled').removeClass('disabled');
         $('#navbar li.disabled').removeClass('disabled');
-        $('#navbar-btn-summary').addClass('disabled');
 
         if (hideQuestionBar) {
             $('#nav-mobile').show();
@@ -66,7 +66,7 @@ function showTestPanel() {
     $('#questionBuilder').hide();
     $('#navbar li').addClass('disabled');
     $('#navbar-btn-start').addClass('disabled');
-    $('#navbar-btn-summary').removeClass('disabled');
+    $('#navbar-btn-summary').show();
     $('#summaryPanel').show();
     beginExam();
     $('#examPanel').show();
@@ -183,7 +183,10 @@ function beginExam() {
         var deadline = moment().add(parseInt($('#numberOfMinutes').val()), 'm');
         initializeClock(deadline);
         $('#navbar-btn-timer').show();
+        $('#navbar-btn-summary').show();
     }
+
+    $('#navbar').hide();
 }
 
 function advanceExam() {
@@ -210,6 +213,7 @@ function finishExam() {
     $('#examPanel').hide();
     $('#summaryPanel').show();
     $('#examCompletedPanel').show();
+    $('#navbar-btn-summary').hide();
     $('#question_counter').html('Final Grade: ' + exam.calculateGrade() + '%');
 
     if (exam.correctlyAnswered.length > 0) {
