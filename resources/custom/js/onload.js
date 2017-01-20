@@ -25,5 +25,9 @@ function loadExamFromURL() {
         $('#loadQuestionsModal').modal('close');
     });
 
+    $('#stored-exams input:checked').each(function() {
+        $(this).attr('checked', false);
+    });
+
 
 }
