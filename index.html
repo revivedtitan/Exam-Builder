@@ -61,7 +61,7 @@
                     <label>Incorrect</label>
                     <div class="summary-wrongly-answered"></div>
                 </div>
-                <div class="col s2">
+                <div class="col s2 hide-on-small-only">
                     <label>Unanswered</label>
                     <div class="summary-unanswered"></div>
                 </div>
@@ -69,7 +69,7 @@
                     <label>Total</label>
                     <div class="summary-total-questions"></div>
                 </div>
-                <div class="col s2">
+                <div class="col s2 hide-on-small-only">
                     <label>Passing Grade</label>
                     <div class="summary-passing-percent">83%</div>
                 </div>
@@ -193,123 +193,227 @@
     <!-- Modal Structure -->
     <div id="loadQuestionsModal" class="modal">
         <div class="modal-content">
-            <h4>Load Exam Questions</h4>
-            <p>Please navigate and load prior saved exam questions built by this application.</p>
-            <p>
-                <form action="#">
-                    <div class="file-field input-field">
-                        <div class="waves-effect waves-light btn black accent-4">
-                            <span>File</span>
-                            <input type="file" onchange='openFile(event)' multiple>
-                        </div>
-                        <div class="file-path-wrapper">
-                            <input class="file-path validate" type="text" placeholder="Upload one or more files">
-                        </div>
-                    </div>
-                </form>
-            </p>
-            <p>
-                <a href="#" class="waves-effect waves-light btn green darken-2" onclick="loadExamFromURL()">Load Security+ Exam</a>
-            </p>
-        </div>
-    </div>
-
-    <!-- Modal Structure -->
-    <div id="saveQuestionsModal" class="modal blue-grey lighten-5" style="border: 2px solid black;">
-        <div class="modal-content">
-            <h4>Save Exam Questions</h4>
-            <p>You can customize the filename used to save the questions in JSON form or accept the default "Exam_Questions_"+[Current Date and Time]</p>
-
-            <form action="#">
-                <div class="col-s12 input-field" style="margin-top:30px;">
-                    <i class="material-icons prefix">system_update_alt</i>
-                    <input id="save_filename" type="text" class="validate">
-                    <label for="save_filename" class="active">Filename</label>
+            <div class="row">
+                <div class="col s12">
+                    <ul class="tabs grey darken-3">
+                        <li class="tab col s4"><a class="active" href="#test1">Preloaded</a></li>
+                        <li class="tab col s4"><a href="#test2">Local</a></li>
+                        <li class="tab col s4"><a href="#test3">Online</a></li>
+                    </ul>
                 </div>
-            </form>
+                <div id="test1" class="col s12">
+                    <div id="stored-exams">
 
-        </div>
-        <div class="modal-footer  center-align blue-grey lighten-1" style="border-top: 1px solid black;">
-            <a href="#!" class=" modal-action modal-close waves-effect waves-grey btn  blue-grey darken-2" style="float:none;" onclick="saveQuestionList()">Save Exam Questions</a>
-        </div>
-    </div>
+                        <ul class="collapsible" data-collapsible="accordion" style="margin-top:0px;">
+                            <li>
+                                <div class="collapsible-header"><i class="material-icons">assignment</i>Exam Compass</div>
+                                <div class="collapsible-body">
+                                    <div class="row exams">
+                                        <div class="col s3 center-align">
+                                            <input type="checkbox" class="filled-in" id="exam-compass-test-1" value="https://raw.githubusercontent.com/revivedtitan/Exam-Builder/master/resources/questions/Exam%20Compass/Security%2B%20Practice%20Test%201.json" />
+                                            <label for="exam-compass-test-1">Practice Exam 1</label>
+                                        </div>
+                                        <div class="col s3 center-align">
+                                            <input type="checkbox" class="filled-in" id="exam-compass-test-2" value="https://raw.githubusercontent.com/revivedtitan/Exam-Builder/master/resources/questions/Exam%20Compass/Security%2B%20Practice%20Test%202.json" />
+                                            <label for="exam-compass-test-2">Practice Exam 2</label>
+                                        </div>
+                                        <div class="col s3 center-align">
+                                            <input type="checkbox" class="filled-in" id="exam-compass-test-3" value="https://raw.githubusercontent.com/revivedtitan/Exam-Builder/master/resources/questions/Exam%20Compass/Security%2B%20Practice%20Test%203.json" />
+                                            <label for="exam-compass-test-3">Practice Exam 3</label>
+                                        </div>
+                                        <div class="col s3 center-align">
+                                            <input type="checkbox" class="filled-in" id="exam-compass-test-4" value="https://raw.githubusercontent.com/revivedtitan/Exam-Builder/master/resources/questions/Exam%20Compass/Security%2B%20Practice%20Test%204.json" />
+                                            <label for="exam-compass-test-4">Practice Exam 4</label>
+                                        </div>
+                                    </div>
+                                    <div class="row exams">
+                                        <div class="col s3 center-align">
+                                            <input type="checkbox" class="filled-in" id="exam-compass-test-5" value="https://raw.githubusercontent.com/revivedtitan/Exam-Builder/master/resources/questions/Exam%20Compass/Security%2B%20Practice%20Test%205.json" />
+                                            <label for="exam-compass-test-5">Practice Exam 5</label>
+                                        </div>
+                                        <div class="col s3 center-align">
+                                            <input type="checkbox" class="filled-in" id="exam-compass-test-6" value="https://raw.githubusercontent.com/revivedtitan/Exam-Builder/master/resources/questions/Exam%20Compass/Security%2B%20Practice%20Test%206.json" />
+                                            <label for="exam-compass-test-6">Practice Exam 6</label>
+                                        </div>
+                                        <div class="col s3 center-align">
+                                            <input type="checkbox" class="filled-in" id="exam-compass-test-7" value="https://raw.githubusercontent.com/revivedtitan/Exam-Builder/master/resources/questions/Exam%20Compass/Security%2B%20Practice%20Test%207.json" />
+                                            <label for="exam-compass-test-7">Practice Exam 7</label>
+                                        </div>
+                                        <div class="col s3 center-align">
+                                            <input type="checkbox" class="filled-in" id="exam-compass-test-8" value="https://raw.githubusercontent.com/revivedtitan/Exam-Builder/master/resources/questions/Exam%20Compass/Security%2B%20Practice%20Test%208.json" />
+                                            <label for="exam-compass-test-8">Practice Exam 8</label>
+                                        </div>
+                                    </div>
+                                    <div class="row exams">
+                                        <div class="col s3 center-align">
+                                            <input type="checkbox" class="filled-in" id="exam-compass-test-9" value="https://raw.githubusercontent.com/revivedtitan/Exam-Builder/master/resources/questions/Exam%20Compass/Security%2B%20Practice%20Test%209.json" />
+                                            <label for="exam-compass-test-9">Practice Exam 9</label>
+                                        </div>
+                                        <div class="col s3 center-align">
+                                            <input type="checkbox" class="filled-in" id="exam-compass-test-10" value="https://raw.githubusercontent.com/revivedtitan/Exam-Builder/master/resources/questions/Exam%20Compass/Security%2B%20Practice%20Test%2010.json" />
+                                            <label for="exam-compass-test-10">Practice Exam 10</label>
+                                        </div>
+                                        <div class="col s3 center-align">
+                                            <input type="checkbox" class="filled-in" id="exam-compass-test-11" value="https://raw.githubusercontent.com/revivedtitan/Exam-Builder/master/resources/questions/Exam%20Compass/Security%2B%20Practice%20Test%2011.json" />
+                                            <label for="exam-compass-test-11">Practice Exam 11</label>
+                                        </div>
+                                        <div class="col s3 center-align">
+                                            <input type="checkbox" class="filled-in" id="exam-compass-test-12" value="https://raw.githubusercontent.com/revivedtitan/Exam-Builder/master/resources/questions/Exam%20Compass/Security%2B%20Practice%20Test%2012.json" />
+                                            <label for="exam-compass-test-12">Practice Exam 12</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header"><i class="material-icons">assignment</i>SY0-401 Practice Exams</div>
+                                <div class="collapsible-body">
+                                    <div class="row exams">
+                                        <div class="col s6 center-align">
+                                            <input type="checkbox" class="filled-in" id="SY0-401-test-1" value="https://raw.githubusercontent.com/revivedtitan/Exam-Builder/master/resources/questions/SY0-401%20Practice%20Exams/SY0-401%20Practice%20Exam%20-%20Access%20Control%20and%20Identity%20Management.json"
+                                            />
+                                            <label for="SY0-401-test-1">Access Control and Identity Management</label>
+                                        </div>
+                                        <div class="col s6 center-align">
+                                            <input type="checkbox" class="filled-in" id="SY0-401-test-2" value="https://raw.githubusercontent.com/revivedtitan/Exam-Builder/master/resources/questions/SY0-401%20Practice%20Exams/SY0-401%20Practice%20Exam%20-%20Application%2C%20Data%2C%20and%20Host%20Security.json"
+                                            />
+                                            <label for="SY0-401-test-2">Application, Data, and Host Security</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header"><i class="material-icons">assignment</i>IT Security Fundamentals - CompTIA Security+ 2015</div>
+                                <div class="collapsible-body">
+                                    <p>Lorem ipsum dolor sit amet.</p>
+                                </div>
+                            </li>
+                        </ul>
 
-    <div id="crudQuestion" class="modal" style="border: 2px solid black;">
-        <input id="selected_question_id" type="text" style="display:none" />
-        <div class="modal-content" style="padding-bottom: 0px;">
-            <div class="input-field col s12">
-                <i class="material-icons prefix">question_answer</i>
-                <input id="selected_question_text" type="text" class="validate" disabled>
-                <label class="active" for="selected_question_text">Question Text</label>
-            </div>
-            <div class="input-field col s12">
-                <i class="material-icons prefix">mode_edit</i>
-                <input id="selected_question_note" type="text" class="validate" disabled>
-                <label class="active" for="selected_question_note">Note</label>
-            </div>
-            <div class="input-field col s12">
-                <ul class="collection" id="selected_question_answers"></ul>
-            </div>
-        </div>
-        <div class="modal-footer" style="border-top: 1px solid black;">
-            <a id="questionModalClose" href="#!" class="modal-action modal-close waves-effect waves-green btn red darken-4" style="float:none;">Okay</a>
-            <a id="questionModalDelete" href="#!" class="modal-action modal-close waves-effect waves-green btn red darken-4" onclick="deleteQuestion()">Delete</a>
-            <a id="questionModalEdit" href="#!" class="waves-effect waves-yellow btn yellow darken-2" onclick="enableEditAction()" style="margin-right:10px;display:none">Edit</a>
-            <a id="questionModalSave" href="#!" class="waves-effect waves-yellow btn green darken-2" onclick="updateQuestion()" style="margin-right:10px;display:none">Save</a>
-        </div>
-    </div>
-
-    <div id="examSettings" class="modal" style="border: 2px solid black;">
-        <div class="modal-content" style="padding-bottom: 0px;">
-            <form id="configureExam">
-                <div class="row">
-                    <h4 class="center-align"><i class="material-icons prefix" style="padding-right:10px;">settings</i>Exam Settings</h4>
-                    <div class="col s3 input-field  center-align disabled">
-                        <input id="timedExamChkBox" class="filled-in" type="checkbox" onclick="enableTimer()" />
-                        <label for="timedExamChkBox">Timed Exam</label>
-                    </div>
-                    <div class="col s3 input-field">
-                        <input id="numberOfMinutes" type="text" class="validate" disabled value="90">
-                        <label for="numberOfMinutes" class="active">Number of minutes</label>
-                    </div>
-                    <div class="col s3 input-field">
-                        <input id="numberOfQuestions" class="validate" type="text">
-                        <label for="numberOfQuestions" class="active"> Number of Questions</label>
-                    </div>
-                    <div class="col s3 input-field">
-                        <input id="passingPercentage" class="validate" type="text" value="83.33">
-                        <label for="passingPercentage" class="active">Passing Percentage</label>
+                        <a href="#" class="waves-effect waves-light btn green darken-2" onclick="loadExamFromURL()" style="width:100%">Load Security+ Exam</a>
                     </div>
                 </div>
-            </form>
-        </div>
-        <div class="modal-footer  center-align" style="border-top: 1px solid black;">
-            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn  black" style="float:none;" onclick="showTestPanel()">Start Exam</a>
-        </div>
-    </div>
+                <div id="test2" class="col s12">
+                    <div class="collapsible" style="padding-left:10px;padding-right:10px;margin-top:0px;">
+                        <p>Please navigate and load prior saved exam questions built by this application.</p>
+                        <p>
+                            <form action="#">
+                                <div class="file-field input-field">
+                                    <div class="waves-effect waves-light btn black accent-4">
+                                        <span>File</span>
+                                        <input type="file" onchange='openFile(event)' multiple>
+                                    </div>
+                                    <div class="file-path-wrapper">
+                                        <input class="file-path validate" type="text" placeholder="Upload one or more files">
+                                    </div>
+                                </div>
+                            </form>
+                        </p>
+                        </ </div>
+                        <div id="test3" class="col s12 collapsible2">Test 3</div>
+                    </div>
 
 
-    <div id="errorModal" class="modal center red lighten-1" style="width:30%;border: 2px solid black;">
-        <div class="modal-content" style="padding-bottom: 0px;">
-            <h4>Question Input Error</h4>
-            <p id="errorModalMessage"></p>
-        </div>
-        <div class="modal-footer red lighten-3" style="border-top: 1px solid black;">
-            <a href="#!" class=" modal-action modal-close waves-effect waves-green btn  red darken-4" style="float:none;">Okay</a>
-        </div>
-    </div>
 
 
-    <!-- Modal Structure -->
-    <div id="question-list-modal" class="modal bottom-sheet modal-fixed-footer">
-        <div class="modal-content">
-            <ul id="nav-mobile">
-            </ul>
-        </div>
-        <div class="modal-footer-list">
-            <h5 class="center-align">Questions Loaded</h5>
-        </div>
-    </div>
+                </div>
+            </div>
+
+            <!-- Modal Structure -->
+            <div id="saveQuestionsModal" class="modal blue-grey lighten-5" style="border: 2px solid black;">
+                <div class="modal-content">
+                    <h4>Save Exam Questions</h4>
+                    <p>You can customize the filename used to save the questions in JSON form or accept the default "Exam_Questions_"+[Current Date and Time]</p>
+
+                    <form action="#">
+                        <div class="col-s12 input-field" style="margin-top:30px;">
+                            <i class="material-icons prefix">system_update_alt</i>
+                            <input id="save_filename" type="text" class="validate">
+                            <label for="save_filename" class="active">Filename</label>
+                        </div>
+                    </form>
+
+                </div>
+                <div class="modal-footer  center-align blue-grey lighten-1" style="border-top: 1px solid black;">
+                    <a href="#!" class=" modal-action modal-close waves-effect waves-grey btn  blue-grey darken-2" style="float:none;" onclick="saveQuestionList()">Save Exam Questions</a>
+                </div>
+            </div>
+
+            <div id="crudQuestion" class="modal" style="border: 2px solid black;">
+                <input id="selected_question_id" type="text" style="display:none" />
+                <div class="modal-content" style="padding-bottom: 0px;">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">question_answer</i>
+                        <input id="selected_question_text" type="text" class="validate" disabled>
+                        <label class="active" for="selected_question_text">Question Text</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">mode_edit</i>
+                        <input id="selected_question_note" type="text" class="validate" disabled>
+                        <label class="active" for="selected_question_note">Note</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <ul class="collection" id="selected_question_answers"></ul>
+                    </div>
+                </div>
+                <div class="modal-footer" style="border-top: 1px solid black;">
+                    <a id="questionModalClose" href="#!" class="modal-action modal-close waves-effect waves-green btn red darken-4" style="float:none;">Okay</a>
+                    <a id="questionModalDelete" href="#!" class="modal-action modal-close waves-effect waves-green btn red darken-4" onclick="deleteQuestion()">Delete</a>
+                    <a id="questionModalEdit" href="#!" class="waves-effect waves-yellow btn yellow darken-2" onclick="enableEditAction()" style="margin-right:10px;display:none">Edit</a>
+                    <a id="questionModalSave" href="#!" class="waves-effect waves-yellow btn green darken-2" onclick="updateQuestion()" style="margin-right:10px;display:none">Save</a>
+                </div>
+            </div>
+
+            <div id="examSettings" class="modal" style="border: 2px solid black;">
+                <div class="modal-content" style="padding-bottom: 0px;">
+                    <form id="configureExam">
+                        <div class="row">
+                            <h4 class="center-align"><i class="material-icons prefix" style="padding-right:10px;">settings</i>Exam Settings</h4>
+                            <div class="col s3 input-field  center-align disabled">
+                                <input id="timedExamChkBox" class="filled-in" type="checkbox" onclick="enableTimer()" />
+                                <label for="timedExamChkBox">Timed Exam</label>
+                            </div>
+                            <div class="col s3 input-field">
+                                <input id="numberOfMinutes" type="text" class="validate" disabled value="90">
+                                <label for="numberOfMinutes" class="active">Number of minutes</label>
+                            </div>
+                            <div class="col s3 input-field">
+                                <input id="numberOfQuestions" class="validate" type="text">
+                                <label for="numberOfQuestions" class="active"> Number of Questions</label>
+                            </div>
+                            <div class="col s3 input-field">
+                                <input id="passingPercentage" class="validate" type="text" value="83.33">
+                                <label for="passingPercentage" class="active">Passing Percentage</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer  center-align" style="border-top: 1px solid black;">
+                    <a href="#!" class=" modal-action modal-close waves-effect waves-green btn  black" style="float:none;" onclick="showTestPanel()">Start Exam</a>
+                </div>
+            </div>
+
+
+            <div id="errorModal" class="modal center red lighten-1" style="width:30%;border: 2px solid black;">
+                <div class="modal-content" style="padding-bottom: 0px;">
+                    <h4>Question Input Error</h4>
+                    <p id="errorModalMessage"></p>
+                </div>
+                <div class="modal-footer red lighten-3" style="border-top: 1px solid black;">
+                    <a href="#!" class=" modal-action modal-close waves-effect waves-green btn  red darken-4" style="float:none;">Okay</a>
+                </div>
+            </div>
+
+
+            <!-- Modal Structure -->
+            <div id="question-list-modal" class="modal bottom-sheet modal-fixed-footer">
+                <div class="modal-content">
+                    <ul id="nav-mobile">
+                    </ul>
+                </div>
+                <div class="modal-footer-list">
+                    <h5 class="center-align">Questions Loaded</h5>
+                </div>
+            </div>
 
 
 </body>

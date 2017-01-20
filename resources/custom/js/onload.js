@@ -13,11 +13,22 @@ $(document).ready(function() {
 })
 
 function loadExamFromURL() {
-    $.ajax({
-        url: "https://raw.githubusercontent.com/revivedtitan/Exam-Builder/master/resources/questions/Exam%20Compass/Security%2B%20Practice%20Test%201.json",
-        success: function(data) {
-            //console.log(data);
-            loadQuestions(data);
-        }
+
+    console.log('get checked elements');
+
+    $('#stored-exams input:checked').each(function() {
+        console.log($(this).val());
+
+        $.ajax({
+            url: $(this).val(),
+            success: function(data) {
+                //console.log(data);
+                loadQuestions(data);
+            }
+        });
+
+        $('#loadQuestionsModal').modal('close');
     });
+
+
 }
