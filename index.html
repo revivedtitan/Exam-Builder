@@ -32,7 +32,7 @@
                     <li id="navbar-btn-save" class="disabled"><a href="#saveQuestionsModal" onclick="openSaveQuestionModal()"><i class="material-icons left">system_update_alt</i><span class="left hide-on-med-and-down">Save</span></a></li>
                     <li id="navbar-btn-clear" class="disabled"><a href="#" onclick="clearAllQuestions()"><i class="material-icons left">delete</i><span class="left hide-on-med-and-down">Clear</span></a></li>
                 </ul>
-                <a href="#" class="brand-logo center hide-on-small-only">
+                <a href="#" class="brand-logo center">
                     <div class="titleClock"></div>
                 </a>
                 <ul id="exam-navbar" class="right">
@@ -61,7 +61,7 @@
                     <label>Incorrect</label>
                     <div class="summary-wrongly-answered"></div>
                 </div>
-                <div class="col s2 hide-on-small-only">
+                <div class="col s2">
                     <label>Unanswered</label>
                     <div class="summary-unanswered"></div>
                 </div>
@@ -69,7 +69,7 @@
                     <label>Total</label>
                     <div class="summary-total-questions"></div>
                 </div>
-                <div class="col s2 hide-on-small-only">
+                <div class="col s2">
                     <label>Passing Grade</label>
                     <div class="summary-passing-percent">83%</div>
                 </div>
@@ -120,12 +120,12 @@
                     </p>
                 </div>
                 <div id="choice_question">
-                    <div class="input-field col s10">
+                    <div class="input-field col s8">
                         <i class="material-icons prefix">note_add</i>
                         <input id="answerText" type="text" class="validate">
                         <label for="answerText">Answer Text</label>
                     </div>
-                    <div class="input-field col s2">
+                    <div class="input-field col s4">
                         <a class="waves-effect waves-light btn black" onclick="addAnswer()" style="width:100%;">Add</a>
                     </div>
                     <div class="input-field col s12" style="margin-top:0px;">
@@ -135,7 +135,7 @@
 
                 <div class="col s6" style="margin-top:22px;">
                     <div class="switch" style="text-align: center;">
-                        <label>No Order
+                        <label>Off
                             <input id="order" type="checkbox"/>
                         <span class="lever"></span>Preserve Order
                         </label>
