@@ -44,6 +44,10 @@ function endExam() {
     $('#question_counter').html(questions.length + ' Questions Loaded');
     $('#navbar-btn-timer').hide();
     $('#navbar-btn-summary').hide();
+    $('#navbar-btn-load').show();
+    $('#navbar-btn-list').show();
+    $('#navbar-btn-save').show();
+    $('#navbar-btn-clear').show();
     $('.titleClock').hide();
     $('#summaryPanel').hide();
     stopClock();
@@ -64,8 +68,6 @@ function checkDisabledOptions() {
 function showTestPanel() {
     $('#nav-mobile').hide();
     $('#questionBuilder').hide();
-    $('#navbar li').addClass('disabled');
-    $('#navbar-btn-start').addClass('disabled');
     $('#navbar-btn-summary').show();
     $('#summaryPanel').show();
     beginExam();
@@ -181,10 +183,13 @@ function beginExam() {
         var deadline = moment().add(parseInt($('#numberOfMinutes').val()), 'm');
         initializeClock(deadline);
         $('#navbar-btn-timer').show();
-        $('#navbar-btn-summary').show();
     }
 
-    $('#navbar').hide();
+    $('#navbar-btn-summary').show();
+    $('#navbar-btn-load').hide();
+    $('#navbar-btn-list').hide();
+    $('#navbar-btn-save').hide();
+    $('#navbar-btn-clear').hide();
 }
 
 function advanceExam() {
@@ -206,7 +211,6 @@ function updateTestSummary() {
 function finishExam() {
     var summary = $("#summaryPanel").find('.modal-content').clone();
     $('#examSummaryClone').html(summary);
-    $('#navbar-btn-summary').addClass('disabled');
     $('#examPanel').hide();
     $('#summaryPanel').show();
     $('#examCompletedPanel').show();
