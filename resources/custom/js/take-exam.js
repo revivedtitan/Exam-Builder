@@ -158,8 +158,6 @@ function checkExamQuestionAnswer() {
 function resetSummary() {
     $('.summary-correctly-answered').html("0");
     $('.summary-wrongly-answered').html("0");
-    $('.summary-unanswered').html("0");
-    $('.summary-total-questions').html(exam.totalQuestionCount);
     $('.summary-passing-percent').html($('#passingPercentage').val() + "%");
     $('.summary-percent').html('0%');
     $('.determinate').css('width', '0%');
@@ -201,7 +199,6 @@ function advanceExam() {
 function updateTestSummary() {
     $('.summary-correctly-answered').html(exam.correctlyAnswered.length);
     $('.summary-wrongly-answered').html(exam.wronglyAnswered.length);
-    $('.summary-unanswered').html(exam.totalQuestionCount - exam.currentQuestionCount);
     $('.summary-percent').html(exam.calculateGrade() + "%");
     $('.determinate').css('width', exam.calculateExamProgress() + '%');
 }

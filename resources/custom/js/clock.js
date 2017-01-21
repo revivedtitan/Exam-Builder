@@ -21,7 +21,7 @@ function initializeClock(endtime) {
         var minutes = ('0' + t.minutes).slice(-2);
         var seconds = ('0' + t.seconds).slice(-2);
 
-        $('.titleClock').html("Remaining Time:\t" + hour + ":" + minutes + ":" + seconds);
+        $('.titleClock').html(hour + ":" + minutes + ":" + seconds);
 
         if (t.total <= 0) {
             clearInterval(timeinterval);
