@@ -13,7 +13,6 @@ $(document).ready(function() {
 })
 
 function loadExamFromURL() {
-
     $('#stored-exams input:checked').each(function() {
         $.ajax({
             url: $(this).val(),
@@ -29,5 +28,5 @@ function loadExamFromURL() {
         $(this).attr('checked', false);
     });
 
-
+    $('#loadQuestionsModal').modal('close');
 }

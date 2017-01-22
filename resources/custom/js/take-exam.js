@@ -83,7 +83,7 @@ function loadExamQuestion(question) {
     $('#exam-question-type').val(question.type);
     $('#exam-question-text').html(question.text);
 
-    var answerLetters = ['A', 'B', 'C', 'D', 'E', 'F'];
+    var answerLetters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K'];
 
     if (question.preserveOrder == false && question.type != "TRUE_FALSE") {
         question.answers = shuffle(question.answers);
