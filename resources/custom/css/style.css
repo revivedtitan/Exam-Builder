@@ -342,3 +342,7 @@ div.titleClock {
     overflow-y: scroll;
     max-height: 35vh;
 }
+
+.modal {
+    max-height: 85%;
+}
