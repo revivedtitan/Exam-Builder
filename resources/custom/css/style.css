@@ -339,16 +339,10 @@ div.titleClock {
 }
 
 .collapsible-body {
-<<<<<<< HEAD
-    overflow-y: scroll;
+    overflow-y: auto;
     max-height: 35vh;
 }
 
 .modal {
     max-height: 85%;
 }
-=======
-    overflow-y: auto;
-    max-height: 30vh;
-}
->>>>>>> origin/master
