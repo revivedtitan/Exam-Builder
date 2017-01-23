@@ -340,5 +340,9 @@ div.titleClock {
 
 .collapsible-body {
     overflow-y: auto;
-    max-height: 28vh;
+    max-height: 50vh;
+}
+
+.modal {
+    max-height: 90%;
 }
