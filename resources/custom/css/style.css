@@ -333,3 +333,12 @@ div.titleClock {
         width: 90%;
     }
 }
+
+.modal.load {
+    overflow-y: hidden;
+}
+
+.collapsible-body {
+    overflow-y: scroll;
+    max-height: 35vh;
+}
