@@ -339,6 +339,6 @@ div.titleClock {
 }
 
 .collapsible-body {
-    overflow-y: scroll;
+    overflow-y: auto;
     max-height: 35vh;
 }
