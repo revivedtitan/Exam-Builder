@@ -4,8 +4,11 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="msapplication-tap-highlight" content="no">
     <link rel="shortcut icon" href="resources/custom/images/badge.png" type="image/x-icon" />
     <title>Exam Builder</title>
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="resources/libraries/materialize/css/icon.css" />
     <link rel="stylesheet" type="text/css" href="resources/libraries/materialize/css/materialize.css" />
     <link rel="stylesheet" type="text/css" href="resources/custom/css/style.css" />
@@ -19,6 +22,8 @@
     <script src="resources/custom/js/question-modal.js"></script>
     <script src="resources/custom/js/take-exam.js"></script>
     <script src="resources/custom/js/onload.js"></script>
+    <script>
+    </script>
 </head>
 
 <body class="grey lighten-4">
@@ -38,6 +43,7 @@
                     <div class="titleClock"></div>
                 </a>
                 <ul id="exam-navbar" class="right">
+                    <li id="navbar-btn-glossary"><a href="#glossary-modal"><i class="material-icons left">description</i><span class="left hide-on-med-and-down">Glossary</span></a></li>
                     <li id="navbar-btn-start" class="disabled"><a href="#examSettings"><i class="material-icons left">play_arrow</i><span class="left hide-on-med-and-down">Start</span></a></li>
                     <li id="navbar-btn-end" style="display:none;" onclick="endExam()"><a><i class="material-icons left">stop</i><span class="left hide-on-med-and-down">End</span></a></li>
                 </ul>
@@ -601,6 +607,1254 @@
             <h5 class="center-align">Questions Loaded</h5>
         </div>
     </div>
+
+    <div id="glossary-modal" class="modal load">
+        <div class="modal-content">
+            <div class="row">
+                <div class="col s12">
+                    <ul class="tabs grey darken-3">
+                        <li class="tab col s6"><a class="active" href="#acronyms">Acronyms</a></li>
+                        <li class="tab col s6"><a href="#malware">Malware</a></li>
+                    </ul>
+                </div>
+                <div id="acronyms" class="col s12">
+                    <div class="glossary-btn-container">
+                        <ul id="glossaryBtns">
+                            <li class="glossary-btn active">
+                                <a href="#a" class="nn_tabs-toggle" id="tab-a" data-id="a"><span>A</span></a>
+                            </li>
+                            <li class="glossary-btn">
+                                <a href="#b" class="nn_tabs-toggle" id="tab-b" data-id="b"><span >B</span></a>
+                            </li>
+                            <li class="glossary-btn">
+                                <a href="#c" class="nn_tabs-toggle" id="tab-c" data-id="c"><span >C</span></a>
+                            </li>
+                            <li class="glossary-btn">
+                                <a href="#d" class="nn_tabs-toggle" id="tab-d" data-id="d"><span >D</span></a>
+                            </li>
+                            <li class="glossary-btn">
+                                <a href="#e" class="nn_tabs-toggle" id="tab-e" data-id="e"><span >E</span></a>
+                            </li>
+                            <li class="glossary-btn">
+                                <a href="#f" class="nn_tabs-toggle" id="tab-f" data-id="f"><span >F</span></a>
+                            </li>
+                            <li class="glossary-btn">
+                                <a href="#g" class="nn_tabs-toggle" id="tab-g" data-id="g"><span >G</span></a>
+                            </li>
+                            <li class="glossary-btn">
+                                <a href="#h" class="nn_tabs-toggle" id="tab-h" data-id="h"><span >H</span></a>
+                            </li>
+                            <li class="glossary-btn">
+                                <a href="#i" class="nn_tabs-toggle" id="tab-i" data-id="i"><span >I</span></a>
+                            </li>
+                            <li class="glossary-btn">
+                                <a href="#j" class="nn_tabs-toggle" id="tab-j" data-id="j"><span >J</span></a>
+                            </li>
+                            <li class="glossary-btn">
+                                <a href="#k" class="nn_tabs-toggle" id="tab-k" data-id="k"><span >K</span></a>
+                            </li>
+                            <li class="glossary-btn">
+                                <a href="#l" class="nn_tabs-toggle" id="tab-l" data-id="l"><span >L</span></a>
+                            </li>
+                            <li class="glossary-btn">
+                                <a href="#m" class="nn_tabs-toggle" id="tab-m" data-id="m"><span >M</span></a>
+                            </li>
+                            <li class="glossary-btn">
+                                <a href="#n" class="nn_tabs-toggle" id="tab-n" data-id="n"><span >N</span></a>
+                            </li>
+                            <li class="glossary-btn">
+                                <a href="#o" class="nn_tabs-toggle" id="tab-o" data-id="o"><span >O</span></a>
+                            </li>
+                            <li class="glossary-btn">
+                                <a href="#p" class="nn_tabs-toggle" id="tab-p" data-id="p"><span >P</span></a>
+                            </li>
+                            <li class="glossary-btn disableClick">
+                                <a href="#q" class="nn_tabs-toggle" id="tab-q" data-id="q"><span >Q</span></a>
+                            </li>
+                            <li class="glossary-btn">
+                                <a href="#r" class="nn_tabs-toggle" id="tab-r" data-id="r"><span >R</span></a>
+                            </li>
+                            <li class="glossary-btn">
+                                <a href="#s" class="nn_tabs-toggle" id="tab-s" data-id="s"><span >S</span></a>
+                            </li>
+                            <li class="glossary-btn">
+                                <a href="#t" class="nn_tabs-toggle" id="tab-t" data-id="t"><span >T</span></a>
+                            </li>
+                            <li class="glossary-btn disableClick">
+                                <a href="#u" class="nn_tabs-toggle" id="tab-u" data-id="u"><span >U</span></a>
+                            </li>
+                            <li class="glossary-btn">
+                                <a href="#v" class="nn_tabs-toggle" id="tab-v" data-id="v"><span >V</span></a>
+                            </li>
+                            <li class="glossary-btn">
+                                <a href="#w" class="nn_tabs-toggle" id="tab-w" data-id="w"><span >W</span></a>
+                            </li>
+                            <li class="glossary-btn">
+                                <a href="#x" class="nn_tabs-toggle" id="tab-x" data-id="x"><span >X</span></a>
+                            </li>
+                            <li class="glossary-btn disableClick">
+                                <a href="#y" class="nn_tabs-toggle" id="tab-y" data-id="y"><span >Y</span></a>
+                            </li>
+                            <li class="glossary-btn disableClick">
+                                <a href="#z" class="nn_tabs-toggle" id="tab-z" data-id="z"><span >Z</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="collapsible-body2">
+                        <div class="glossary-letter-pane active" id="a">
+                            <dt><dfn>AAA</dfn></dt>
+                            <dd>
+                                <p><b>Authentication, Authorization and Accounting</b>. Security architecture framework designed for:</p>
+                                <ol>
+                                    <li>Verification of the identity of a person or process (Authentication)</li>
+                                    <li>Granting or denying access to network resources (Authorization)</li>
+                                    <li>Tracking the services users are accessing as well as the amount of network resources they are consuming (Accounting)</li>
+                                </ol>
+                            </dd>
+                            <dt><dfn>ACL</dfn></dt>
+                            <dd>
+                                <p><b>Access Control List</b>. A mechanism that implements access control for a system resource by enumerating the identities of the system entities that are permitted to access the resource.</p>
+                            </dd>
+                            <dt><dfn>AES</dfn></dt>
+                            <dd>
+                                <p><b>Advanced Encryption Standard</b>. Symmetric-key encryption standard comprising three block ciphers, AES-128, AES-192 and AES-256. Each of these ciphers has a 128-bit block size, with key sizes of 128, 192 and 256 bits,
+                                    respectively. When used with 256-bit key, it is referred to as AES256. AES uses the Rijandel algorithm.</p>
+                            </dd>
+                            <dt><dfn>AES256</dfn></dt>
+                            <dd>
+                                <p><b>Advanced Encryption Standard 256-bit (also written as AES-256)</b>. A symmetric-key encryption algorithm that uses 256-bit encryption key.</p>
+                            </dd>
+                            <dt><dfn>AH</dfn></dt>
+                            <dd>
+                                <p><b>Authentication Header</b>. A component of the Internet Protocol Security (IPsec) protocol suite designed to provide connectionless data integrity service and data origin authentication service for IP datagrams, and (optionally)
+                                    to provide protection against replay attacks. AH does not provide confidentiality, which means it does not encrypt the data. The data is readable, but protected from modification by the use of hash. AH can be used alone
+                                    or in combination with the Encapsulating Security Payload (ESP) protocol (another component of the IPsec suite). AH packets are identified with protocol ID number 51 embedded in the packet.</p>
+                            </dd>
+                            <dt><dfn>ALE</dfn></dt>
+                            <dd>
+                                <p><b>Annualized Loss Expectancy</b>. A risk assessment formula defining probable financial loss due to a risk over a one year period. It is defined as: Annualized Loss Expectancy (ALE) = Annual Rate of Occurrence (ARO) x
+                                    Single Loss Expectancy (SLE).</p>
+                            </dd>
+                            <dt><dfn>AP</dfn></dt>
+                            <dd>
+                                <p><b>Access Point</b>. Device or software that allows wireless devices to connect to a wired network. Often used as interchangeable term for a Wireless Access Point (WAP).</p>
+                            </dd>
+                            <dt><dfn>API</dfn></dt>
+                            <dd>
+                                <p><b>Application Programming Interface</b>. A collection of code that allows computer programmers to speed up the process of creating software applications. The main advantage from using APIs comes from the fact that they
+                                    usually contain many readily available functions designed to perform specific tasks. An API call allows the programmer to take advantage of the block of code already defined within API instead of writing the entire
+                                    programming code required to perform a given task from scratch.</p>
+                            </dd>
+                            <dt><dfn>ASP</dfn></dt>
+                            <dd>
+                                <p><b>Application Service Provider</b>. A vendor that provides application functionality and associated services across a network to multiple customers using a rental or usage-based transaction-pricing model.</p>
+                            </dd>
+                            <dt><dfn>ARO</dfn></dt>
+                            <dd>
+                                <p><b>Annualized Rate of Occurrence</b>. An estimate based on the historical data of how often a threat would be successful in exploiting a vulnerability. For example, if an event occurs once every 10 years, then its annualized
+                                    rate of occurrence is 1 / 10 = 0.1.</p>
+                            </dd>
+                            <dt><dfn>ARP</dfn></dt>
+                            <dd>
+                                <p><b>Address Resolution Protocol</b>. A low-level computer networking protocol used for resolution of a Network Layer address (IP) into a Data Link Layer address (Ethernet MAC address).</p>
+                            </dd>
+                            <dt><dfn>AUP</dfn></dt>
+                            <dd>
+                                <p><b>Acceptable Use Policy</b>. A set of rules enforced in a network that restrict the use to which the network may be put.</p>
+                            </dd>
+                            <br>
+                        </div>
+                        <div class="glossary-letter-pane" id="b">
+                            <dt><dfn>BAC</dfn></dt>
+                            <dd>
+                                <p><b>Business Availability Center</b>. An application management solution designed for monitoring and management of business services and application health. BAC allows to reduce downtime and improve the quality of user experience
+                                    by optimizing the availability and performance of applications and business services.</p>
+                            </dd>
+                            <dt><dfn>BCP</dfn></dt>
+                            <dd>
+                                <p><b>Business Continuity Planning</b>. The process of preparing for a disruptive event aimed at helping an organization to resume and maintain its operations in case of such event.</p>
+                            </dd>
+                            <dt><dfn>BIA</dfn></dt>
+                            <dd>
+                                <p><b>Business Impact Analysis</b>. A management level analysis of all business functions and the effect a specific interruption to business operations may have upon them.</p>
+                            </dd>
+                            <dt><dfn>BIOS</dfn></dt>
+                            <dd>
+                                <p><b>Basic Input/Output System</b>. A computer program permanently stored in a chip on the motherboard. BIOS contains all the necessary code to identify and initialize basic system hardware components, such as disk drives,
+                                    keyboard, and monitor. Its primary function is to set up the hardware for loading and starting an operating system.</p>
+                            </dd>
+                            <dt><dfn>BPA</dfn></dt>
+                            <dd>
+                                <p><b>Business Partners Agreement</b>. A key document governing the relationship between two business organisations.</p>
+                            </dd>
+                            <dt><dfn>BYOD</dfn></dt>
+                            <dd>
+                                <p><b>Bring Your Own Device</b>. The policy of permitting employees to bring personally owned computing devices (e.g. laptops, tablets, or smartphones) to their workplace, and to use those devices to access privileged company
+                                    information and applications.</p>
+                            </dd>
+                            <br>
+                        </div>
+                        <div class="glossary-letter-pane" id="c">
+                            <dt><dfn>CA</dfn></dt>
+                            <dd>
+                                <p><b>Certificate Authority</b>. A private or public entity that issues, distributes, and revokes digital certificates. A CA is a trusted third party that is trusted by both the subject (owner) of the certificate and the party
+                                    relying upon the certificate. One of the CA's functions is to verify the identity of each entity before issuing a certificate and consequently to guarantee that the individual granted the unique certificate is, in fact,
+                                    who they claim to be. After the certificate is issued, the certificate holder can use it as proof of their identity. As long as both parties in a communication or transaction trust a specific third party CA, then the
+                                    two entities can trust that each is who they claim to be.</p>
+                            </dd>
+                            <dt><dfn>CAC</dfn></dt>
+                            <dd>
+                                <p><b>Common Access Card</b>. A United States Department of Defense (DoD) smart card issued as standard identification for active-duty military personnel, reserve personnel, civilian employees, other non-DoD government employees,
+                                    state employees of the National Guard, and eligible contractor personnel.</p>
+                            </dd>
+                            <dt><dfn>CAN</dfn></dt>
+                            <dd>
+                                <p><b>Controller Area Network</b>. Originally developed for use in automotive applications, CAN was designed to allow microcontrollers and devices to communicate with each other within a vehicle without a host computer. CAN
+                                    is a message-based protocol, designed specifically for automotive applications but now also used in other areas such as industrial automation and medical equipment.</p>
+                            </dd>
+                            <dt><dfn>CBC-MAC</dfn></dt>
+                            <dd>
+                                <p><b>Cipher Block Chaining Message Authentication Code</b>. A cryptographic technique for constructing a message authentication code from a block cipher.</p>
+                            </dd>
+                            <dt><dfn>CCMP</dfn></dt>
+                            <dd>
+                                <p><b>Counter Mode with Cipher Block Chaining Message Authentication Code Protocol</b>. An encryption protocol designed for Wireless Local Area Networks (WLANs). CCMP offers enhanced security and was designed to address the
+                                    vulnerabilities of similar technologies such as Temporal Key Integrity Protocol (TKIP).</p>
+                            </dd>
+                            <dt><dfn>CCTV</dfn></dt>
+                            <dd>
+                                <p><b>Closed Circuit Television</b>. CCTV is a network of video cameras and monitors connected in a closed circuit. Unlike regular television, where anyone with a receiver can pick up the signal, CCTV images can only be displayed
+                                    on the monitors that have direct connection to the CCTV cameras.</p>
+                            </dd>
+                            <dt><dfn>CERT</dfn></dt>
+                            <dd>
+                                <p><b>Computer Emergency Response Team</b>. A generic term for an expert group that handles computer security incidents (historically from the first team by the same name formed at the Carnegie Mellon University).</p>
+                            </dd>
+                            <dt><dfn>CHAP</dfn></dt>
+                            <dd>
+                                <p><b>Challenge Handshake Authentication Protocol</b>. A remote access authentication protocol used primarily over dial-up connections. CHAP relies on a shared secret (usually a password) that both ends of the connection know.
+                                    Unlike other authentication mechanisms, such as Password Authentication Protocol (PAP) which sends the credentials in clear text, CHAP doesn't send the actual password over the insecure public link. After receiving
+                                    a logon request from the client, the server creates a nonce (a number used once) as a challenge mechanism and sends it to the client. The client adds a shared secret to the nonce and calculates a hash value from the
+                                    combined data, which is next sent to the server. At the receiving end, the server performs the same calculation (one-way hash on the combined shared secret and nonce), and if the resulting hash value matches the one
+                                    received from the client, the client is authenticated. Once the client is authenticated, CHAP periodically sends a new challenge to the client at random intervals in order to prevent session hijacking. If an attacker
+                                    disconnects the legitimate client and authenticates himself to the server with the intercepted hash, he won't be able to calculate the correct hash value when the server challenges the client with the different nonce
+                                    and the connection will be automatically closed.</p>
+                            </dd>
+                            <dt><dfn>CIRT</dfn></dt>
+                            <dd>
+                                <p><b>Computer Incident Response Team</b>. A generic term for an expert group that handles computer security incidents.</p>
+                            </dd>
+                            <dt><dfn>CRC</dfn></dt>
+                            <dd>
+                                <p><b>Cyclic Redundancy Check</b>. An error detection mechanism used to check for data transmission errors. The sending device runs a block of data that is to be transmitted through a mathematical formula and appends the resulting
+                                    checksum to the data. The same calculation is repeated at the receiving end and if the checksums do not match the frame is rejected and resent.</p>
+                            </dd>
+                            <dt><dfn>CRL</dfn></dt>
+                            <dd>
+                                <p><b>Certificate Revocation List</b>. A list of digital certificates (identified by their serial numbers) that have been revoked and should no longer be relied upon. A CRL is published by a Certificate Authority (CA). When
+                                    a potential user in a public key infrastructure (PKI) framework attempts to access a server, the server allows or denies access based on the CRL entry for that particular user. A CRL is generated and published periodically,
+                                    often at a defined interval. The main drawback of this method is that in order to keep the list up to date at the client's end it has to be downloaded frequently. This problem can be solved by choosing an alternative,
+                                    newer solution known as the Online Certificate Status Protocol (OCSP), which works on a direct query basis and provides answers regarding the certificate's status with no such delay.</p>
+                                <br>
+                            </dd>
+                        </div>
+                        <div class="glossary-letter-pane" id="d">
+                            <dt><dfn>DAC</dfn></dt>
+                            <dd>
+                                <p><b>Discretionary Access Control</b>. A type of access control in computer security where every object has an owner who at his/her own discretion determines what kind of permissions other users can have to that object. DAC
+                                    is also referred to as an access control method based on user identity.</p>
+                            </dd>
+                            <dt><dfn>DDoS</dfn></dt>
+                            <dd>
+                                <p><b>Distributed Denial of Service</b>. As opposed to the simple Denial of Service (DoS) attacks that usually are performed from a single system, a Distributed Denial of Service attack uses multiple compromised computer systems
+                                    to perform an attack against its target. The intermediary systems that are used as platform for the attack are the secondary victims of the DDoS attack; they are often referred to as zombies, and collectively as a botnet.
+                                    The goal of DoS and DDoS attacks is to flood the bandwidth or resources of a targeted system so that it becomes overwhelmed with false requests and in result doesn't have time or resources to handle legitimate requests.</p>
+                            </dd>
+                            <dt><dfn>DEP</dfn></dt>
+                            <dd>
+                                <p><b>Data Execution Prevention</b>. A security feature in modern operating systems that monitors applications to make sure they use system memory safely. In Microsoft environment, DEP is defined as a set of hardware and software
+                                    technologies that perform additional checks on memory to help protect against malicious code exploits. If a program tries to execute code from memory in a an incorrect way, DEP closes the program.</p>
+                            </dd>
+                            <dt><dfn>DES</dfn></dt>
+                            <dd>
+                                <p><b>Data Encryption Standard</b>. A block cipher based on a symmetric-key algorithm that uses a 56-bit key. It is considered compromised and was replaced with 3DES (Triple DES), which applies the DES algorithm three times
+                                    to each data block resulting in a key size of 168 bits. 2011-08-06 18:50:03 1</p>
+                            </dd>
+                            <dt><dfn>DHCP</dfn></dt>
+                            <dd>
+                                <p><b>Dynamic Host Configuration Protocol</b>. DHCP provides configuration parameters to Internet hosts. It is built on a client-server model, where designated DHCP server hosts allocate network addresses and deliver configuration
+                                    parameters to dynamically configured hosts. Usually the DHCP server provides the client with at least IP address, subnet mask, and default gateway.</p>
+                            </dd>
+                            <dt><dfn>DLL</dfn></dt>
+                            <dd>
+                                <p><b>Dynamic Link Library</b>. A DLL is a library that contains code and data that can be used by more than one Microsoft Windows application at the same time. When multiple programs use the same library of functions, a DLL
+                                    can reduce the duplication of code that is loaded on the disk and in physical memory saving system resources. For the Microsoft Windows operating systems, much of the functionality of the operating system is provided
+                                    by dynamic link libraries (DLL). Typically, a DLL provides one or more particular functions and a program accesses the functions by creating either a static or dynamic link to the DLL. A static link remains constant
+                                    during program execution while a dynamic link is created by the program as needed. A dynamic link library (DLL) file is an executable file that allows Windows applications to share code and other resources necessary
+                                    to perform particular tasks. DLLs most often appear as files with a .DLL extension, but they may also have an .EXE or other extension, such as .OCX (for libraries containing ActiveX controls), or .DRV (for legacy system
+                                    drivers). Some of the other files that are implemented as DLLs in Windows operating systems include, for example, Control Panel (.CPL) files - each item located in Windows Control Panel is a specialized DLL.</p>
+                            </dd>
+                            <dt><dfn>DLP</dfn></dt>
+                            <dd>
+                                <p><b>Data Loss Prevention</b>. Software or hardware based security solutions designed to detect and prevent unauthorized use and transmission of confidential information outside of the corporate network. DLP systems can be
+                                    divided into:</p>
+                                <ol>
+                                    <li><b>Data in Motion (DiM)</b> DLP systems, which are software or hardware tools that monitor network traffic in order to detect sensitive data that is being sent in violation of information security policies.</li>
+                                    <li><b>Data at Rest (DaR)</b> DLP systems, which prevent the stored data from being accessed for example by encrypting backup tapes and other storage devices.</li>
+                                    <li><b>Data in Use (DiU)</b> DLP systems, which run on end-user workstations or servers in the organization.</li>
+                                </ol>
+                                <p>Data Loss Prevention may be referred to differently by different vendors. Other terms for DLP may include such terms as: Data Leakage Protection, Data Leak Prevention, Information Leak Detection and Prevention (ILDP), Information
+                                    Leak Prevention (ILP), Content Monitoring and Filtering (CMF), Information Protection and Control (IPC) or Extrusion Prevention System.</p>
+                            </dd>
+                            <dt><dfn>DMZ</dfn></dt>
+                            <dd>
+                                <p><b>Demilitarized Zone</b>. A lightly protected subnet placed on the outside of the company's firewall consisting of publicly available servers. The purpose of DMZ is to offer services, such as web browsing, FTP, or email,
+                                    to both the public and internal clients without compromising the security of the private LAN.</p>
+                            </dd>
+                            <dt><dfn>DNS</dfn></dt>
+                            <dd>
+                                <p><b>Domain Name Service</b>. Database distributed over a collection of servers and used by client software for purposes such as translating a domain name-style host name (such as www.example.com) into an IP address (such
+                                    as 192.0.43.10).</p>
+                            </dd>
+                            <dt><dfn>DoS</dfn></dt>
+                            <dd>
+                                <p><b>Denial of Service</b>. An attack aimed at preventing legitimate users from accessing a computer resource. Denial-of-Service attacks fall into two basic categories: attacks exploiting software vulnerabilities and errors
+                                    which result in targeted system being unable to perform any legitimate tasks, and network attacks, which are aimed at flooding the targeted computer with fake requests so that it runs out of system resources and becomes
+                                    unable to handle legitimate requests.</p>
+                            </dd>
+                            <dt><dfn>DRP</dfn></dt>
+                            <dd>
+                                <p><b>Disaster Recovery Plan</b>. A set of procedures that are implemented when business functions become disrupted by a damaging event. The main goal of DRP is to restore mission-critical functions as quickly as possible
+                                    and minimize losses. The key components of a DRP are data backups, procedures for recovering computer systems, and planning for alternate sites.</p>
+                            </dd>
+                            <dt><dfn>DSA</dfn></dt>
+                            <dd>
+                                <p><b>Digital Signature Algorithm</b>. An algorithm specified in the Federal Information Processing Standards Publication 186-3. DSA is a cryptographic algorithm used to generate a digital signature. Signature generation uses
+                                    a private key to generate a digital signature; signature verification uses a public key that corresponds to, but is not the same as, the private key. Each signatory possesses a private and public key pair. Public keys
+                                    may be known by the public; private keys are kept secret. Anyone can verify the signature by employing the signatory’s public key. Only the user that possesses the private key can perform signature generation. A hash
+                                    function is used in the signature generation process to obtain a condensed version of the data to be signed; the condensed version of the data is often called a message digest. The message digest is input to the digital
+                                    signature algorithm to generate the digital signature. Digital signatures are used to detect unauthorized modifications to data and to authenticate the identity of the signatory. In addition, the recipient of signed
+                                    data can use a digital signature as evidence in demonstrating to a third party that the signature was, in fact, generated by the claimed signatory. This is known as non-repudiation, since the signatory cannot easily
+                                    repudiate the signature at a later time.</p>
+                                <br>
+                            </dd>
+                        </div>
+                        <div class="glossary-letter-pane" id="e">
+                            <dt><dfn>EAP</dfn></dt>
+                            <dd>
+                                <p><b>Extensible Authentication Protocol</b>. An authentication framework frequently used in wireless networks and Point-to-Point connections. EAP defines a framework for authentication, but does not specify how the authentication
+                                    is implemented. EAP supports wide range of authentication schemes. Commonly used methods capable of operating in wireless networks include EAP-TLS, EAP-SIM, EAP-AKA, LEAP and EAP-TTLS.</p>
+                            </dd>
+                            <dt><dfn>ECC</dfn></dt>
+                            <dd>
+                                <p><b>Elliptic Curve Cryptography</b>. An encryption technique based on the idea of using points on a curve to define a public/private key pair. ECC requires less computational power and at the same time produces shorter cryptographic
+                                    keys making it suitable for smaller devices such as cell phones and wireless devices.</p>
+                            </dd>
+                            <dt><dfn>EFS</dfn></dt>
+                            <dd>
+                                <p><b>Encrypting File System</b>. The encryption component of the NTFS file system. EFS enables transparent encryption and decryption of files by using advanced, standard cryptographic algorithms. EFS uses a combination of
+                                    symmetric (one key is used to encrypt the files) and asymmetric (two keys are used to protect the encryption key) cryptography to make decrypting the files difficult without the correct key. Any individual or program
+                                    that doesn't possess the appropriate cryptographic key cannot read the encrypted data. However, the cryptography keys for EFS are in practice protected by the user account password, and are therefore susceptible to
+                                    most password attacks. In other words, encryption of files is only as strong as the password to unlock the decryption key.</p>
+                            </dd>
+                            <dt><dfn>EMI</dfn></dt>
+                            <dd>
+                                <p><b>Electromagnetic Interference</b>. A magnetic field produced as a side effect from the flow of electricity. In data lines that are not properly shielded EMI can cause corruption of data.</p>
+                            </dd>
+                            <dt><dfn>ESP</dfn></dt>
+                            <dd>
+                                <p><b>Encapsulating Security Payload</b>. The Encapsulating Security Payload (ESP) is a component of the Internet Protocol Security (IPsec) protocol suite. ESP is designed to provide a mix of security services in IPv4 and
+                                    IPv6. ESP is used to provide confidentiality, data origin authentication, connectionless integrity, an anti-replay service (a form of partial sequence integrity), and limited traffic flow confidentiality. ESP is identified
+                                    with the protocol ID number 50.</p>
+                            </dd>
+                            <br>
+                        </div>
+                        <div class="glossary-letter-pane" id="f">
+                            <dt><dfn>FTP</dfn></dt>
+                            <dd>
+                                <p><b>File Transfer Protocol</b>. An unencrypted file exchange protocol. FTP employs TCP ports 20 and 21. Connection established over TCP port 20 (the data connection) is used for exchanging data, connection made over TCP
+                                    port 21 (the control connection) remains open for the duration of the whole session and is used for session administration (commands, identification, passwords, etc.).</p>
+                                <br>
+                            </dd>
+                        </div>
+                        <div class="glossary-letter-pane" id="g">
+                            <dt><dfn>GPU</dfn></dt>
+                            <dd>
+                                <p><b>Graphic Processing Unit</b>. A specialized microprocessor designed to remove the burden of graphic-intense calculations from the CPU. In personal computers, a GPU can be present on a dedicated video card, integrated
+                                    on the motherboard, or in certain CPUs, placed on the CPU die. Integrated GPUs share a portion of the system's RAM and are commonly much less capable than dedicated solutions.</p>
+                            </dd>
+                            <dt><dfn>GRE</dfn></dt>
+                            <dd>
+                                <p><b>Generic Routing Encapsulation</b>. A tunneling protocol developed by Cisco that can encapsulate a wide variety of protocol packet types inside IP tunnels, creating a virtual point-to-point link to Cisco routers at remote
+                                    points over an IP internetwork.</p>
+                                <br>
+                            </dd>
+                        </div>
+                        <div class="glossary-letter-pane" id="h">
+                            <dt><dfn>HDD</dfn></dt>
+                            <dd>
+                                <p><b>Hard Disk Drive</b>. Sometimes referred to as hard disk, the main secondary storage of a PC (primary storage being RAM). Hard disk drive is a mechanism that consists of rotating rigid platters on a motor-driven spindle
+                                    within a protective enclosure. The platter surfaces are covered with a magnetic coating that can hold data in the form of magnetized spots. The top and bottom of each platter has a read/write head that moves across
+                                    the platter as all the platters rotate on a spindle. All the read/write heads are controlled by an actuator, which moves the read/write heads across the platters in unison.</p>
+                            </dd>
+                            <dt><dfn>HIDS</dfn></dt>
+                            <dd>
+                                <p><b>Host Based Intrusion Detection System</b>. A security application designed to monitor and analyze the local computer system for malicious or anomalous activity. In some cases HIDS also analyzes the network traffic to
+                                    and from the specific computer on which the intrusion detection software is installed on. Common examples of HIDS are antivirus software and anti-spyware applications.</p>
+                            </dd>
+                            <dt><dfn>HIPS</dfn></dt>
+                            <dd>
+                                <p><b>Host Based Intrusion Prevention System</b>. A security application designed to monitor and analyze the local computer system for malicious or anomalous activity. Intrusion prevention systems are considered extensions
+                                    of intrusion detection systems because they both monitor network traffic and/or system activities for malicious activity. The main differences are, unlike intrusion detection systems that are restricted to a passive
+                                    response (such as recording an event or sending notification to the manager's console) intrusion prevention systems are placed in-line and are able to actively prevent/block intrusions that are detected by terminating
+                                    processes or sessions, or by implementing network configuration changes on the fly (e.g instructing a firewall to reject IP traffic from certain address).</p>
+                            </dd>
+                            <dt><dfn>HMAC</dfn></dt>
+                            <dd>
+                                <p><b>Hashed Message Authentication Code</b>. A specific construction for calculating a message authentication code (MAC) involving a cryptographic hash function in combination with a secret key. A Message Authentication Code
+                                    (MAC) is an algorithm that mathematically combines a key with a hash to provide a “code” that can be appended with a given piece of data to ensure its integrity. As with any MAC, HMAC may be used to simultaneously verify
+                                    both the data integrity and the authenticity of a message. Any cryptographic hash function, such as MD5 or SHA-1, may be used in the calculation of an HMAC; the resulting MAC algorithm is termed HMAC-MD5 or HMAC-SHA1
+                                    accordingly. The cryptographic strength of the HMAC depends upon the cryptographic strength of the underlying hash function, the size of its hash output length in bits and on the size and quality of the cryptographic
+                                    key.
+                                </p>
+                            </dd>
+                            <dt><dfn>HSM</dfn></dt>
+                            <dd>
+                                <p><b>Hardware Security Module</b>. A piece of hardware and associated software/firmware that usually attaches to the inside of a PC or server and provides at least the minimum of cryptographic functions. These functions include
+                                    (but are not limited to) encryption, decryption, key generation, and hashing. The physical device offers some level of physical tamper-resistance and has a user interface and a programmable interface.</p>
+                            </dd>
+                            <dt><dfn>HTTP</dfn></dt>
+                            <dd>
+                                <p><b>HyperText Transfer Protocol</b>. A networking protocol used for transmission of HTML documents (which are text files containing special code that defines how web pages are displayed). HTTP operates by default on TCP
+                                    port 80. It is a cleartext communication protocol, i.e. it offers no security.</p>
+                            </dd>
+                            <dt><dfn>HTTPS</dfn></dt>
+                            <dd>
+                                <p><b>HyperText Transfer Protocol Secure</b>. A combination of the Hypertext Transfer Protocol (HTTP) with SSL/TLS protocol to provide encrypted communication and secure identification of a network web server. Transport Layer
+                                    Security (TLS) and its predecessor, Secure Sockets Layer (SSL), are cryptographic protocols that provide communication security over the Internet. HTTPS connections are often used for payment transactions on the World
+                                    Wide Web and for sensitive transactions in corporate information systems. As opposed to HTTP URLs that begin with "http://" and use port 80 by default, HTTPS URLs begin with "https://" and use port 443 by default.</p>
+                            </dd>
+                            <dt><dfn>HVAC</dfn></dt>
+                            <dd>
+                                <p><b>Heating Ventilation Air Conditioning</b>. A generic term for mechanical systems that provide climate control measures in modern buildings.</p>
+                                <br>
+                            </dd>
+                        </div>
+                        <div class="glossary-letter-pane" id="i">
+                            <dt><dfn>IaaS</dfn></dt>
+                            <dd>
+                                <p><b>Infrastructure as a Service</b>. One of the cloud computing infrastructure types where clients, instead of buying all the hardware and software, purchase computing resources as an outsourced service from suppliers who
+                                    own and maintain all the necessary equipment. The clients usually pay for computational resources on a per-use basis. in IaaS, cost of the service depends on the amount of consumed resources.</p>
+                            </dd>
+                            <dt><dfn>ICMP</dfn></dt>
+                            <dd>
+                                <p><b>Internet Control Message Protocol</b>. One of the protocols of the Internet Protocol Suite used for error, control, and informational messages. Network utilities such as Windows tracert (traceroute on other operating
+                                    systems), Windows NT PathPing, and ping are based on the ICMP messages. ICMPs are used by routers, intermediary devices, or hosts to communicate updates or error information to other routers, intermediary devices, or
+                                    hosts.
+                                </p>
+                            </dd>
+                            <dt><dfn>ID</dfn></dt>
+                            <dd>
+                                <p><b>Identification</b>.</p>
+                                <ol>
+                                    <li>A process of claiming an identity which is commonly followed by the act of verifying or proving the claimed identity (identity proofing or authentication).</li>
+                                    <li>Identity document (ID): any document which may be used to verify aspects of a person's personal identity.</li>
+                                </ol>
+                            </dd>
+                            <dt><dfn>IKE</dfn></dt>
+                            <dd>
+                                <p><b>Internet Key Exchange</b>. A protocol used to set up a security association (SA) in the IPsec protocol suite. IKE ensures the secure exchange of secret keys between communicating parties in order to establish the encrypted
+                                    VPN tunnel. It has the capability of choosing the strongest protocol that is supported by both hosts in a connection.</p>
+                            </dd>
+                            <dt><dfn>IM</dfn></dt>
+                            <dd>
+                                <p><b>Instant Messaging</b>. A form of real-time direct text-based chat between two or more users using personal computers or other devices. The user's text is conveyed over a network, such as the Internet. More advanced instant
+                                    messaging software clients also allow enhanced modes of communication, such as live voice or video calling. Instant Messaging communication usually occurs in cleartext making it vulnerable to packet sniffing and eavesdropping.
+                                    IM users are also exposed to various types of social engineering attacks and malicious code delivered through the IM file transfer capability. Infected user's contact list can also be exploited as a medium for malware
+                                    propagation over the network. Due to its peer-to-peer architecture, Instant Messaging is easy to deploy and use, but difficult to control and manage from a corporate point of view (misuse of the IM applications in a
+                                    workplace creates a liability for not only the offender but also the employer).</p>
+                            </dd>
+                            <dt><dfn>IMAP4</dfn></dt>
+                            <dd>
+                                <p><b>Internet Message Access Protocol v4</b>. The Internet Message Access Protocol Version 4 allows a client to access and manipulate electronic mail messages on a server. IMAP4 permits manipulation of mailboxes (remote message
+                                    folders) in a way that is functionally equivalent to local folders. IMAP4 includes, among others, operations for creating, deleting, and renaming mailboxes, checking for new messages, and permanently removing messages.
+                                    IMAP is one of the two most prevalent Internet standard protocols for email retrieval, the other being the Post Office Protocol (POP). It does not specify a means of posting mail; this function is handled by a mail
+                                    transfer protocol such as SMTP. IMAP4 operates by default over TCP port 143.</p>
+                            </dd>
+                            <dt><dfn>IP</dfn></dt>
+                            <dd>
+                                <p><b>Internet Protocol</b>. The method or protocol by which data is sent from one computer to another on the Internet. IP is a connectionless, best-effort packet switching protocol that moves datagrams (discrete sets of bits)
+                                    from one computer to another across an internetwork but does not provide reliable delivery, flow control, sequencing, or other end-to-end services that TCP provides.</p>
+                            </dd>
+                            <dt><dfn>IPsec</dfn></dt>
+                            <dd>
+                                <p><b>Internet Protocol Security</b>. A collective name for security architecture and protocols to provide security services for Internet Protocol traffic. The IPsec architecture specifies security protocols (AH and ESP),
+                                    security associations (ISAKMP), key management (IKE), and algorithms for authentication and encryption. IPsec can be implemented in a host-to-host transport mode (where only the payload of the IP packet is usually encrypted
+                                    and/or authenticated) or in a network tunnel mode (where the entire IP packet is encrypted and/or authenticated).</p>
+                            </dd>
+                            <dt><dfn>IRC</dfn></dt>
+                            <dd>
+                                <p><b>Internet Relay Chat</b>. An Internet text messaging system that allows one to converse with others in real time. IRC is structured as a network of servers, each of which accepts connections from client programs, one
+                                    per user. The IRC client applications send and receive messages to and from an IRC server and the IRC server broadcasts all messages to everyone participating in a discussion.</p>
+                            </dd>
+                            <dt><dfn>ISA</dfn></dt>
+                            <dd>
+                                <p><b>Interconnection Security Agreement</b>. An agreement established between the organizations that own and operate connected IT systems to document the technical requirements of the interconnection.</p>
+                            </dd>
+                            <dt><dfn>ISP</dfn></dt>
+                            <dd>
+                                <p><b>Internet Service Provider</b>. A company that provides access to the Internet.</p>
+                            </dd>
+                            <dt><dfn>IV</dfn></dt>
+                            <dd>
+                                <p><b>Initialization Vector</b>. Synonym for Initialization Value. An input parameter that sets the starting state of a cryptographic algorithm or mode. IV input is typically required to be random or pseudo random. The use
+                                    of an IV prevents repetition in data encryption, making it more difficult for a hacker using a dictionary attack to find patterns and break a cipher.</p>
+                                <br>
+                            </dd>
+                        </div>
+                        <div class="glossary-letter-pane" id="j">
+                            <dt><dfn>JBOD</dfn></dt>
+                            <dd>
+                                <p><b>Just a Bunch of Disks</b>.</p>
+                            </dd>
+                            <br>
+                        </div>
+                        <div class="glossary-letter-pane" id="k">
+                            <dt><dfn>KDC</dfn></dt>
+                            <dd>
+                                <p><b>Key Distribution Center</b>. A type of key center (used in symmetric cryptography) that implements a key-distribution protocol to provide keys (usually, session keys) to two (or more) entities that wish to communicate
+                                    securely.
+                                </p>
+                            </dd>
+                            <br>
+                        </div>
+                        <div class="glossary-letter-pane" id="l">
+                            <dt><dfn>L2TP</dfn></dt>
+                            <dd>
+                                <p><b>Layer 2 Tunneling Protocol</b>. A tunneling protocol that combines features of the Point-to-Point Tunneling Protocol (PPTP) and Layer 2 Forwarding Protocol (L2F). L2TP is a tunneling protocol used to support virtual
+                                    private networks (VPNs). It does not provide any encryption or confidentiality by itself; it relies on an encryption protocol that it passes within the tunnel to provide privacy. Authentication and data encryption features
+                                    can be provided when L2TP is used to encapsulate IPsec.</p>
+                            </dd>
+                            <dt><dfn>LANMAN</dfn></dt>
+                            <dd>
+                                <p><b>Local Area Network Manager</b>. Legacy password storage mechanism for Microsoft Windows. Due to its weaknesses LANMAN is not recommended and should be disabled on all current versions of Windows (in Vista and later the
+                                    protocol is disabled by default). LANMAN was replaced with NT LAN Manager (NTLM) with the release of Windows NT. It is still shipped with Windows for backward compatibility and might still be in use on some systems
+                                    for passwords that are less than 15 characters long.</p>
+                            </dd>
+                            <dt><dfn>LDAP</dfn></dt>
+                            <dd>
+                                <p><b>Lightweight Directory Access Protocol</b>. The Lightweight Directory Access Protocol (LDAP) is an Internet protocol for accessing distributed directory services (i.e. managed lists of network resources such as users,
+                                    computers, or groups) that act in accordance with X.500 data and service models (i.e. a series of computer networking standards covering electronic directory services). LDAP operates over TCP port 389 and also on TCP
+                                    port 636 when encrypted with either TLS or SSL.</p>
+                            </dd>
+                            <dt><dfn>LEAP</dfn></dt>
+                            <dd>
+                                <p><b>Lightweight Extensible Authentication Protocol</b>. A proprietary wireless LAN authentication method developed by Cisco Systems. LEAP uses dynamic Wired Equivalent Privacy (WEP) keys for mutual authentication between
+                                    a wireless client and a RADIUS server.</p>
+                                <br>
+                            </dd>
+                        </div>
+                        <div class="glossary-letter-pane" id="m">
+                            <dt><dfn>MAC</dfn></dt>
+                            <dd>
+                                <p>The <b>MAC</b> acronym may apply to:</p>
+                                <ol>
+                                    <li><b>Mandatory Access Control</b>. An access control model where every resource has a sensitivity label matching a clearance level assigned to a user (in order to be able to access the resource, user's clearance level
+                                        must be equal or higher than the sensitivity level assigned to the resource). With mandatory access control users cannot set or change access policies at their own discretion; labels and clearance levels can only
+                                        be applied and changed by an administrator.</li>
+                                    <li><b>Media Access Control</b>. A sublayer of the Data Link Layer specified in the OSI model.</li>
+                                    <li><b>Media Access Control address (MAC address)</b>. A unique identifier assigned to network interfaces (48-bit hexadecimal number defining the so called physical address of the Network Interface Card).</li>
+                                    <li><b>Message Authentication Code</b>. A Message Authentication Code (MAC) is an algorithm that mathematically combines a secret key with a hash to provide a “code” that can be appended with a given piece of data to ensure
+                                        its integrity. Message Authentication Code may be used to simultaneously verify both the data integrity as well as its authenticity, by allowing verifiers (who also possess the secret key) to detect any changes
+                                        to the data.</li>
+                                </ol>
+                            </dd>
+                            <dt><dfn>MAN</dfn></dt>
+                            <dd>
+                                <p><b>Metropolitan Area Network</b>. A data network intended to serve an area approximating that of a large city. A MAN usually interconnects a number of local area networks (LANs) using a high-capacity backbone technology,
+                                    such as fiber-optical links.</p>
+                            </dd>
+                            <dt><dfn>MBR</dfn></dt>
+                            <dd>
+                                <p><b>Master Boot Record</b>. 512-byte sector on the outermost track of the hard drive designated as the beginning of the hard drive. Master Boot Record consists of master boot program and partition table. Partition table
+                                    contains the description, location, and size of each partition on the drive. Partition set as an active partition is the partition used to boot the OS and during the computer startup process the role of the master boot
+                                    program is to check the partition table in order to find the active partition and execute the code stored in its first sector. The first sector of the active partition is also known as the OS boot record and it contains
+                                    the code that starts the process of loading the operating system.</p>
+                            </dd>
+                            <dt><dfn>MD5</dfn></dt>
+                            <dd>
+                                <p><b>Message-Digest Algorithm 5</b>. A cryptographic hash function that produces a 128-bit hash value. An MD5 hash is typically expressed as a 32-digit hexadecimal number. MD5 is used to verify the integrity of data or messages.
+                                    MD5 is a one-way function. One-way means that it is easy to apply hash function to some data and produce a result (a hash), but it's impossible to recreate the original data from the result of the hash function alone.
+                                    It could be compared to a book with its table of contents: it's easy to recreate the table of contents of a book if we have all the chapters, but it's not possible to do it the opposite way. Table of contents could
+                                    be called a digest here (and in hashing the resulting value is also called a digest, or checksum, or simply a hash). The resulting hash is the exact "content in a nutshell" (in the form of a string) derived from the
+                                    main content. In case there's any change to the data after the original hash was taken, the next time when a hash function is applied the resulting hash value after modification will be different from the original hash.</p>
+                            </dd>
+                            <dt><dfn>MOU</dfn></dt>
+                            <dd>
+                                <p><b>Memorandum of Understanding</b>. A document established between two or more parties to define their respective responsibilities in accomplishing a particular goal or mission.</p>
+                            </dd>
+                            <dt><dfn>MS-CHAP</dfn></dt>
+                            <dd>
+                                <p><b>Microsoft Challenge Handshake Authentication Protocol</b>. The Microsoft version of the Challenge Handshake Authentication Protocol. MS-CHAP exists in two versions, MS-CHAPv1 and MS-CHAPv2. MS-CHAPv2 offers additional
+                                    protection by introducing mutual authentication.</p>
+                            </dd>
+                            <dt><dfn>MTU</dfn></dt>
+                            <dd>
+                                <p><b>Maximum Transmission Unit</b>. The largest frame length which may be sent on a physical medium. MTU is used, for example, by the Transmission Control Protocol (TCP) to determine the maximum allowable packet size, any
+                                    messages larger than the MTU are divided into smaller packets before being sent. A larger MTU brings greater efficiency because each packet carries more user data while protocol overheads, such as headers or underlying
+                                    per-packet delays, remain fixed. On the other hand, corruption of a single bit in a packet requires that the entire packet be retransmitted and retransmissions of larger packets take longer.</p>
+                            </dd>
+                            <br>
+                        </div>
+                        <div class="glossary-letter-pane" id="n">
+                            <dt><dfn>NAC</dfn></dt>
+                            <dd>
+                                <p><b>Network Access Control</b>. A set of rules enforced in a network that the clients attempting to access the network must comply with. Depending on whether policies are enforced before or after end-stations gain access
+                                    to the network, NAC can be implemented as:</p>
+                                <ol>
+                                    <li><b>Pre-admission NAC</b>, where a host must, for example, be virus free or have patches applied before it is allowed to connect to the network.</li>
+                                    <li><b>Post-admission NAC</b>, where a host is being granted/denied permissions based on its actions after it has been provided with the access to the network.</li>
+                                </ol>
+                            </dd>
+                            <dt><dfn>NAT</dfn></dt>
+                            <dd>
+                                <p><b>Network Address Translation</b>. A technology that provides an IP proxy between a private LAN and a public network such as the Internet. Computers on the private LAN can access the Internet through a NAT-capable router
+                                    which handles the IP address translation. NAT hides the internal IP addresses by modifying IP address information in IP packet headers while in transit across a traffic routing device.</p>
+                            </dd>
+                            <dt><dfn>NIDS</dfn></dt>
+                            <dd>
+                                <p><b>Network Based Intrusion Detection System</b>. A system that tries to detect malicious activity by examining network traffic. NIDS does not take any active steps to prevent the attack. It relies on a passive response
+                                    instead, which may include saving the information about an event in logs or sending an alert.</p>
+                            </dd>
+                            <dt><dfn>NIPS</dfn></dt>
+                            <dd>
+                                <p><b>Network Based Intrusion Prevention System</b>. A network security appliance that monitors the entire network for suspicious traffic. As opposed to the Network Based Intrusion Detection System (NIDS), NIPS is capable
+                                    of an active response that may include resetting connection or reprogramming a firewall to block network traffic from the suspected malicious source.</p>
+                            </dd>
+                            <dt><dfn>NIST</dfn></dt>
+                            <dd>
+                                <p><b>National Institute of Standards and Technology</b>. NIST is a non-regulatory federal agency within the U.S. Department of Commerce. NIST's mission is to promote U.S. innovation and industrial competitiveness by advancing
+                                    measurement science, standards, and technology.</p>
+                            </dd>
+                            <dt><dfn>NOS</dfn></dt>
+                            <dd>
+                                <p><b>Network Operating System</b>. Typically, the term Network Operating System refers to a specialized server operating system (such as Windows Server, Novell NetWare, or a Unix-like operating system) that is designed to
+                                    control the whole network and its resources. These are systems that can provide resource sharing, security, network access control, management, and other features for multiple computer hosts and network devices on a
+                                    network. In a broader sense, NOS may also refer to any basic operating system enhanced by additional networking features and as such this term may also apply to the less specialized, client operating systems such as
+                                    Windows XP.</p>
+                            </dd>
+                            <dt><dfn>NTFS</dfn></dt>
+                            <dd>
+                                <p><b>New Technology File System</b>. A file system developed by Microsoft for Windows NT. NTFS was introduced in 1993 with the release of the Microsoft Windows NT 3.1 (with "NT" referring to NTFS v1.0 implemented in the latest
+                                    version of Windows, which at that time was 3.1). NTFS was designed as a replacement for its predecessor, the File Allocation Table (FAT) file system, and also became the preferred file system for later releases of MS
+                                    Windows. Its advantages over FAT include improved reliability due to the file system recovery features, increased security achieved by allowing users to set permissions on files or folders (through the Discretionary
+                                    Access Control access control model), support for the Encrypting File System (EFS) technology used to store encrypted files on NTFS volumes, file compression, and disk quotas.</p>
+                            </dd>
+                            <dt><dfn>NTLM</dfn></dt>
+                            <dd>
+                                <p><b>New Technology LAN Manager</b>. An authentication protocol used in Microsoft Windows for authentication between clients and servers. NTLM was replaced by Kerberos as the preferred authentication method and its use is
+                                    no longer recommended by Microsoft.</p>
+                            </dd>
+                            <dt><dfn>NTP</dfn></dt>
+                            <dd>
+                                <p><b>Network Time Protocol</b>. A protocol that is used for synchronizing computer system clocks in the Internet. NTP runs by default on the TCP port 123.</p>
+                            </dd>
+                            <br>
+                        </div>
+                        <div class="glossary-letter-pane" id="o">
+                            <dt><dfn>OS</dfn></dt>
+                            <dd>
+                                <p><b>Operating System</b>. A bundle of applications and code capable of:</p>
+                                <ol>
+                                    <li>Providing an interface to a user (by offering applications that allow users to interact with the system).</li>
+                                    <li>Taking user input (through a keyboard, or a mouse, or other input device).</li>
+                                    <li>Processing data (e.g. performing calculations on the input).</li>
+                                    <li>Creating output (e.g. displaying results on a monitor screen or sending results to a printer, or other output device).</li>
+                                    <li>Storing data (keeping data in a temporary working storage, such as Random Access Memory, or saving files permanently on a hard drive or other mass storage device).</li>
+                                    <li>Hardware management (the ability to take advantage of all the features offered by the integrated hardware and peripheral devices through a firmware such as BIOS or software device driver applications).</li>
+                                </ol>
+                            </dd>
+                            <dt><dfn>OVAL</dfn></dt>
+                            <dd>
+                                <p><b>Open Vulnerability Assessment Language</b>. An international, information security, community standard to promote open and publicly available security content, and to standardize the transfer of this information across
+                                    the entire spectrum of security tools and services. OVAL includes a language used to encode system details, and an assortment of content repositories held throughout the community.</p>
+                                <br>
+                            </dd>
+                        </div>
+                        <div class="glossary-letter-pane" id="p">
+                            <dt><dfn>PAP</dfn></dt>
+                            <dd>
+                                <p><b>Password Authentication Protocol</b>. A simple authentication mechanism wherein a user identifier and password are transmitted in cleartext form. PAP is used in Point-to-Point Protocol (PPP), a data link protocol commonly
+                                    used in establishing a direct connection between two networking nodes.</p>
+                            </dd>
+                            <dt><dfn>PAT</dfn></dt>
+                            <dd>
+                                <p><b>Port Address Translation</b>. A function provided by some routers which allows hosts on a LAN to communicate with the rest of a network (such as the Internet) without revealing their own private IP address. All outbound
+                                    packets have their IP address translated to the routers external IP address. Replies come back to the router which then translates them back into the private IP address of the original host for final delivery.</p>
+                            </dd>
+                            <dt><dfn>PBX</dfn></dt>
+                            <dd>
+                                <p><b>Private Branch Exchange</b>. A private telephone system that connect phones within the enterprise to an external line. PBXs make connections among the internal telephones of a private organization and also connect them
+                                    to the public switched telephone network (PSTN) via trunk lines. This saves the cost that would result from connecting every telephone within the company to an external telephone line separately.</p>
+                            </dd>
+                            <dt><dfn>PEAP</dfn></dt>
+                            <dd>
+                                <p><b>Protected Extensible Authentication Protocol</b>. A protocol that encapsulates the Extensible Authentication Protocol (EAP) within an encrypted and authenticated Transport Layer Security (TLS) tunnel.</p>
+                            </dd>
+                            <dt><dfn>PED</dfn></dt>
+                            <dd>
+                                <p><b>Personal Electronic Device</b>. A lightweight consumer electronic devices that include mobile phones, Personal Digital Assistants (PDAs), laptops and tablets, digital cameras, portable game consoles, optical media players,
+                                    MP3 players, USB drives, calculators, earphones, and other lightweight portable electronic devices.</p>
+                            </dd>
+                            <dt><dfn>PGP</dfn></dt>
+                            <dd>
+                                <p><b>Pretty Good Privacy</b>. A program which cryptographically protects files and electronic mail from being read by others. It may also be used to digitally sign a document or message, thus authenticating the creator.</p>
+                            </dd>
+                            <dt><dfn>PII</dfn></dt>
+                            <dd>
+                                <p><b>Personally Identifiable Information</b>. Any type of information pertaining to an individual that can be used to uniquely identify that individual. Identity of a person can be established by tracing their most basic
+                                    attributes such as name, surname, phone number or traditional mailing address, but also through their social security or credit card numbers, IP or email addresses, or data collected via biometric devices. Security
+                                    of Personally Identifiable Information has become major concern for companies and organizations due to the accessibility of this type of data over the Internet, but also due to misuse of personal electronic devices
+                                    such as USB drives or smartphones that are easily concealable and can carry large amounts of data.</p>
+                            </dd>
+                            <dt><dfn>PKI</dfn></dt>
+                            <dd>
+                                <p><b>Public Key Infrastructure</b>.</p>
+                                <ol>
+                                    <li>A system of Certificate Authorities (CAs) and, optionally, Registration Authorities (RAs) and other supporting servers and agents that perform some set of certificate management, archive management, key management,
+                                        and token management functions for a community of users in an application of asymmetric cryptography.</li>
+                                    <li>A set of hardware, software, people, policies, and procedures needed to create, manage, store, distribute, and revoke digital certificates based on asymmetric cryptography.</li>
+                                </ol>
+                            </dd>
+                            <dt><dfn>POTS</dfn></dt>
+                            <dd>
+                                <p><b>Plain Old Telephone Service</b>. A telephone service that remains the basic form of residential and small business service connection to the telephone network in many parts of the world.</p>
+                            </dd>
+                            <dt><dfn>PPP</dfn></dt>
+                            <dd>
+                                <p><b>Point-to-Point Protocol</b>. A protocol that provides a standard method for transporting multi-protocol datagrams over point-to-point links. PPP is comprised of three main components:</p>
+                                <ol>
+                                    <li>A method for encapsulating multi-protocol datagrams.</li>
+                                    <li>A Link Control Protocol (LCP) for establishing, configuring, and testing the data-link connection.</li>
+                                    <li>A family of Network Control Protocols (NCPs) for establishing and configuring different network-layer protocols.</li>
+                                </ol>
+                            </dd>
+                            <dt><dfn>PPTP</dfn></dt>
+                            <dd>
+                                <p><b>Point-to-Point Tunneling Protocol</b>. An Internet client-server protocol (originally developed by Ascend and Microsoft) that enables a dial-up user to create a virtual extension of the dial-up link across a network
+                                    by tunneling PPP over IP.</p>
+                            </dd>
+                            <dt><dfn>PSK</dfn></dt>
+                            <dd>
+                                <p><b>Pre-Shared Key</b>. A string of Unicode characters used to authenticate L2TP / IPSec connections.</p>
+                            </dd>
+                            <dt><dfn>PTZ</dfn></dt>
+                            <dd>
+                                <p><b>Pan-Tilt-Zoom</b>. A term referring to features of a surveillance equipment (e.g. PTZ camera).</p>
+                            </dd>
+                            <br>
+                        </div>
+                        <div class="glossary-letter-pane" id="q">
+                            <br>
+                        </div>
+                        <div class="glossary-letter-pane" id="r">
+                            <dt><dfn>RA</dfn></dt>
+                            <dd>
+                                <p><b>Recovery Agent</b>. A user capable of decrypting all files encrypted with Encrypting File System (EFS) by any local system user.</p>
+                            </dd>
+                            <dt><dfn>RAD</dfn></dt>
+                            <dd>
+                                <p><b>Rapid Application Development</b>. A software development methodology where planning of software is interleaved with writing the software itself. The lack of extensive pre-planning generally allows software to be written
+                                    much faster, and makes it easier to change requirements.</p>
+                            </dd>
+                            <dt><dfn>RADIUS</dfn></dt>
+                            <dd>
+                                <p><b>Remote Authentication Dial-In User Service</b>. An Internet protocol for carrying dial-in users' authentication information and configuration information between a shared, centralized authentication server (the RADIUS
+                                    server) and a network access server (the RADIUS client) that needs to authenticate the users of its network access ports. In a RADIUS environment, a user presents authentication information and possibly other information
+                                    to the RADIUS client, and the client passes that information to the RADIUS server. The server authenticates the client using a shared secret value and checks the presented information, and then returns to the client
+                                    all authorization and configuration information needed by the client to serve the user.</p>
+                            </dd>
+                            <dt><dfn>RAID</dfn></dt>
+                            <dd>
+                                <p><b>Redundant Array of Inexpensive Disks</b>. An umbrella term for computer data storage schemes that can divide and replicate data among multiple physical disk drives in order to increase fault tolerance and performance.</p>
+                            </dd>
+                            <dt><dfn>RAS</dfn></dt>
+                            <dd>
+                                <p><b>Remote Access Server</b>. Any combination of hardware and software providing the ability to log onto a network from a distant location.</p>
+                            </dd>
+                            <dt><dfn>RBAC</dfn></dt>
+                            <dd>
+                                <ol>
+                                    <li><b>Role Based Access Control</b>. An access control model wherein rights and permissions are assigned to roles instead of to users. Within an organization, roles are created for various job functions. The permissions
+                                        to perform certain operations are assigned to specific roles. Members of staff (or other system users) are assigned particular roles, and through those role assignments acquire the permissions to perform particular
+                                        system functions. Since users are not assigned permissions directly, but only acquire them through their role (or roles), management of individual user rights becomes a matter of simply assigning appropriate roles
+                                        to the user; this simplifies common operations, such as adding a user, or changing a user's department.</li>
+                                    <li><b>Rule Based Access Control</b>. An access control model in which access to resources is granted or denied depending on Access Control List (ACL) entries. An ACL specifies which users or system processes are granted
+                                        access to objects, as well as what operations are allowed on given objects. Each entry in a typical ACL specifies a subject and an operation. When a subject requests an operation on an object in an ACL-based security
+                                        model, the operating system first checks the ACL for an applicable entry to decide whether the requested operation is authorized. In computer networks, Rule Based Access Control model is usually implemented in network
+                                        devices such as firewalls in order to control inbound and outbound traffic based on filtering rules.</li>
+                                </ol>
+                            </dd>
+                            <dt><dfn>RSA</dfn></dt>
+                            <dd>
+                                <p><b>Rivest-Shamir-Adleman</b>. An algorithm for asymmetric cryptography, invented in 1977 by Ron Rivest, Adi Shamir, and Leonard Adleman. The RSA algorithm can be used for both public key encryption and digital signatures.
+                                    Its security is based on the difficulty of factoring large integers.</p>
+                            </dd>
+                            <dt><dfn>RPO</dfn></dt>
+                            <dd>
+                                <p><b>Recovery Point Objective</b>. The point in time to which systems and data must be recovered after a disaster has occurred.</p>
+                            </dd>
+                            <dt><dfn>RTO</dfn></dt>
+                            <dd>
+                                <p><b>Recovery Time Objective</b>. The recovery time objective (RTO) is the duration of time within which a business process must be restored after a disaster (or disruption) in order to avoid unacceptable consequences associated
+                                    with a break in business continuity. RTOs are established at the Business Impact Analysis (BIS) stage of the Business Continuity Planning (BCP). The goal of a Business Impact Analysis is to determine the impact of any
+                                    disruption of the activities that support the organization's key products and services. A key aspect of determining the impact of a disruption is identifying the so called Maximum Tolerable Period of Disruption (MTPOD),
+                                    which is the maximum amount of time that an enterprise's key products or services can be unavailable or undeliverable after an event that causes disruption to operations. The goal of Recovery Time Objective is to ensure
+                                    that the Maximum Tolerable Period of Disruption (MTPD) for each activity is not exceeded.</p>
+                            </dd>
+                            <dt><dfn>RTP</dfn></dt>
+                            <dd>
+                                <p><b>Real-Time Transport Protocol</b>. A protocol that provides end-to-end network transport functions suitable for applications transmitting real-time data, such as audio, video or simulation data, over multicast or unicast
+                                    network services. RTP does not address resource reservation and does not guarantee quality-of-service for real-time services. The data transport is augmented by a control protocol (RTCP) to allow monitoring of the data
+                                    delivery in a manner scalable to large multicast networks, and to provide minimal control and identification functionality.</p>
+                                <br>
+                            </dd>
+                        </div>
+                        <div class="glossary-letter-pane" id="s">
+                            <dt><dfn>S/MIME</dfn></dt>
+                            <dd>
+                                <p><b>Secure/Multipurpose Internet Mail Extensions</b>. Multipurpose Internet Mail Extensions (MIME) is an Internet protocol that enhances the basic format of Internet electronic mail messages to enable transmission of text
+                                    in languages other than English using character encodings other than ASCII and non-text attachments such as images, sounds, video, and executable files. MIME also extends the format of email to support message bodies
+                                    with multi-part content and header information in non-ASCII character sets. S/MIME is an Internet protocol to provide encryption and digital signatures for MIME data.</p>
+                            </dd>
+                            <dt><dfn>SaaS</dfn></dt>
+                            <dd>
+                                <p><b>Software as a Service</b>. A cloud computing infrastructure type where applications are hosted over a network (typically Internet) eliminating the need to install and run the software on the customer's own computers
+                                    and simplifying maintenance and support. Compared to conventional software deployment which requires licensing fee and often investment in additional hardware on the client side, SaaS can be delivered at a lower cost
+                                    by providing remote access to applications and pricing based on monthly or annual subscription fee.</p>
+                            </dd>
+                            <dt><dfn>SCADA</dfn></dt>
+                            <dd>
+                                <p><b>Supervisory Control and Data Acquisition</b>. A control system providing the capability for real-time monitoring and gathering information related to industrial equipment.</p>
+                            </dd>
+                            <dt><dfn>SCAP</dfn></dt>
+                            <dd>
+                                <p><b>Security Content Automation Protocol</b>. A suite of specifications for standardizing the format and nomenclature by which security software communicates information about software flaws and security configurations.</p>
+                            </dd>
+                            <dt><dfn>SCSI</dfn></dt>
+                            <dd>
+                                <p><b>Small Computer System Interface</b>. A set of standards for connecting and transferring data between computers and peripheral devices. SCSI allows for connecting hard disk drives, tape drives, optical media drives, printers,
+                                    scanners, and other devices. Depending on the standard, SCSI bus can provide support for up to 7 (narrow SCSI) or 15 devices (wide SCSI). Through the use of port expanders, newer SCSI interfaces (such as Serial Attached
+                                    SCSI (SAS)) can extend this number to many more supported devices. Devices on the SCSI bus communicate with the PC through the SCSI bus controller, which can be integrated on the motherboard or attached to the SCSI
+                                    chain on an expansion card (also referred to as host adapter, or Host Bus Adapter (HBA)). Since the adapter device is just another device in the SCSI chain, it can be placed anywhere on the cable. Each device on a SCSI
+                                    bus is assigned a number from 0 to 15 called SCSI ID, by means of jumpers, DIP switches, dials on the device, or software settings. The host adapter is generally assigned a number larger than all other devices, either
+                                    7 or 15 (SCSI ID doesn't need to reflect the position of the device on the cable). SCSI ID identifies the physical device, which in some cases can have several logical devices embedded in it (e.g. in the case of a tape-backup
+                                    jukebox which can have a tape changing device and multiple drives/slots to hold tape cartridges). To identify and address logical devices, each logical device is assigned a Logical Unit Number (LUN). SCSI chain requires
+                                    termination, which prevents bouncing back of the signal and data corruption. As a rule, there must be no more than two, and no less than two terminators, and termination on the bus must be present only at the beginning
+                                    of the SCSI bus, and at the end of the SCSI bus.</p>
+                            </dd>
+                            <dt><dfn>SDLC</dfn></dt>
+                            <dd>
+                                <p><b>Software Development Life Cycle</b>. A formalized framework describing activities and steps performed at each stage of the software development process.</p>
+                            </dd>
+                            <dt><dfn>SDLM</dfn></dt>
+                            <dd>
+                                <p><b>Software Development Life Cycle Methodology</b>. A term applying to one of the several models describing tasks or activities that take place during the software development process. Depending on requirements, software
+                                    development model may consist of distinct phases that need to be followed by developers in order (Waterfall model), rely on more flexible, adaptive planning and changing requirements that result from feedback and testing
+                                    throughout the development process (Agile software development), or use minimal planning interleaved with writing the software itself (Rapid Application Development (RAD)).</p>
+                            </dd>
+                            <dt><dfn>SHA</dfn></dt>
+                            <dd>
+                                <p><b>Secure Hashing Algorithm</b>. A series of cryptographic hash functions that produce an output of selectable length of either 160, 224, 256, 384, or 512 bits for input data. Hash function operates on variable-length input
+                                    (e.g., a message or a file) and outputs a fixed-length output, which typically is much shorter than most input values. The hash value is sometimes called the message digest or simply digest. Hash functions are based
+                                    on the one-way property which means that it is easy to apply hash function to data and produce a digest, but it's impossible (or very difficult) to recreate the original data from the result of the hash function alone.
+                                    In case there's any change to data after the original hash was taken, the resulting hash taken after modification will be different from the original hash. This feature allows for application of hashing functions in
+                                    verifying integrity of files and messages, e.g. by comparing message digests calculated before and after transmission it is possible to determine whether any changes have been made to a message or a file integrity in
+                                    transit. The SHA algorithms are distinguished as SHA-0, SHA-1, and SHA-2, with SHA-1 being the most widely used of the existing SHA hash functions (SHA-1 produces a 160-bit message digest). The SHA algorithms are called
+                                    secure because of their on-way property, i.e. because of the assumption that it is computationally infeasible to find a message which corresponds to a given message digest (brute force attacks that try to exploit this
+                                    feature are called preimage attacks), or to find two different messages which produce the same message digest (when this occurs, it is referred to as a collision, and finding two different messages that produce the
+                                    same message digest is the goal of a birthday attack).</p>
+                            </dd>
+                            <dt><dfn>SHTTP</dfn></dt>
+                            <dd>
+                                <p><b>Secure Hypertext Transfer Protocol</b>. An Internet protocol for providing client-server security services for HTTP communications. Compared to HTTPS, which uses Secure Sockets Layer (SSL) or Transport Layer Security
+                                    (TLS) cryptographic protocols that secure the entire communication channel, SHTTP creates secure message by encrypting only web page data rather than the whole session, making it less secure of the two.</p>
+                            </dd>
+                            <dt><dfn>SIM</dfn></dt>
+                            <dd>
+                                <p><b>Subscriber Identity Module</b>. An integrated circuit on a removable card that stores information used to identify a subscriber on mobile telephony devices.</p>
+                            </dd>
+                            <dt><dfn>SLA</dfn></dt>
+                            <dd>
+                                <p><b>Service Level Agreement</b>. A part of a service contract that defines performance expectations of the customer and service provider. SLA is a negotiated agreement to provide a service at a performance level that meets
+                                    or exceeds the specified performance objectives. Typical SLA objectives are related to the services provided, the standards of service, the delivery timetable, responsibilities of supplier and customer, provisions for
+                                    legal and regulatory compliance, mechanisms for monitoring and reporting of services, payment terms, how disputes will be resolved, confidentiality and non-disclosure provisions, and termination conditions.</p>
+                            </dd>
+                            <dt><dfn>SLE</dfn></dt>
+                            <dd>
+                                <p><b>Single Loss Expectancy</b>. A loss of value to an asset resulting from a single security incident. The formula for calculating SLE is defined as:</p>
+                                <p class="center-text">Single Loss Expectancy (SLE) = Asset Value (AV) x Exposure Factor (EF)</p>
+                                <p>The Exposure Factor in the SLE formula is a predicted percentage value reflecting the extent of damage to the asset when the incident occurs.</p>
+                            </dd>
+                            <dt><dfn>SMS</dfn></dt>
+                            <dd>
+                                <p><b>Short Message Service</b>. A form of text messaging communication on phones and mobile phones.</p>
+                            </dd>
+                            <dt><dfn>SMTP</dfn></dt>
+                            <dd>
+                                <p><b>Simple Mail Transfer Protocol</b>. A TCP-based, Application-Layer, Internet Standard protocol for moving electronic mail messages from one server to another. SMTP runs by default on TCP port 25.</p>
+                            </dd>
+                            <dt><dfn>SNMP</dfn></dt>
+                            <dd>
+                                <p><b>Simple Network Management Protocol</b>. A UDP-based, Application Layer protocol used in network management systems to monitor network-attached devices. SNMP is typically integrated into most modern network infrastructure
+                                    devices such as routers, bridges, switches, servers, printers, copiers, fax machines, and other network-attached devices. An SNMP-managed network consists of three key components: a managed device, a network-management
+                                    software module that resides on a managed device (Agent), and a network management system (NMS) which executes applications that monitor and control managed devices and collect SNMP information from Agents. All SNMP-compliant
+                                    devices include a virtual database called Management Information Base (MIB) containing information about configuration and state of the device that can be queried by the SNMP management station. The manager receives
+                                    notifications (Traps and InformRequests) on UDP port 162. The SNMP Agent receives requests on UDP port 161, and before answering a request from SNMP manager, SNMP Agent verifies that the manager belongs to an SNMP community
+                                    with access privileges to the Agent. An SNMP community is a group that consists of SNMP devices and one or more SNMP managers. The community has a name, and all members of a community have the same access privileges.
+                                    An SNMP device or Agent may belong to more than one SNMP community and it will not respond to requests from management stations that do not belong to one of its communities. The relationship between SNMP server system
+                                    and the client systems is defined by the so called community string which acts like a password. In terms of security, SNMP version 1 and version 2 offer only authentication based on community strings sent in cleartext.
+                                    SNMPv3 provides authentication, packet encryption, and hashing mechanisms that allow for checking whether data has changed in transit.</p>
+                            </dd>
+                            <dt><dfn>SONET</dfn></dt>
+                            <dd>
+                                <p><b>Synchronous Optical NETworking</b>. An international standard for high-speed, long-distance data communications over fiber-optic media. SONET defines interface standards at the Physical Layer of the OSI seven-layer model
+                                    and most commonly employs a ring-based topology. Transmission rates of signals that can be carried on SONET networks are defined through Optical Carrier (OC) specifications. Optical Carrier classifications are based
+                                    on the abbreviation OC followed by a number specifying a multiple of a base unit of 51.84 Mbps. SONET defines various OC specifications offering different speeds, from OC-1 (transmission speeds of up to 51.84 Mbps)
+                                    through OC-768 (transmission speeds of up to 39.2 Gbps).</p>
+                            </dd>
+                            <dt><dfn>SPIM</dfn></dt>
+                            <dd>
+                                <p><b>Spam Over Instant Messaging</b>. Unsolicited messages received via instant messaging systems.</p>
+                            </dd>
+                            <dt><dfn>SSH</dfn></dt>
+                            <dd>
+                                <p><b>Secure Shell</b>. A tunneling protocol for secure remote login and other secure network services designed as a replacement for Telnet and other insecure remote shells. SSH has three main parts:</p>
+                                <ul>
+                                    <li><b>Transport layer protocol</b>: Provides server authentication, confidentiality, and integrity; and can optionally provide compression. This layer typically runs over a TCP connection, but might also run on top of
+                                        any other reliable data stream.</li>
+                                    <li><b>User authentication protocol</b>: Authenticates the client-side user to the server. It runs over the transport layer protocol.</li>
+                                    <li><b>Connection protocol</b>: Multiplexes the encrypted tunnel into several logical channels. It runs over the user authentication protocol.</li>
+                                </ul>
+                                <p>Apart from providing the ability to log in remotely and execute commands on a remote host, SSH is also used for secure file transfer through the SSH-based protocols such as SSH File Transfer Protocol (SFTP) or Secure Copy
+                                    (SCP). SSH is based on a client-server model and runs by default on TCP port 22.</p>
+                            </dd>
+                            <dt><dfn>SSL</dfn></dt>
+                            <dd>
+                                <p><b>Secure Sockets Layer</b>. A series of cryptographic protocols (originally developed by Netscape Communications, Inc.) that use connection-oriented end-to-end encryption to provide data confidentiality service and data
+                                    integrity service for traffic between a client (often a web browser) and a server, and that can optionally provide authentication between the client and the server. SSL has two layers; SSL's lower layer, the SSL Record
+                                    Protocol encapsulates protocols that run in the upper layer. The upper- layer protocols are the three SSL management protocols -- SSL Handshake Protocol, SSL Change Cipher Spec Protocol, SSL Alert Protocol -- and some
+                                    Application-Layer protocol (e.g., HTTP). The SSL management protocols provide asymmetric cryptography for server authentication (verifying the server's identity to the client) and optional client authentication (verifying
+                                    the client's identity to the server), and also enable them, before the application protocol transmits or receives data, to negotiate a symmetric encryption algorithm and secret session key (to use for data confidentiality
+                                    service) and a keyed hash (to use for data integrity service). SSL operates at the Session Layer of the OSI model.</p>
+                            </dd>
+                            <dt><dfn>SSO</dfn></dt>
+                            <dd>
+                                <p><b>Single Sign-On</b>. An authentication subsystem that enables a user to access multiple, connected system components (such as separate hosts on a network) after a single login at only one of the components. A single sign-on
+                                    subsystem typically requires a user to log in once at the beginning of a session, and then during the session transparently grants access by the user to multiple, separately protected hosts, applications, or other system
+                                    resources, without further login action by the user. Such a subsystem has the advantages of being user friendly and enabling authentication to be managed consistently across an entire enterprise. Such a subsystem also
+                                    has the disadvantage of requiring all the accessed components to depend on the security of the same authentication information. One of the more important SSO implementations is Kerberos. SSO can also be implemented
+                                    through hardware (e.g. smart-card-based single sign-on).</p>
+                            </dd>
+                            <dt><dfn>STP</dfn></dt>
+                            <dd>
+                                <p><b>Shielded Twisted Pair</b>. A type of twisted pair copper cabling used in Ethernet and telephone networks. Shielded twisted pair cable reduces interference from adjacent wire pairs (crosstalk), and Electromagnetic Interference
+                                    (EMI) / Radio Frequency Interference (RFI) from outside sources such as power generating machinery. STP can be implemented with the use of a braided screen or foil and protecting sheath can cover all four pairs only,
+                                    or (in order to offer the best protection) cover all four pairs and additionally each individual pair of wires.</p>
+                            </dd>
+                            <br>
+                        </div>
+                        <div class="glossary-letter-pane" id="t">
+                            <dt><dfn>TACACS</dfn></dt>
+                            <dd>
+                                <p><b>Terminal Access Controller Access Control System</b>. A UDP-based authentication and access control protocol in which a network access server receives an identifier and password from a remote terminal and passes them
+                                    to a separate authentication server for verification. TACACS can provide service not only for network access servers but also routers and other networked computing devices via one or more centralized authentication
+                                    servers. TACACS was originally developed for ARPANET and has evolved for use in commercial equipment.</p>
+                            </dd>
+                            <dt><dfn>TACACS+</dfn></dt>
+                            <dd>
+                                <p><b>Terminal Access Controller Access Control System Plus</b>. A TCP-based protocol that improves on TACACS by separating the functions of authentication, authorization, and accounting and by encrypting all traffic between
+                                    the network access server and authentication server. TACACS+ is extensible to allow any authentication mechanism to be used with TACACS+ clients.</p>
+                            </dd>
+                            <dt><dfn>TCP/IP</dfn></dt>
+                            <dd>
+                                <p><b>Transmission Control Protocol / Internet Protocol</b>. A common, interchangeable term for Internet Protocol Suite (IPS). IPS is often referred to as "TCP/IP", because TCP and IP protocols are the most basic and important
+                                    of its components. Transmission Control Protocol (TCP) is a Transport-Layer protocol that reliably delivers a sequence of datagrams from one computer to another in a computer network. Internet Protocol (IP) is an Internet-Layer
+                                    protocol that moves datagrams (discrete sets of bits) from one computer to another across an internetwork but does not provide reliable delivery, flow control, sequencing, or other end-to-end services that TCP provides.
+                                    Versions of Internet Protocol deployed on the Internet include IPv4 (the most widely adopted version), and IPv6 which was designed to replace IPv4 (currently in various stages of deployment on the Internet).</p>
+                            </dd>
+                            <dt><dfn>TKIP</dfn></dt>
+                            <dd>
+                                <p><b>Temporal Key Integrity Protocol</b>. A protocol designed to fix problems with frame encryption and integrity of Wired Equivalent Privacy (WEP) security protocol. TKIP was introduced in the IEEE 802.11i standard which
+                                    specifies security mechanisms for wireless networks. The TKIP protocol uses the original RC4 encryption algorithm that was also used by WEP but adds a mixing function that creates per-frame keys to avoid the weak-key
+                                    attacks on WEP. It also adds a message integrity code (MIC) which enables devices to authenticate the packets they receive. TKIP was designed to run on most existing WLAN station and access point equipment with only
+                                    software/firmware upgrades.</p>
+                            </dd>
+                            <dt><dfn>TLS</dfn></dt>
+                            <dd>
+                                <p><b>Transport Layer Security</b>. The TLS protocol provides communications security over the Internet. The protocol allows client/server applications to communicate in a way that is designed to prevent eavesdropping, tampering,
+                                    or message forgery. The primary goal of the TLS protocol is to provide privacy and data integrity between two communicating applications. The protocol is composed of two layers: the TLS Record Protocol and the TLS Handshake
+                                    Protocol. The TLS Record Protocol provides connection security that has two basic properties:</p>
+                                <ul>
+                                    <li>The connection is private. Symmetric cryptography is used for data encryption (e.g. AES, RC4, etc.). The keys for this symmetric encryption are generated uniquely for each connection and are based on a secret negotiated
+                                        by another protocol (such as the TLS Handshake Protocol). The Record Protocol can also be used without encryption.</li>
+                                    <li>The connection is reliable. Message transport includes a message integrity check using a keyed Message Authentication Code (MAC.) Secure hash functions (e.g. SHA-1, etc.) are used for MAC computations. The Record Protocol
+                                        can operate without a MAC, but is generally only used in this mode while another protocol is using the Record Protocol as a transport for negotiating security parameters.</li>
+                                </ul>
+                                <p>The TLS Record Protocol is used for encapsulation of various higher-level protocols. One such encapsulated protocol, the TLS Handshake Protocol, allows the server and client to authenticate each other and to negotiate an
+                                    encryption algorithm and cryptographic keys before the application protocol transmits or receives its first byte of data. The TLS Handshake Protocol provides connection security that has three basic properties:</p>
+                                <ul>
+                                    <li>The peer's identity can be authenticated using asymmetric, or public key, cryptography (e.g. RSA, DSA, etc.). This authentication can be made optional, but is generally required for at least one of the peers.</li>
+                                    <li>The negotiation of a shared secret is secure: the negotiated secret is unavailable to eavesdroppers, and for any authenticated connection the secret cannot be obtained, even by an attacker who can place himself in the
+                                        middle of the connection.</li>
+                                    <li>The negotiation is reliable: no attacker can modify the negotiation communication without being detected by the parties to the communication.</li>
+                                </ul>
+                                <p>One advantage of TLS is that it is application protocol independent. Higher-level protocols can layer on top of the TLS protocol transparently. The TLS standard, however, does not specify how protocols add security with
+                                    TLS; the decisions on how to initiate TLS handshaking and how to interpret the authentication certificates exchanged are left to the judgement of the designers and implementors of protocols that run on top of TLS. Transport
+                                    Layer Security was designed as a replacement for SSL. TLS is based on, and very similar to, SSL, but they are not interoperable.</p>
+                            </dd>
+                            <dt><dfn>TPM</dfn></dt>
+                            <dd>
+                                <p><b>Trusted Platform Module</b>. The name of a specification, published by the Trusted Computing Group (TCG), for a microcontroller that can store secured information, and also the general name of implementations of that
+                                    specification. The TPM is a microchip that stores keys, passwords and digital certificates. TPMs are usually embedded on the motherboard of a personal computer or laptop, but they can also be used in other devices such
+                                    as mobile phones or network equipment. Cryptographic algorithms used in TPMs include RSA, SHA1, and HMAC.</p>
+                            </dd>
+                            <dt><dfn>UAT</dfn></dt>
+                            <dd>
+                                <p><b>User Acceptance Testing</b>. One of the testing stages in the software development process performed by customers or end users. Software testing begins at the Alpha stage (named after the first letter of the Greek alphabet),
+                                    User Acceptance Testing takes place during Beta stage (named after the second letter of the Greek alphabet). Beta testing, which follows Alpha testing, can be considered a form of external User Acceptance Testing. Versions
+                                    of the software, known as beta versions, are released to a limited audience outside of the programming team. Beta testing begins when software contains all intended functionality of the final version but remains still
+                                    in a development phase. The process of delivering a beta version to the users is called beta release and this is typically the first time that the software is available outside of the organization that developed it.
+                                    The users of a beta version are called beta testers. They are usually customers or prospective customers of the organization that develops the software, willing to test the software without charge, often receiving the
+                                    final software free of charge or for a reduced price. Developers release either a closed beta or an open beta; closed beta versions are released to a select group of individuals for a user test and are invitation only,
+                                    while open betas are to a larger group from the general public and anyone interested. The testers report any bugs that they find, and sometimes suggest additional features they think should be available in the final
+                                    version. Other Greek letters, such as Gamma and Delta, are sometimes used to indicate further versions of software that are substantially complete, but still undergoing testing, with Omega used to indicate final testing
+                                    versions that are believed to be relatively bug-free, ready for production.</p>
+                            </dd>
+                            <dt><dfn>UPS</dfn></dt>
+                            <dd>
+                                <p><b>Uninterruptible Power Supply</b>. A UPS provides backup power in case of the main power source failure. A Typical UPS device supplies energy through one or more attached batteries providing enough time for a normal system
+                                    shutdown or till a log-term backup power generator is ready to take over the load. Apart from its main function, which is supplying power during blackouts (complete loss of power), UPS can also condition the line to
+                                    compensate for brownouts (temporary voltage reductions) or spikes (temporary voltage surges). A UPS device can be implemented as a standby device (battery-powered circuit is used in case of the main power source failure),
+                                    an inline device (battery-powered circuit is used continually), or a line-interactive device (which combines the features of the first two). Some UPS devices (smart UPS) may also offer additional features that can be
+                                    controlled through software, providing the ability to send a notification when the power goes out, schedule a check for a weak battery, or manage the UPS remotely over the network.</p>
+                            </dd>
+                            <dt><dfn>URL</dfn></dt>
+                            <dd>
+                                <p><b>Universal Resource Locator</b>. An address of a resource on the Internet. The part of the URL before the colon identifies the access scheme or protocol (e.g. HTML or FTP) and the part after the colon is processed according
+                                    to that access scheme.</p>
+                            </dd>
+                            <dt><dfn>USB</dfn></dt>
+                            <dd>
+                                <p><b>Universal Serial Bus</b>. A standard for connecting various types of peripheral devices to PCs and other USB-compliant devices. USBs plug and play feature allows for attaching and removing USB peripherals without the
+                                    need for physical device configuration (hot plugging), and additionally for doing so without the need to shut down and restart the system (hot swapping). Devices on the USB bus communicate with the PC through the USB
+                                    host controller (in most cases embedded in the chipset of the motherboard). USB devices can be daisy chained, or multiple devices can connect to a USB hub (each new attached device shares the USB bus and lowers the
+                                    total available bandwidth). There always exists one hub known as the root hub, which is built into the host controller. A single host controller can serve up to 127 devices and also provide electrical power for the
+                                    device (USB devices supporting this feature are called bus-powered devices). USB version 1.1 offers data rates of 1.5 Mbps (designed for low data rate peripherals such as joysticks, and sometimes referred to as "Low-Speed")
+                                    and 12 Mbps (designed for higher-speed devices such as disk drives, and sometimes referred to as "Full-Speed"). USB version 2.0 (officially labeled as "Hi-Speed") allows for transfer rates of 480 Mpbs and is backward-compatible
+                                    with the earlier versions. USB 3.0 standard (officially marketed as "SuperSpeed") has transmission rates of up to 5 Gbps and is backwards compatible with USB 2.0. USB devices connect through several types of connectors,
+                                    including standard A and B connectors, Mini-B, and also Micro-A and Micro-B connectors. Generally, type A connectors are designed to be used with host controllers and hubs (devices that can supply power), type B plugs
+                                    are used on USB peripherals (devices that receive power). For USB 2.0 or earlier, the maximum length of a standard cable is 5 metres (16.4 ft). The USB 3.0 standard does not directly specify a maximum cable length.</p>
+                            </dd>
+                            <dt><dfn>UTP</dfn></dt>
+                            <dd>
+                                <p><b>Unshielded Twisted Pair</b>. A type of copper cabling used in Ethernet and telephone networks. A UTP cable consists of eight wires grouped into pairs. Each wire is covered by an insulating material, and wires in each
+                                    pair are twisted around each other in order to reduce signal interference from adjacent wire pairs (effect known as crosstalk). UTP cable is not surrounded by any shielding that would provide protection against Electromagnetic
+                                    Interference (EMI) / Radio Frequency Interference (RFI) from outside sources. Another disadvantage is that UTP cabling must comply with specific requirements related to the twist rate (pulling or bending the cable can
+                                    degrade its performance over time). The biggest advantage of UTP is its low cost (UTP costs less per meter than any other type of LAN cabling). UTP cabling is also easier to install than other network media such as
+                                    Shielded Twisted Pair (STP), coaxial, or fiber-optic cables. When used as a network media, UTP cables are often installed with Registered Jack 45 (RJ-45) connector (RJ-11 connectors are used for telephone cabling).</p>
+                            </dd>
+                            <br>
+                        </div>
+                        <div class="glossary-letter-pane" id="v">
+                            <dt><dfn>VLAN</dfn></dt>
+                            <dd>
+                                <p><b>Virtual Local Area Network</b>. A logical grouping of computers that may be physically located on different parts of a LAN. VLANs allow computer hosts to act as if they were attached to the same broadcast domain, regardless
+                                    of their physical location. VLAN membership can be configured through software instead of physically relocating devices or connections, and VLANs are often created with the use of switches equipped with additional software
+                                    features. By default, all ports on a switch are typically labeled as VLAN1, and virtual networks are created by changing this assignment (labeling one of the ports as VLAN2, another as VLAN3, etc.). Multiple switches
+                                    on a LAN can be configured this way, and physically dispersed hosts that connect to e.g. VLAN2 port on any of those switches become a part of a single logical subnet. VLAN membership can be set either through switch
+                                    ports, where a device connecting to a certain switch port automatically becomes a member of the VLAN assigned to that port (static VLAN), or through mapping the VLAN membership with the MAC address of the device connected
+                                    to the port (dynamic VLAN). Dynamic VLANs are configured through the use of server software that relies on a database containing MAC-address-to-VLAN mappings. When a device connects to the dynamic port on a switch its
+                                    MAC address is sent to the server, and if the matching entry in its database is found the server sends the VLAN number for that port. Data from multiple VLANs on single switch is carried through a single network link
+                                    between switches. This is often referred to as "trunking" or "VLAN multiplexing", and each of the switches has a special port (trunk port) configured to pass all the data, regardless of the VLAN number, between all
+                                    switches on a LAN. To allow for multiple VLANs on one link, frames from individual VLANs must be identified. The most common and preferred method, IEEE 802.1Q adds a tag to the Ethernet frame header, labeling it as
+                                    belonging to a certain VLAN.</p>
+                            </dd>
+                            <dt><dfn>VoIP</dfn></dt>
+                            <dd>
+                                <p><b>Voice over IP</b>. A form of communication that allows to make phone calls over a broadband Internet connection instead of typical analog telephone lines. Basic VoIP access usually allows to call others who are also
+                                    receiving calls over the Internet. Interconnected VoIP services also allow to make and receive calls to and from traditional landline numbers, usually for a service fee. Some VoIP services require a computer or a dedicated
+                                    VoIP phone, while others allow to use a landline phone to place VoIP calls through a special adapter.</p>
+                            </dd>
+                            <dt><dfn>VPN</dfn></dt>
+                            <dd>
+                                <p><b>Virtual Private Network</b>. A logical, restricted-use network created with the use of encryption and tunneling protocols over physical, public network links.</p>
+                            </dd>
+                            <dt><dfn>VTC</dfn></dt>
+                            <dd>
+                                <p><b>Video Teleconferencing</b>. A set of telecommunication technologies which allow two or more locations to interact via two-way video and audio transmissions simultaneously.</p>
+                            </dd>
+                            <br>
+                        </div>
+                        <div class="glossary-letter-pane" id="w">
+                            <dt><dfn>WAF</dfn></dt>
+                            <dd>
+                                <p><b>Web-Application Firewall</b>. An appliance, server plugin, or filter protecting the web server from attack.</p>
+                            </dd>
+                            <dt><dfn>WAP</dfn></dt>
+                            <dd>
+                                <p><b>Wireless Access Point</b>. A device that connects wireless clients to a wired or wireless network. A WAP can combine functions of multiple network devices, featuring a built-in wireless router, bridge, Ethernet switch,
+                                    or broadband modem. WAPs allow for centralized control over access to the network and network resources (infrastructure mode), and enable support for more connecting devices.</p>
+                            </dd>
+                            <dt><dfn>WEP</dfn></dt>
+                            <dd>
+                                <p><b>Wired Equivalent Privacy</b>. A security protocol introduced as part of the original IEEE 802.11 standard for implementing wireless local area network (WLAN) communication. WEP was based on the use of the same shared
+                                    private encryption key (or limited set of rotating keys) among all stations on a WLAN. This meant that if the key from a single station was compromised, the entire WLAN encryption scheme was compromised. Also, a weakness
+                                    in how WEP was implemented allowed it to be cracked by public domain tools (e.g. WepAttack, AirCrack, etc.) by an attacker capturing packets passively. Furthermore, the flawed implementation also meant that increasing
+                                    the key size from the available 40-bit exportable or 104-bit domestic options did not increase the difficulty in breaking the key exponentially, only linearly. Thus, simply increasing the key size was not an effective
+                                    way to improve security. These weaknesses, combined with the lack of key management for distributing and updating keys on all WLAN stations and access points, made WEP security inadequate for protecting wireless networks
+                                    and difficult to manage. WEP was replaced by an interim security solution referred to as Wi-Fi Protected Access (WPA). The two key components of WPA, TKIP and 802.1x, addressed the primary problems with the original
+                                    802.11 security model based on WEP. WPA interim standard was replaced by Wi-Fi Protected Access II (WPA2), also referred to as 802.11i (the two terms, 802.11i and WPA2, are used synonymously to mean the new security
+                                    standard for 802.11 networks).</p>
+                            </dd>
+                            <dt><dfn>WIDS</dfn></dt>
+                            <dd>
+                                <p><b>Wireless Intrusion Detection System</b>. A network device that monitors radio spectrum for the presence of unauthorized, rogue access points and the use of wireless attack tools.</p>
+                            </dd>
+                            <dt><dfn>WIPS</dfn></dt>
+                            <dd>
+                                <p><b>Wireless Intrusion Prevention System</b>. A network device that monitors radio spectrum for the presence of unauthorized, rogue access points and the use of wireless attack tools. In addition to intrusion detection,
+                                    a WIPS also includes features that prevent against the threat automatically.</p>
+                            </dd>
+                            <dt><dfn>WPA</dfn></dt>
+                            <dd>
+                                <p><b>Wi-Fi Protected Access</b>. An interim standard introduced in response to flaws found in Wired Equivalent Privacy (WEP) cryptographic protocol. The two key components of WPA, TKIP and 802.1x, addressed the primary problems
+                                    with the original 802.11 security model based on WEP. WPA interim standard was replaced by Wi-Fi Protected Access II (WPA2), also referred to as 802.11i (the two terms, 802.11i and WPA2, are used synonymously to mean
+                                    the new security standard for 802.11 networks).</p>
+                            </dd>
+                            <br>
+                        </div>
+                        <div class="glossary-letter-pane" id="x">
+                            <dt><dfn>XSRF</dfn></dt>
+                            <dd>
+                                <p><b>Cross-Site Request Forgery</b>. A security vulnerability that tricks a user into sending unauthorized commands to a web application of the trusted website.</p>
+                            </dd>
+                            <dt><dfn>XSS</dfn></dt>
+                            <dd>
+                                <p><b>Cross-Site Scripting</b>. A security vulnerability that allows for injection of malicious code into a trusted website. The malicious code, often in the form a JavaScript code, can then be sent to the unsuspecting user
+                                    and executed by the user's web browser application.</p>
+                            </dd>
+                            <br>
+                        </div>
+                        <div class="glossary-letter-pane" id="y">
+                            <br>
+                        </div>
+                        <div class="glossary-letter-pane" id="z">
+                            <br>
+                        </div>
+                    </div>
+                </div>
+                <div id="malware" class="col s12">
+                    <div class="collapsible-body2">
+
+                        <dt><dfn>ActiveX controls</dfn></dt>
+                        <dd>A type of downloadable web browser plug-ins for Microsoft Internet Explorer providing additional interactive features to web pages. Malicious ActiveX controls pose a risk of unintended execution of malware.</dd>
+                        <dt><dfn>Adware</dfn></dt>
+                        <dd>Software that automatically plays, displays, or downloads advertisements to a computer.</dd>
+                        <dt><dfn>Armored virus</dfn></dt>
+                        <dd>A type of computer virus that takes advantage of various mechanisms specifically designed to make tracing, disassembling and reverse engineering its code more difficult.</dd>
+                        <dt><dfn>Backdoor</dfn></dt>
+                        <dd>An undocumented (and often legitimate) way of gaining access to a program, online service or an entire computer system.</dd>
+                        <dt><dfn>Botnet</dfn></dt>
+                        <dd>A group of computers running malicious software under control of a hacker.</dd>
+                        <dt><dfn>Buffer overflow</dfn></dt>
+                        <dd>A technique used by certain types of malware to cause an error in a program and make it easier to run malicious code.</dd>
+                        <dt><dfn>Companion virus</dfn></dt>
+                        <dd>An older type of computer virus which doesn't alter files and works by creating infected companion file with the exact same name as the legitimate program, but with different file extension. The virus takes advantage of the fact
+                            that in the old MS-DOS command-line interface executables can be run by providing only the file name which facilitates the execution of infected code by an unaware user.</dd>
+                        <dt><dfn>Computer worm</dfn></dt>
+                        <dd>A standalone malicious computer program that replicates itself over a computer network.</dd>
+                        <dt><dfn>Cross-site scripting</dfn></dt>
+                        <dd>A computer security vulnerability allowing attackers to insert malicious code into a trusted website.</dd>
+                        <dt><dfn>Dialer</dfn></dt>
+                        <dd>A rogue application designed to exploit dialup connections by making unauthorized telephone calls.</dd>
+                        <dt><dfn>Downloader</dfn></dt>
+                        <dd>A type of Trojan designed to transfer other malware onto a PC via Internet connection.</dd>
+                        <dt><dfn>Drive-by download</dfn></dt>
+                        <dd>An automatic download performed without the user's consent (and often without any notice) aimed at installing malware or potentially unwanted programs.</dd>
+                        <dt><dfn>Dropper</dfn></dt>
+                        <dd>A type of Trojan designed to install other malware files onto a PC without the need for an active Internet connection.</dd>
+                        <dt><dfn>Executable file</dfn></dt>
+                        <dd>A type of computer file that when opened runs a program or series of instructions contained in the file.</dd>
+                        <dt><dfn>Exploit</dfn></dt>
+                        <dd>Computer code or command that takes advantage of software design flaws.</dd>
+                        <dt><dfn>Grayware</dfn></dt>
+                        <dd>A category of applications which despite of not being classified as malware can worsen the performance of a computer and pose security risk.</dd>
+                        <dt><dfn>Heuristics</dfn></dt>
+                        <dd>A method employed by many computer antivirus programs designed to detect previously unknown types of malware.</dd>
+                        <dt><dfn>iframe</dfn></dt>
+                        <dd>An HTML tag for embedding another web document within the current HTML web page. The downside of utilizing iframes relates to the fact that they can be used for the purpose of injecting malicious code (often in the form of JavaScript
+                            applet) into an otherwise trusted page.</dd>
+                        <dt><dfn>Keylogger</dfn></dt>
+                        <dd>An application collecting information about user keyboard activity. Typically, malicious keyloggers are installed and run on a system without the user's knowledge/consent to steal logon credentials, credit card numbers, and other
+                            sensitive data.
+                        </dd>
+                        <dt><dfn>Logic bomb</dfn></dt>
+                        <dd>Malicious code activated by a specific event.</dd>
+                        <dt><dfn>Macro virus</dfn></dt>
+                        <dd>A type of computer virus that exploits the capability for creating and embedding simple scripts in popular office and cooperative applications.</dd>
+                        <dt><dfn>Malicious app</dfn></dt>
+                        <dd>Mobile application designed to harm user devices or personal data acting in disguise of a legitimate program.</dd>
+                        <dt><dfn>Malware</dfn></dt>
+                        <dd>A generic term for various types of malicious software used to disrupt computer operation, gather sensitive information, or gain access to private computer systems. The category of malware encompasses all sorts of malicious applications,
+                            including Trojan horses, most rootkits and backdoors, computer viruses, worms, spyware, keyloggers, more intrusive forms of adware, and other malicious programs.</dd>
+                        <dt><dfn>Payload</dfn></dt>
+                        <dd>The part of malware performing malicious action.</dd>
+                        <dt><dfn>Phage virus</dfn></dt>
+                        <dd>A type of computer virus that deletes or corrupts contents of the target host file instead of attaching itself to the file.</dd>
+                        <dt><dfn>Polymorphic malware</dfn></dt>
+                        <dd>A type of malicious software capable of changing its underlying code in order to avoid detection.</dd>
+                        <dt><dfn>Pop-under</dfn></dt>
+                        <dd>One of the ways of delivering online advertising content utilized by adware. Advertising pop-unders are usually displayed in a new browser window hidden beneath the current page and are not seen until the covering window is closed.</dd>
+                        <dt><dfn>Pop-up</dfn></dt>
+                        <dd>One of the ways of delivering online advertising content utilized by adware. Advertising pop-ups are usually displayed in a new web browser window and cover the contents of the current page.</dd>
+                        <dt><dfn>Quarantine</dfn></dt>
+                        <dd>Isolation of files and applications suspected of containing malware in order to prevent further execution and potential harm to the user's system.</dd>
+                        <dt><dfn>Ransomware</dfn></dt>
+                        <dd>Malware that restricts access to a computer system by encrypting files or locking the entire system down until the user performs requested action.</dd>
+                        <dt><dfn>Replication</dfn></dt>
+                        <dd>The process by which a virus makes copies of itself to carry out subsequent infections.</dd>
+                        <dt><dfn>Retrovirus</dfn></dt>
+                        <dd>A computer virus that actively attacks an antivirus program in an effort to prevent detection.</dd>
+                        <dt><dfn>Rootkit</dfn></dt>
+                        <dd>A collection of software tools used by a hacker in order to mask intrusion and obtain administrator-level access to a computer or computer network.</dd>
+                        <dt><dfn>Signature file</dfn></dt>
+                        <dd>A file containing new malicious code patterns used by the antivirus application as a reference in the process of malware removal.</dd>
+                        <dt><dfn>Spyware</dfn></dt>
+                        <dd>Malicious software collecting information about users without their knowledge/consent.</dd>
+                        <dt><dfn>SQL injection</dfn></dt>
+                        <dd>Execution of SQL commands aimed at gaining unauthorized access to an online database. This type of attack occurs when for example entry fields of web forms designed to collect information from users allow passing unchecked user
+                            input to the database. The countermeasure against this type of code injection is input validation, which limits the scope of user input that can be passed through an online form.</dd>
+                        <dt><dfn>Trojan horse</dfn></dt>
+                        <dd>Malicious software performing unwanted and harmful actions in disguise of a legitimate and useful program.</dd>
+                        <dt><dfn>Virus</dfn></dt>
+                        <dd>A computer program containing malicious segment that attaches itself to an application program or other executable component.</dd>
+                        <dt><dfn>Windows Defender</dfn></dt>
+                        <dd>A built-in application tool for Microsoft operating systems providing protection against viruses, spyware, and other potentially unwanted programs.</dd>
+                        <dt><dfn>XSS</dfn></dt>
+                        <dd>A shorthand term for cross-site scripting.</dd>
+                        <dt><dfn>Zero-day attack</dfn></dt>
+                        <dd>A type of attack exploiting vulnerabilities that are present in already released software but unknown to the software developer.</dd>
+                        <dt><dfn>Zombie</dfn></dt>
+                        <dd>A computer that has been compromised by a virus or Trojan horse that puts it under the remote control of an online hijacker.</dd>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
 
 
 </body>

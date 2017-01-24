@@ -314,7 +314,7 @@ div.titleClock {
 
 .tabs .indicator {
     background-color: #06bcff;
-    height: 0px;
+    height: 3px;
 }
 
 .row.exams {
@@ -345,4 +345,84 @@ div.titleClock {
 
 .modal {
     max-height: 90%;
+}
+
+#glossaryBtns {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+    display: inline-block;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+#glossaryBtns li {
+    float: left;
+}
+
+#glossaryBtns li a {
+    display: inline;
+    color: white;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+}
+
+#glossaryBtns li a:hover {
+    background-color: #111111;
+}
+
+.glossary-letter-pane {
+    display: none;
+}
+
+.active {
+    display: inline;
+}
+
+.disableClick {
+    pointer-events: none;
+    opacity: .5;
+}
+
+.glossary-btn-container {
+    text-align: center;
+    background-color: #333333;
+}
+
+dd {
+    margin-left: 0px;
+    padding: 10px 10px 20px 30px;
+}
+
+dt {
+    font-weight: bold;
+    padding: 10px 0px 0px 10px;
+}
+
+dt:nth-of-type(2n+1) {
+    background: #E4E4E4;
+}
+
+dd:nth-of-type(2n+1) {
+    background: #E4E4E4;
+}
+
+dt:nth-of-type(2n) {
+    background: white;
+}
+
+dd:nth-of-type(2n) {
+    background: white;
+}
+
+.modal.load {
+    overflow-y: hidden;
+}
+
+.collapsible-body2 {
+    overflow-y: auto;
+    max-height: 45vh;
 }
