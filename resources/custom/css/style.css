@@ -457,7 +457,6 @@ dd:nth-of-type(2n) {
 .correct {
     background-color: green;
     border-radius: 5px;
-    padding: 5px;
 }
 
 .correctAnswerChk::after {
