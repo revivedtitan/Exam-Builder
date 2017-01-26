@@ -457,4 +457,15 @@ dd:nth-of-type(2n) {
 .correct {
     background-color: green;
     border-radius: 5px;
+    padding: 5px;
+}
+
+.correctAnswerChk::after {
+    border: 2px solid white !important;
+    background-color: white !important;
+}
+
+.correctAnswerChk::before {
+    border-right: 2px solid black !important;
+    border-bottom: 2px solid black !important;
 }

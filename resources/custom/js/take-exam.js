@@ -89,7 +89,7 @@ function loadExamQuestion(question) {
 
     if (question.type == "CHECK_ALL") {
         $.each(question.answers, function(aKey, aValue) {
-            var newAnswer = '<p><input name="exam-answers" type="checkbox" id="' + answerLetters[aKey] + '" value="' + aValue.text + '" class="with-gap" /><label for="' + answerLetters[aKey] + '">' + aValue.text.trim() + '</label></p>';
+            var newAnswer = '<p><input name="exam-answers" type="checkbox" id="' + answerLetters[aKey] + '" value="' + aValue.text + '" class="filled-in" /><label for="' + answerLetters[aKey] + '">' + aValue.text.trim() + '</label></p>';
             $('#exam-answers').append(newAnswer);
         });
     } else {
@@ -145,13 +145,19 @@ function checkExamQuestionAnswer() {
     $.each(correctAnswers, function(index, answer) {
         var element = formAnswerType + answer + '"]';
         $(element).parent().find('label').removeClass('incorrectAnswer');
-        $(element).parent().find('label').addClass('correctAnswer');
+
+        if (formAnswerType == ':checkbox[value="') {
+            $(element).parent().find('label').addClass('correctAnswerChk');
+        } else {
+            $(element).parent().find('label').addClass('correctAnswer');
+        }
+
         $(element).parent().find('label').css('color', 'white');
         $(element).parent().addClass('correct');
         $(element).parent().css('opacity', '1');
         $(element).prop("checked", true);
         console.log($(element));
-        ''
+
     });
 
     updateTestSummary();
