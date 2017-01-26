@@ -469,3 +469,8 @@ dd:nth-of-type(2n) {
     border-right: 2px solid black !important;
     border-bottom: 2px solid black !important;
 }
+
+#exam-answers p {
+ padding-top:2px;
+ padding-bottom:2px;
+}
