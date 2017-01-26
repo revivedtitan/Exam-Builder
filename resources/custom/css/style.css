@@ -427,14 +427,34 @@ dd:nth-of-type(2n) {
     max-height: 45vh;
 }
 
-[type="checkbox"]:checked + label::before {
+[type="checkbox"]:checked+label::before {
     border-right: 2px solid #5088b7;
     border-bottom: 2px solid #5088b7;
 }
 
-[type="radio"]:checked + label::after, .with-gap[type="radio"]:checked + label::after {
+[type="radio"]:checked+label::after,
+.with-gap[type="radio"]:checked+label::after {
     background-color: #5088b7;
 }
-[type="radio"]:checked + label::after, .with-gap[type="radio"]:checked + label::before, .with-gap[type="radio"]:checked + label::after {
+
+[type="radio"]:checked+label::after,
+.with-gap[type="radio"]:checked+label::before,
+.with-gap[type="radio"]:checked+label::after {
     border: 2px solid #5088b7;
+}
+
+.correctAnswer::after {
+    border: 2px solid white !important;
+    background-color: white !important;
+}
+
+.correctAnswer::before {
+    border-right: 2px solid white !important;
+    border-bottom: 2px solid white !important;
+    border: 2px solid white !important;
+}
+
+.correct {
+    background-color: green;
+    border-radius: 5px;
 }

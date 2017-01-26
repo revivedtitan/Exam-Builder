@@ -78,8 +78,6 @@ function loadExamQuestion(question) {
     $('#exam-answers').html("");
     $('#exam-note').html("");
     $('#exam-answer-result').html("");
-    $('#exam-answer-result').removeClass("incorrectAnswer");
-    $('#exam-answer-result').removeClass("correctAnswer");
     $('#exam-question-type').val(question.type);
     $('#exam-question-text').html(question.text);
 
@@ -103,7 +101,8 @@ function loadExamQuestion(question) {
 }
 
 function checkExamQuestionAnswer() {
-    var selectedAnswers = $('input[name=exam-answers]:checked')
+    var selectedAnswers = $('input[name=exam-answers]:checked');
+    var allAnswers = $('input[name=exam-answers]');
 
     if (selectedAnswers.length == 0) {
         $('#errorModalMessage').html('Please select an answer!');
@@ -112,6 +111,10 @@ function checkExamQuestionAnswer() {
     }
 
     var userAnswers = [];
+
+    $.each(allAnswers, function(index, answer) {
+        $(answer).parent().css("opacity", ".3");
+    });
 
     $.each(selectedAnswers, function(index, answer) {
         userAnswers.push($(answer).val());
@@ -143,6 +146,12 @@ function checkExamQuestionAnswer() {
         var element = formAnswerType + answer + '"]';
         $(element).parent().find('label').removeClass('incorrectAnswer');
         $(element).parent().find('label').addClass('correctAnswer');
+        $(element).parent().find('label').css('color', 'white');
+        $(element).parent().addClass('correct');
+        $(element).parent().css('opacity', '1');
+        $(element).prop("checked", true);
+        console.log($(element));
+        ''
     });
 
     updateTestSummary();
