@@ -470,6 +470,7 @@ dd:nth-of-type(2n) {
 }
 
 #exam-answers p {
- padding-top:1px;
- padding-bottom:1px;
+ padding-top:2px;
+ padding-bottom:0px;
+    padding-left:1px;
 }
