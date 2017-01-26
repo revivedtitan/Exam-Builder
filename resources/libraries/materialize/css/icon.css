@@ -4,7 +4,7 @@
     font-family: 'Material Icons';
     font-style: normal;
     font-weight: 400;
-    src: local('Material Icons'), local('MaterialIcons-Regular'), url("https://github.com/revivedtitan/Exam-Builder/blob/master/resources/libraries/materialize/fonts/icons/Material-Icons.woff2") format('woff2');
+    src: local('Material Icons'), local('MaterialIcons-Regular'), url("http://github.com/revivedtitan/Exam-Builder/blob/master/resources/libraries/materialize/fonts/icons/Material-Icons.woff2") format('woff2');
 }
 
 .material-icons {
