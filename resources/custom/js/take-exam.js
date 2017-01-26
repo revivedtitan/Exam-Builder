@@ -121,16 +121,6 @@ function checkExamQuestionAnswer() {
     });
 
     var correctAnswers = getAnswers(exam.currentQuestion);
-
-    if (userAnswers.sort().compare(correctAnswers.sort())) {
-        exam.correctlyAnswered.push(exam.currentQuestion);
-        $('#exam-answer-result').html("Good job, please continue to the next question..").addClass('correctAnswer');
-        $('#exam-answer-result').addClass('correctAnswer');
-    } else {
-        exam.wronglyAnswered.push(exam.currentQuestion);
-        $('#exam-answer-result').html("Incorrect, please continue to the next question..").addClass('incorrectAnswer');
-    }
-
     var questionType = $('#exam-question-type').val();
     var formAnswerType = ':radio[value="';
 
@@ -158,10 +148,19 @@ function checkExamQuestionAnswer() {
         $(element).parent().addClass('correct');
         $(element).parent().css('opacity', '1');
         $(element).prop("checked", true);
-        console.log($(element));
-
     });
 
+    $('#exam-answer-result').removeClass('correctAnswer');
+    $('#exam-answer-result').removeClass('incorrectAnswer');
+    
+    if (userAnswers.sort().compare(correctAnswers.sort())) {
+        exam.correctlyAnswered.push(exam.currentQuestion);
+        $('#exam-answer-result').html("Good job, please continue to the next question..").addClass('correctAnswer');
+    } else {
+        exam.wronglyAnswered.push(exam.currentQuestion);
+        $('#exam-answer-result').html("Incorrect, please continue to the next question..").addClass('incorrectAnswer');
+    }
+    
     updateTestSummary();
 
     $('#exam-note').html(exam.currentQuestion.note);
