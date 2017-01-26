@@ -125,6 +125,7 @@ function checkExamQuestionAnswer() {
     if (userAnswers.sort().compare(correctAnswers.sort())) {
         exam.correctlyAnswered.push(exam.currentQuestion);
         $('#exam-answer-result').html("Good job, please continue to the next question..").addClass('correctAnswer');
+        $('#exam-answer-result').addClass('correctAnswer');
     } else {
         exam.wronglyAnswered.push(exam.currentQuestion);
         $('#exam-answer-result').html("Incorrect, please continue to the next question..").addClass('incorrectAnswer');
@@ -151,6 +152,7 @@ function checkExamQuestionAnswer() {
         } else {
             $(element).parent().find('label').addClass('correctAnswer');
         }
+
 
         $(element).parent().find('label').css('color', 'white');
         $(element).parent().addClass('correct');
